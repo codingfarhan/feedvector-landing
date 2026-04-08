@@ -17,7 +17,7 @@ export default function PrivacyPolicyPage() {
               Effective date: March 5, 2026
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              Company / Brand: FeedVector ("FeedVector", "we", "us", "our")
+              Company / Brand: FeedVector (&quot;FeedVector&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;)
             </p>
             <p className="text-sm text-gray-500 dark:text-gray-400">Website: feedvector.com</p>
             <p className="text-sm text-gray-500 dark:text-gray-400">Contact: farhan@feedvector.com</p>
@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-base text-gray-600 dark:text-gray-300">
             This Privacy Policy explains how we collect, use, share, and protect information when you use our
             website and products, including our web app that lets you connect social media accounts (including
-            LinkedIn, Instagram, Facebook, YouTube and TikTok) to create and schedule posts ("Services").
+            LinkedIn, Instagram, Facebook, YouTube and TikTok) to create and schedule posts (&quot;Services&quot;).
           </p>
 
           <section className="space-y-3">
@@ -70,7 +70,7 @@ export default function PrivacyPolicyPage() {
               </ul>
               <p className="text-base text-gray-600 dark:text-gray-300">
                 We only request and use LinkedIn, Instagram, Facebook, YouTube and TikTok data to provide the
-                scheduling/publishing features you asked for, consistent with each platform's API terms.
+                scheduling/publishing features you asked for, consistent with each platform&apos;s API terms.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export default function PrivacyPolicyPage() {
               <li>Store your preferences (timezone, schedules)</li>
               <li>Provide customer support and respond to requests</li>
               <li>Improve product reliability and performance (debugging, analytics)</li>
-              <li>Send service messages (e.g., "post failed", billing receipts, important product notices)</li>
+              <li>Send service messages (e.g., &quot;post failed&quot;, billing receipts, important product notices)</li>
             </ul>
             <p className="text-base text-gray-600 dark:text-gray-300">We do not sell your personal information.</p>
             <div className="space-y-2">
@@ -123,7 +123,7 @@ export default function PrivacyPolicyPage() {
               <li>Legal obligation: compliance with applicable laws</li>
             </ul>
             <p className="text-base text-gray-600 dark:text-gray-300">
-              LinkedIn reminds developers they're responsible for their own GDPR compliance for data obtained from LinkedIn.
+              LinkedIn reminds developers they&apos;re responsible for their own GDPR compliance for data obtained from LinkedIn.
             </p>
           </section>
 
@@ -230,7 +230,7 @@ export default function PrivacyPolicyPage() {
               <li>Analytics (optional)</li>
             </ul>
             <p className="text-base text-gray-600 dark:text-gray-300">
-              If we use non-essential cookies, we'll provide a cookie banner or controls where required by law.
+              If we use non-essential cookies, we&apos;ll provide a cookie banner or controls where required by law.
             </p>
           </section>
 
@@ -258,7 +258,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-3">
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white/90">12) Children</h2>
             <p className="text-base text-gray-600 dark:text-gray-300">
-              Our Services are not intended for children under 13 (or the minimum age required in your country). We don't
+              Our Services are not intended for children under 13 (or the minimum age required in your country). We don&apos;t
               knowingly collect data from children.
             </p>
           </section>
@@ -266,7 +266,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-3">
             <h2 className="text-xl font-semibold text-gray-800 dark:text-white/90">13) Changes to this policy</h2>
             <p className="text-base text-gray-600 dark:text-gray-300">
-              We may update this Privacy Policy from time to time. We'll update the "Effective date" and may notify you of
+              We may update this Privacy Policy from time to time. We&apos;ll update the &quot;Effective date&quot; and may notify you of
               material changes in the app or by email.
             </p>
           </section>
