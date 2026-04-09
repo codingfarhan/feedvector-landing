@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Script from "next/script"
 import { ThemeProvider } from "next-themes"
 import { Onest } from "next/font/google"
 import "./globals.css"
@@ -30,6 +31,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Google tag (gtag.js) */}
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-CRD0JM1LZ5" strategy="afterInteractive" />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-CRD0JM1LZ5');`}
+        </Script>
+      </head>
       <body className={`bg-gray-50 dark:bg-dark-secondary min-h-screen flex flex-col ${onest.className}`}>
         <ThemeProvider disableTransitionOnChange>
           {/* ToasterProvider must render before the children components */}
