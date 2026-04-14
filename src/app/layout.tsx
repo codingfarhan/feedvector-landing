@@ -10,17 +10,34 @@ const onest = Onest({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://feedvector.com"),
   title: {
-    default: "FeedVector - Social Scheduling with AI",
+    default: "FeedVector - Social Media Scheduling with AI",
     template: "%s | FeedVector",
   },
-  description: "FeedVector helps teams plan, create, and schedule social content across channels with AI assistance, automation, and analytics.",
+  description:
+    "FeedVector is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+  keywords: [
+    "social media scheduling",
+    "AI social media",
+    "social media scheduler",
+    "social media management",
+    "content scheduling",
+  ],
   openGraph: {
     title: "FeedVector",
-    description: "FeedVector helps teams plan, create, and schedule social content across channels with AI assistance, automation, and analytics.",
-    url: "https://feedvector.com",
+    description:
+      "FeedVector is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+    url: "/",
     siteName: "FeedVector",
-    images: [{ url: "https://example.com/og.png" }],
+    images: [{ url: "/images/hero/hero-img.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FeedVector",
+    description:
+      "FeedVector is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+    images: ["/images/hero/hero-img.png"],
   },
 }
 

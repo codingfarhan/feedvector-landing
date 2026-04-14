@@ -1,8 +1,18 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy',
-};
+  title: "Privacy Policy",
+  description: "FeedVector privacy policy covering how we collect, use, and protect data in our AI social media platform.",
+  keywords: ["privacy policy", "data protection", "social media scheduling"],
+  alternates: {
+    canonical: "/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy",
+    description: "FeedVector privacy policy covering how we collect, use, and protect data in our AI social media platform.",
+    url: "/privacy",
+  },
+}
 
 export default function PrivacyPolicyPage() {
   return (
@@ -279,5 +289,5 @@ export default function PrivacyPolicyPage() {
         </div>
       </div>
     </section>
-  );
+  )
 }

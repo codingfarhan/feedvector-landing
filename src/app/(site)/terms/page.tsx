@@ -1,8 +1,18 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'Terms of Service',
-};
+  title: "Terms of Service",
+  description: "FeedVector terms of service for using our website and AI social media scheduling platform.",
+  keywords: ["terms of service", "legal", "social media scheduling"],
+  alternates: {
+    canonical: "/terms",
+  },
+  openGraph: {
+    title: "Terms of Service",
+    description: "FeedVector terms of service for using our website and AI social media scheduling platform.",
+    url: "/terms",
+  },
+}
 
 export default function TermsOfServicePage() {
   return (
@@ -299,5 +309,5 @@ export default function TermsOfServicePage() {
         </div>
       </div>
     </section>
-  );
+  )
 }
