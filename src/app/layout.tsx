@@ -23,11 +23,13 @@ export const metadata: Metadata = {
     "social media scheduler",
     "social media management",
     "content scheduling",
+    "feed vector",
+    "feedvector",
   ],
   openGraph: {
     title: "FeedVector",
     description:
-      "FeedVector is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+      "FeedVector (often written as Feed Vector) is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
     url: "/",
     siteName: "FeedVector",
     images: [{ url: "/images/hero/hero-img.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FeedVector",
     description:
-      "FeedVector is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+      "FeedVector (often written as Feed Vector) is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
     images: ["/images/hero/hero-img.png"],
   },
 }

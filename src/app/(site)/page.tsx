@@ -13,7 +13,15 @@ export const metadata: Metadata = {
   title: "Social Media Scheduling with AI",
   description:
     "Plan, create, and schedule posts across channels with FeedVector. Automate workflows, collaborate with your team, and track performance with AI.",
-  keywords: ["social media scheduling", "AI social media", "social media scheduler", "content calendar", "post scheduling"],
+  keywords: [
+    "social media scheduling",
+    "AI social media",
+    "social media scheduler",
+    "content calendar",
+    "post scheduling",
+    "feed vector",
+    "feedvector",
+  ],
   alternates: {
     canonical: "/",
   },
@@ -31,6 +39,7 @@ const jsonLd = {
     {
       "@type": "Organization",
       name: "FeedVector",
+      alternateName: "Feed Vector",
       url: "https://feedvector.com",
       logo: "https://feedvector.com/images/logo-black.svg",
     },
@@ -45,11 +54,7 @@ const jsonLd = {
 export default async function Home() {
   return (
     <>
-      <Script
-        id="json-ld-feedvector"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <Script id="json-ld-feedvector" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HeroSection />
       <CoreFeatures />
       <AudienceSection />
