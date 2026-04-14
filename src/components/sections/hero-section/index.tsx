@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import HeroLogos from "../hero-logos"
 import { Subheading } from "./subheading"
-import { IntroVideo } from "./intro-video"
 
 export default function HeroSection() {
   return (
@@ -81,13 +80,6 @@ export default function HeroSection() {
 
         <div className="max-[1100px]:hidden">
           <Image src="/images/hero/shape-left-1.svg" className="absolute top-14 left-16 floating-1" alt="" width={170} height={44} />
-          <Image
-            src="/images/hero/shape-left-2.svg"
-            className="absolute left-[145px] top-[298px] floating-2 max-[1240px]:left-[80px]"
-            alt=""
-            width={181}
-            height={44}
-          />
           <Image src="/images/hero/shape-right-1.svg" className="absolute right-16 top-[108px] floating-3" alt="" width={176} height={44} />
           <Image
             src="/images/hero/shape-right-2.svg"
