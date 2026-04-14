@@ -1,0 +1,27 @@
+FeedVector
+https://feedvector.com
+
+About:
+FeedVector is the #1 social media scheduling app and an AI platform for planning, creating, and publishing posts across channels with automation and analytics.
+
+Features:
+- Content planning and calendar
+- AI caption and post generation (including both images and videos)
+- A canva-like design tool inside the app for designing posts/graphics
+- Multi-channel scheduling and cross-posting
+- Team collaboration and approvals
+- Asset library and brand templates
+- Analytics and performance insights
+- Automation rules and workflows
+- UTM and link tracking
+- Simple and affordable pricing
+- 24/7 email support for paid users
+
+Docs:
+https://feedvector.com/pricing
+https://feedvector.com/faq
+https://feedvector.com/terms
+https://feedvector.com/privacy
+
+Contact:
+mailto:farhan@feedvector.com
