@@ -14,7 +14,7 @@ export const CORE_FEATURES: CoreFeature[] = [
     iconUrl: icons.pencil,
   },
   {
-    title: "Viral Templates for X and LinkedIn",
+    title: "Viral Templates for LinkedIn and X",
     description: "Choose from hundreds of proven templates and tailor them to your voice in seconds.",
     iconUrl: icons.file,
     badge: "New",
