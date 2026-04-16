@@ -12,13 +12,16 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Social Media Scheduling with AI",
   description:
-    "Plan, create, and schedule posts across channels with FeedVector. Automate workflows, collaborate with your team, and track performance with AI.",
+    "Plan, create, and schedule posts across channels with FeedVector. Choose from hundreds of viral templates for X and LinkedIn, automate workflows, collaborate, and track performance with AI.",
   keywords: [
     "social media scheduling",
     "AI social media",
     "social media scheduler",
     "content calendar",
     "post scheduling",
+    "viral templates",
+    "X templates",
+    "LinkedIn templates",
     "feed vector",
     "feedvector",
   ],
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Social Media Scheduling with AI",
     description:
-      "Plan, create, and schedule posts across channels with FeedVector. Automate workflows, collaborate with your team, and track performance with AI.",
+      "Plan, create, and schedule posts across channels with FeedVector. Choose from hundreds of viral templates for X and LinkedIn, automate workflows, collaborate, and track performance with AI.",
     url: "/",
   },
 }

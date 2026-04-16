@@ -13,11 +13,11 @@ export default function HeroSection() {
               <Subheading text="All-in-one social scheduling with AI" />
 
               <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
-                Plan, create, and schedule across every social channel
+                Create and schedule high performing social posts with AI
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
-                Schedule content, collaborate with your team, automate repeat work, and track performance with AI assistance and integrated design
-                tools.
+                Choose from hundreds of viral templates for LinkedIn and X, collaborate with your team, automate repeat work, and track performance
+                with Analytics. All from one place.
               </p>
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">

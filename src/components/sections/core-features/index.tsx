@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { CORE_FEATURES } from "./data";
+import Image from "next/image"
+import { CORE_FEATURES } from "./data"
 
 export function CoreFeatures() {
   return (
@@ -11,8 +11,7 @@ export function CoreFeatures() {
           </h2>
 
           <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Everything you need to plan, create, automate, and analyze social
-            content from one workspace.
+            Everything you need to plan, create, automate, and analyze social content from one workspace.
           </p>
         </div>
 
@@ -23,25 +22,22 @@ export function CoreFeatures() {
               className="bg-white p-9 border border-gray-200 dark:bg-white/5 dark:border-white/3 rounded-[20px] shadow-[0px_30px_50px_-32px_rgba(107,110,148,0.04)]"
             >
               <div className="core-feature-icon mb-9">
-                <Image
-                  src={feature.iconUrl}
-                  alt={feature.title}
-                  role="presentation"
-                  width={40}
-                  height={40}
-                />
+                <Image src={feature.iconUrl} alt={feature.title} role="presentation" width={40} height={40} />
               </div>
 
               <h3 className="mb-4 text-gray-800 dark:text-white/90 font-bold text-xl md:text-2xl">
                 {feature.title}
+                {feature.badge ? (
+                  <span className="ml-1.5 inline-flex -translate-y-px align-middle items-center rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400 px-2.5 py-1 text-xs font-semibold">
+                    {feature.badge}
+                  </span>
+                ) : null}
               </h3>
-              <p className="text-gray-500 dark:text-gray-400">
-                {feature.description}
-              </p>
+              <p className="text-gray-500 dark:text-gray-400">{feature.description}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
-  );
+  )
 }

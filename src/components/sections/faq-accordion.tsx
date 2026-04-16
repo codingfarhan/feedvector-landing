@@ -47,6 +47,12 @@ export default function FaqAccordion() {
       question: "Do you provide analytics?",
       answer: "Yes. Track performance across channels with comprehensive analytics to improve results.",
     },
+    {
+      id: 7,
+      question: "Do you include viral templates for X and LinkedIn?",
+      answer:
+        "Yes. Pick from hundreds of viral templates for X and LinkedIn, customize them to match your voice, then schedule and publish.",
+    },
   ]
 
   const toggleItem = (itemId: number) => {
