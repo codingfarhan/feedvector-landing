@@ -96,7 +96,6 @@ function TestimonialCard({ testimonial }: { testimonial: (typeof testimonials)[n
         </div>
         <div>
           <h3 className="text-gray-800 font-base dark:text-white/90">{testimonial.name}</h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">{testimonial.company}</p>
         </div>
       </div>
       <div className="p-5 rounded-2xl bg-white/90 dark:bg-white/[0.03]">
