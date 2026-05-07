@@ -63,7 +63,7 @@ export default async function Home() {
       <AudienceSection />
       <ToolsTab />
       <BenefitsGrid />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <PricingSection />
       <FaqAccordion />
     </>
