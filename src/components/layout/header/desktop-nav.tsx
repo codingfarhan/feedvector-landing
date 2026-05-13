@@ -27,14 +27,19 @@ export default function DesktopNav() {
               key={item.href}
               href={item.href}
               className={cn(
-                'text-gray-500 dark:text-gray-400 text-sm px-4 py-1.5 rounded-full hover:text-primary-500 font-medium',
+                'text-gray-500 dark:text-gray-400 text-sm px-4 py-1.5 rounded-full hover:text-primary-500 font-medium inline-flex items-center gap-2 whitespace-nowrap',
                 {
                   'bg-white dark:bg-white/5 font-medium text-gray-800 dark:text-white/90 shadow-xs':
                     pathname === item.href,
                 }
               )}
             >
-              {item.label}
+              <span>{item.label}</span>
+              {item.badge ? (
+                <span className="inline-flex items-center h-5 rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400 px-2 text-[10px] font-semibold leading-none shrink-0">
+                  {item.badge}
+                </span>
+              ) : null}
             </Link>
           );
         }

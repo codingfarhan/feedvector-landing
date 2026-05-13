@@ -6,6 +6,7 @@ import ToolsTab from "@/components/sections/tools-tab"
 import { CoreFeatures } from "@/components/sections/core-features"
 import PricingSection from "@/components/sections/pricing"
 import AudienceSection from "@/components/sections/audience-section"
+import McpCallout from "@/components/sections/mcp-callout"
 import type { Metadata } from "next"
 import Script from "next/script"
 
@@ -62,6 +63,7 @@ export default async function Home() {
       <CoreFeatures />
       <AudienceSection />
       <ToolsTab />
+      <McpCallout />
       <BenefitsGrid />
       {/* <TestimonialsSection /> */}
       <PricingSection />

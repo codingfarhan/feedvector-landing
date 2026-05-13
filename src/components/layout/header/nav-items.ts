@@ -3,6 +3,7 @@ type NavItem =
       type: "link"
       href: string
       label: string
+      badge?: string
     }
   | {
       type: "dropdown"
@@ -28,5 +29,11 @@ export const navItems: NavItem[] = [
     type: "link",
     label: "Pricing",
     href: "/pricing",
+  },
+  {
+    type: "link",
+    label: "MCP",
+    href: "/mcp",
+    badge: "New!",
   },
 ] satisfies NavItem[]

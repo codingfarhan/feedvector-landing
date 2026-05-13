@@ -2,13 +2,14 @@ FeedVector
 https://feedvector.com
 
 About:
-FeedVector is the #1 social media scheduling app and an AI platform for planning, creating, and publishing posts across channels with automation and analytics.
+FeedVector is the #1 social media scheduling app and an AI platform for planning, creating, and publishing posts across channels with automation and analytics. FeedVector also provides an MCP (Model Context Protocol) server so developers can schedule posts across platforms from MCP-compatible AI clients.
 
 Features:
 - Content planning and calendar
 - AI caption and post generation (including both images and videos)
 - A canva-like design tool inside the app for designing posts/graphics
 - Multi-channel scheduling and cross-posting
+- MCP server for scheduling posts from AI clients (Claude, Cursor, etc.)
 - Team collaboration and approvals
 - Asset library and brand templates
 - Analytics and performance insights
@@ -20,6 +21,7 @@ Features:
 Docs:
 https://feedvector.com/pricing
 https://feedvector.com/faq
+https://feedvector.com/mcp
 https://feedvector.com/terms
 https://feedvector.com/privacy
 

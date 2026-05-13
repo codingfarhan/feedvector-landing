@@ -32,13 +32,18 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "block px-3 py-2 rounded-md text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
+                      "flex items-center justify-between gap-3 px-3 py-2 rounded-md text-sm font-medium text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
                       {
                         "text-gray-800 dark:text-white": pathname === item.href,
                       },
                     )}
                   >
-                    {item.label}
+                    <span>{item.label}</span>
+                    {item.badge ? (
+                      <span className="inline-flex items-center h-5 rounded-full bg-primary-500/10 text-primary-600 dark:text-primary-400 px-2 text-[10px] font-semibold leading-none shrink-0">
+                        {item.badge}
+                      </span>
+                    ) : null}
                   </Link>
                 )
               }
