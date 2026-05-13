@@ -30,9 +30,7 @@ export default function McpPage() {
               <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                 <div className="space-y-2">
                   <p className="text-base font-semibold text-gray-800 dark:text-white/90">Documentation Index</p>
-                  <p className="text-base text-gray-600 dark:text-gray-300">
-                    Fetch the complete documentation index at:
-                  </p>
+                  <p className="text-base text-gray-600 dark:text-gray-300">Fetch the complete documentation index at:</p>
                   <CopyBlock variant="inline" value="https://feedvector.com/llms.txt" className="mt-2" />
                   <p className="text-base text-gray-600 dark:text-gray-300">
                     Use this file to discover all available pages before exploring further.
@@ -176,8 +174,8 @@ export default function McpPage() {
 }`}
                 />
                 <p className="text-base text-gray-600 dark:text-gray-300">
-                  Replace <code className="text-gray-800 dark:text-white/90">your-api-key</code> with your actual API key from Settings &gt;
-                  MCP.
+                  Replace <code className="text-gray-800 dark:text-white/90">your-api-key</code> with your actual API key from Settings &gt; Public
+                  API.
                 </p>
               </section>
 
