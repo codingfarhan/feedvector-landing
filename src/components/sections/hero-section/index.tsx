@@ -30,6 +30,18 @@ export default function HeroSection() {
 
                 {/* <IntroVideo /> */}
               </div>
+              <a
+                href="https://fazier.com/launches/feedvector.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex relative z-30"
+              >
+                <img
+                  src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light"
+                  width={120}
+                  alt="Fazier badge"
+                />
+              </a>
             </div>
           </div>
           <div className="max-w-[1000px] mx-auto relative">
