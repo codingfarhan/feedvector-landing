@@ -3,8 +3,17 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useState } from "react"
 import { navItems } from "./nav-items"
+import type { NavSection } from "./nav-items"
 import { cn } from "@/lib/utils"
 import { ChevronDownIcon } from "@/icons/icons"
+
+function getDropdownSections(item: Extract<(typeof navItems)[number], { type: "dropdown" }>): NavSection[] {
+  return item.sections ?? [{ items: item.items ?? [] }]
+}
+
+function isActivePath(pathname: string, href: string) {
+  return pathname === href || pathname.startsWith(`${href}/`)
+}
 
 interface MobileMenuProps {
   isOpen: boolean
@@ -49,6 +58,9 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
               }
 
               if (item.type === "dropdown") {
+                const sections = getDropdownSections(item)
+                const dropdownItems = sections.flatMap((section) => section.items)
+
                 return (
                   <div key={item.label}>
                     <button
@@ -57,9 +69,10 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                         "flex justify-between items-center w-full px-3 py-2 rounded-md text-sm font-medium" +
                           " text-gray-500 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
                         {
-                          "text-gray-700 dark:text-gray-200": item.items.some((subItem) => pathname.includes(subItem.href)),
+                          "text-gray-700 dark:text-gray-200": dropdownItems.some((subItem) => isActivePath(pathname, subItem.href)),
                         },
                       )}
+                      aria-expanded={activeDropdown === item.label}
                     >
                       <span>{item.label}</span>
                       <span className={cn("size-4 transition-transform duration-200", activeDropdown === item.label && "rotate-180")}>
@@ -68,22 +81,37 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                     </button>
 
                     {activeDropdown === item.label && (
-                      <div className="mt-2 space-y-1 pl-4">
-                        {item.items.map((subItem) => (
-                          <Link
-                            key={subItem.href}
-                            href={subItem.href}
-                            className={cn(
-                              "flex items-center px-3 py-2 gap-1.5 rounded-md text-sm font-medium text-gray-500" +
-                                " dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
-                              {
-                                "px-2": "icon" in subItem,
-                                "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200": pathname.includes(subItem.href),
-                              },
-                            )}
-                          >
-                            <span>{subItem.label}</span>
-                          </Link>
+                      <div className="mt-2 space-y-3 pl-4">
+                        {sections.map((section, sectionIndex) => (
+                          <div key={section.title ?? `${item.label}-${sectionIndex}`}>
+                            {section.title ? (
+                              <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-[0.08em] text-gray-400 dark:text-gray-500">
+                                {section.title}
+                              </p>
+                            ) : null}
+                            <div className="space-y-1">
+                              {section.items.map((subItem) => (
+                                <Link
+                                  key={subItem.href}
+                                  href={subItem.href}
+                                  className={cn(
+                                    "block rounded-md px-3 py-2 text-sm font-medium text-gray-500" +
+                                      " dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
+                                    {
+                                      "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200": isActivePath(pathname, subItem.href),
+                                    },
+                                  )}
+                                >
+                                  <span>{subItem.label}</span>
+                                  {subItem.description ? (
+                                    <span className="mt-1 block text-xs font-normal leading-5 text-gray-500 dark:text-gray-400">
+                                      {subItem.description}
+                                    </span>
+                                  ) : null}
+                                </Link>
+                              ))}
+                            </div>
+                          </div>
                         ))}
                       </div>
                     )}
