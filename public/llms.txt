@@ -22,6 +22,9 @@ Docs:
 https://feedvector.com/pricing
 https://feedvector.com/faq
 https://feedvector.com/mcp
+https://feedvector.com/guides/feedvector-mcp-vscode
+https://feedvector.com/guides/feedvector-mcp-codex-desktop
+https://feedvector.com/guides/feedvector-mcp-chatgpt
 https://feedvector.com/terms
 https://feedvector.com/privacy
 

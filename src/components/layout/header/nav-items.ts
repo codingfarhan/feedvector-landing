@@ -65,62 +65,62 @@ export const navItems: NavItem[] = [
       },
     ],
   },
-  // {
-  //   type: "dropdown",
-  //   label: "Guides",
-  //   sections: [
-  //     {
-  //       title: "MCP setup",
-  //       items: [
-  //         {
-  //           href: "/guides/feedvector-mcp-claude-desktop",
-  //           label: "Claude Desktop MCP setup",
-  //         },
-  //         {
-  //           href: "/guides/feedvector-mcp-claude-code",
-  //           label: "Claude Code MCP setup",
-  //         },
-  //         {
-  //           href: "/guides/feedvector-mcp-cursor",
-  //           label: "Cursor MCP setup",
-  //         },
-  //         {
-  //           href: "/guides/feedvector-mcp-windsurf",
-  //           label: "Windsurf MCP setup",
-  //         },
-  //         {
-  //           href: "/guides/feedvector-mcp-vscode",
-  //           label: "VS Code MCP setup",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "Social media workflows",
-  //       items: [
-  //         {
-  //           href: "/guides/post-daily-on-linkedin-without-writing-daily",
-  //           label: "Post daily on LinkedIn without writing daily",
-  //         },
-  //         {
-  //           href: "/guides/turn-one-youtube-video-into-20-social-media-posts",
-  //           label: "Turn one YouTube video into 20 social posts",
-  //         },
-  //         {
-  //           href: "/guides/founders-automate-social-media-without-sounding-like-ai",
-  //           label: "Automate founder social without sounding like AI",
-  //         },
-  //         {
-  //           href: "/guides/repost-high-performing-posts-automatically",
-  //           label: "Repost high-performing posts automatically",
-  //         },
-  //         {
-  //           href: "/guides/build-founder-content-system-in-30-minutes",
-  //           label: "Build a founder content system in 30 minutes",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    type: "dropdown",
+    label: "Guides",
+    sections: [
+      {
+        title: "MCP setup",
+        items: [
+          // {
+          //   href: "/guides/feedvector-mcp-claude-desktop",
+          //   label: "Claude Desktop MCP setup",
+          // },
+          // {
+          //   href: "/guides/feedvector-mcp-claude-code",
+          //   label: "Claude Code MCP setup",
+          // },
+          {
+            href: "/guides/feedvector-mcp-chatgpt",
+            label: "ChatGPT Website MCP setup",
+          },
+          {
+            href: "/guides/feedvector-mcp-codex-desktop",
+            label: "Codex Desktop App MCP setup",
+          },
+          {
+            href: "/guides/feedvector-mcp-vscode",
+            label: "Codex VS Code Extension MCP setup",
+          },
+        ],
+      },
+      // {
+      //   title: "Social media workflows",
+      //   items: [
+      //     {
+      //       href: "/guides/post-daily-on-linkedin-without-writing-daily",
+      //       label: "Post daily on LinkedIn without writing daily",
+      //     },
+      //     {
+      //       href: "/guides/turn-one-youtube-video-into-20-social-media-posts",
+      //       label: "Turn one YouTube video into 20 social posts",
+      //     },
+      //     {
+      //       href: "/guides/founders-automate-social-media-without-sounding-like-ai",
+      //       label: "Automate founder social without sounding like AI",
+      //     },
+      //     {
+      //       href: "/guides/repost-high-performing-posts-automatically",
+      //       label: "Repost high-performing posts automatically",
+      //     },
+      //     {
+      //       href: "/guides/build-founder-content-system-in-30-minutes",
+      //       label: "Build a founder content system in 30 minutes",
+      //     },
+      //   ],
+      // },
+    ],
+  },
   {
     type: "link",
     label: "MCP",
