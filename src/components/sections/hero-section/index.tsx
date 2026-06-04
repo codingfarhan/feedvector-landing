@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import HeroLogos from "../hero-logos"
+import { AnimatedHeadlineWord } from "./animated-headline-word"
+import { HeroImageCarousel } from "./hero-image-carousel"
 import { Subheading } from "./subheading"
 
 export default function HeroSection() {
@@ -13,11 +15,10 @@ export default function HeroSection() {
               <Subheading text="All-in-one social scheduling with AI" />
 
               <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
-                Create and schedule high performing social posts with AI
+                Create <span className="text-[#0A66C2]">LinkedIn</span> content so good it gets you <AnimatedHeadlineWord />
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
-                Choose from hundreds of viral templates for LinkedIn and X, collaborate with your team, automate repeat work, and track performance
-                with Analytics. All from one place.
+                Choose from hundreds of viral post templates for LinkedIn, schedule posts and track performance with Analytics. All from one place.
               </p>
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
@@ -56,8 +57,7 @@ export default function HeroSection() {
           </div>
           <div className="max-w-[1000px] mx-auto relative">
             <div className="p-3 sm:p-[18px] relative z-30 rounded-[32px] border border-white/30 dark:border-white/10 bg-white/20">
-              <Image src="/images/hero/hero-img.png" alt="" className="w-full rounded-2xl block dark:hidden" width={966} height={552} />
-              <Image src="/images/hero/hero-img-dark.png" alt="" className="w-full rounded-2xl hidden dark:block" width={966} height={552} />
+              <HeroImageCarousel />
             </div>
             <div className="absolute hidden lg:block z-10 -top-20 -translate-y-20 left-1/2 -translate-x-1/2">
               <svg width="1300" height="1001" viewBox="0 0 1300 1001" fill="none" xmlns="http://www.w3.org/2000/svg">

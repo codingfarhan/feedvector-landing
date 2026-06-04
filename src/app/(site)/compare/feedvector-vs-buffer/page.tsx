@@ -24,7 +24,7 @@ const sections = [
 
 const feedVectorWins = [
   "AI-native content workflows",
-  "Viral templates for LinkedIn and X",
+  "Viral templates for LinkedIn",
   "Built-in AI design, image, and video generation",
   "Automation through auto-actions",
   "MCP server for AI clients like Claude and Cursor",
@@ -247,7 +247,7 @@ export default function FeedVectorVsBufferPage() {
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
-                      body="FeedVector is built around AI content workflows. It includes viral templates for LinkedIn and X, an AI content assistant, built-in AI design tools, AI image and video generation, and automation via auto-actions."
+                      body="FeedVector is built around AI content workflows. It includes viral templates for LinkedIn, an AI content assistant, built-in AI design tools, AI image and video generation, and automation via auto-actions."
                       verdict="Best fit if you want AI to drive ideation, creation, repurposing, and publishing from the same workspace."
                     />
                     <ComparisonBlock
@@ -258,7 +258,7 @@ export default function FeedVectorVsBufferPage() {
                   </div>
                   <ImageShowcase
                     src="/images/tab-image/viral-templates.png"
-                    alt="FeedVector viral templates for LinkedIn and X"
+                    alt="FeedVector viral templates for LinkedIn"
                     title="FeedVector turns content creation into a repeatable system"
                     description="Templates, AI assistance, and creative tools help you move from blank page to scheduled post faster."
                   />

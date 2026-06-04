@@ -20,7 +20,7 @@ const comparisonRows = [
     "AI assistant, viral templates, AI design, AI images, AI videos, and copilots",
     "AI social media assistant for ideas and writing help",
   ],
-  ["Templates", "Viral templates for LinkedIn and X", "Content planning tools and recurring post templates"],
+  ["Templates", "Viral templates for LinkedIn", "Content planning tools and recurring post templates"],
   [
     "Analytics",
     "Cross-channel analytics connected to the publishing workflow",
@@ -295,7 +295,7 @@ export default function FeedVectorVsMetricoolPage() {
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
-                      body="FeedVector combines viral templates for LinkedIn and X, AI content assistance, AI copilots, auto-complete, AI design tools, an advanced picture editor, AI image generation, and AI video generation."
+                      body="FeedVector combines viral templates for LinkedIn, AI content assistance, AI copilots, auto-complete, AI design tools, an advanced picture editor, AI image generation, and AI video generation."
                       verdict="Best fit if content speed, creative generation, and AI-native publishing are the main priorities."
                     />
                     <ComparisonBlock
@@ -306,7 +306,7 @@ export default function FeedVectorVsMetricoolPage() {
                   </div>
                   <ImageShowcase
                     src="/images/tab-image/viral-templates.png"
-                    alt="FeedVector viral templates for LinkedIn and X"
+                    alt="FeedVector viral templates for LinkedIn"
                     title="FeedVector puts content creation at the center"
                     description="Templates, AI assistance, and creative tools help teams move from idea to scheduled post faster."
                   />

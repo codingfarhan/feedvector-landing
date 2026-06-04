@@ -32,14 +32,14 @@ export const metadata: Metadata = {
       "FeedVector (often written as Feed Vector) is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
     url: "/",
     siteName: "FeedVector",
-    images: [{ url: "/images/hero/hero-img.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
+    images: [{ url: "/images/tab-image/schedule.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FeedVector",
     description:
       "FeedVector (often written as Feed Vector) is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
-    images: ["/images/hero/hero-img.png"],
+    images: ["/images/tab-image/schedule.png"],
   },
 }
 

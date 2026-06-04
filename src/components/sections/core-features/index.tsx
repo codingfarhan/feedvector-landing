@@ -7,11 +7,11 @@ export function CoreFeatures() {
       <div className="max-w-[72rem] mx-auto">
         <div className="mb-12 text-center">
           <h2 className="mb-3 font-bold text-gray-800 text-3xl dark:text-white/90 md:text-title-lg max-w-xl mx-auto">
-            Core Features for Social Media Growth
+            Everything you need to grow on <span className="text-[#0A66C2]">LinkedIn</span>
           </h2>
 
           <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Everything you need to plan, create, automate, and analyze social content from one workspace.
+            Plan, create, automate, and analyze LinkedIn posts from one place.
           </p>
         </div>
 

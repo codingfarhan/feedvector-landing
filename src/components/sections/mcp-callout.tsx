@@ -14,10 +14,11 @@ export default function McpCallout() {
             </div>
 
             <h2 className="font-bold text-gray-800 text-2xl md:text-3xl dark:text-white/90">
-              Schedule posts across platforms from your AI client
+              Schedule posts on social media from your favourite AI client
             </h2>
             <p className="text-gray-500 dark:text-gray-400">
-              Connect Claude, Cursor, or any MCP-compatible client to FeedVector and schedule posts on different platforms using natural language.
+              Connect Claude, ChatGPT, or any MCP-compatible client to FeedVector and schedule posts on different social accounts using natural
+              language.
             </p>
           </div>
 
@@ -40,4 +41,3 @@ export default function McpCallout() {
     </section>
   )
 }
-

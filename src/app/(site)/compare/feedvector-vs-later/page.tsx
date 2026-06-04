@@ -10,7 +10,7 @@ const comparisonRows = [
     "AI assistant, copilots, auto-complete, AI design, images, videos, and MCP workflows",
     "AI Ideas and Caption Writer powered by monthly AI credits",
   ],
-  ["Templates", "Hundreds of viral templates for LinkedIn and X", "Idea generation, captions, hashtags, and media workflows"],
+  ["Templates", "Hundreds of viral templates for LinkedIn", "Idea generation, captions, hashtags, and media workflows"],
   [
     "Publishing",
     "Cross-posting, queue publishing, calendar planning, auto-actions, and MCP scheduling",
@@ -92,7 +92,7 @@ const faqs = [
   {
     question: "Who should choose FeedVector over Later?",
     answer:
-      "Choose FeedVector if you want to publish more content with fewer people, use viral templates for LinkedIn and X, generate images or videos with AI, and connect AI clients to your publishing workflow.",
+      "Choose FeedVector if you want to publish more content with fewer people, use viral templates for LinkedIn, generate images or videos with AI, and connect AI clients to your publishing workflow.",
   },
   {
     question: "Who should choose Later over FeedVector?",
@@ -310,7 +310,7 @@ export default function FeedVectorVsLaterPage() {
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
-                      body="FeedVector has the clearer AI-native creation stack: viral templates for LinkedIn and X, AI content assistance, AI copilots, AI auto-complete, Design with AI, a picture editor, AI image generation, and AI video allowances."
+                      body="FeedVector has the clearer AI-native creation stack: viral templates for LinkedIn, AI content assistance, AI copilots, AI auto-complete, Design with AI, a picture editor, AI image generation, and AI video allowances."
                       verdict="Best fit if the job is to create more content faster, with AI embedded across writing, creative, and publishing."
                     />
                     <ComparisonBlock

@@ -96,7 +96,7 @@ export default function AIToolsTabs() {
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="mb-3 font-bold text-center text-gray-800 dark:text-white/90 text-3xl md:text-title-lg">
-            Everything you need to grow on social, in one place.
+            Everything you need to grow on <span className="text-[#0A66C2]">LinkedIn</span>, in one place.
           </h2>
           <p className="max-w-2xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
             Plan, write faster with viral templates, publish, automate, and analyze with AI assistance and built-in creative tools.

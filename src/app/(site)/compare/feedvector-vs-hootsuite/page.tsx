@@ -281,7 +281,7 @@ export default function FeedVectorVsHootsuitePage() {
                 <section id="positioning" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="1" title="AI publishing system vs enterprise platform" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector positions itself around a tight workflow: create better posts with AI, use viral templates for LinkedIn and X, schedule
+                    FeedVector positions itself around a tight workflow: create better posts with AI, use viral templates for LinkedIn, schedule
                     across channels, collaborate with a team, automate repetitive work, and track what performs.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
@@ -302,7 +302,7 @@ export default function FeedVectorVsHootsuitePage() {
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
-                      body="FeedVector is built around practical content speed: hundreds of viral templates for LinkedIn and X, AI content assistance, AI copilots, auto-complete, AI design tools, a picture editor, and AI image and video generation allowances."
+                      body="FeedVector is built around practical content speed: hundreds of viral templates for LinkedIn, AI content assistance, AI copilots, auto-complete, AI design tools, a picture editor, and AI image and video generation allowances."
                       verdict="Best fit if the core job is producing better posts faster without assembling a large content operation."
                     />
                     <ComparisonBlock
@@ -313,7 +313,7 @@ export default function FeedVectorVsHootsuitePage() {
                   </div>
                   <ImageShowcase
                     src="/images/tab-image/viral-templates.png"
-                    alt="FeedVector viral templates for LinkedIn and X"
+                    alt="FeedVector viral templates for LinkedIn"
                     title="FeedVector makes content creation the center of the workflow"
                     description="Templates, AI assistance, and creative tools are built into the publishing process."
                   />

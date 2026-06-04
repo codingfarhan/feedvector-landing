@@ -9,15 +9,19 @@ export type CoreFeature = {
 
 export const CORE_FEATURES: CoreFeature[] = [
   {
-    title: "Seamless Scheduling",
-    description: "Plan ahead and cross-post to multiple channels from a single calendar.",
-    iconUrl: icons.pencil,
-  },
-  {
-    title: "Viral Templates for LinkedIn and X",
+    title: "Viral Templates for LinkedIn",
     description: "Choose from hundreds of proven templates and tailor them to your voice in seconds.",
     iconUrl: icons.file,
-    badge: "New",
+  },
+  {
+    title: "Analytics & Insights",
+    description: "Track performance across channels and optimize what you publish.",
+    iconUrl: icons.lightningBolt,
+  },
+  {
+    title: "Seamless Scheduling",
+    description: "Plan ahead and cross-post to multiple LinkedIn accounts from a single place.",
+    iconUrl: icons.pencil,
   },
   {
     title: "AI Content Assistant",
@@ -33,10 +37,5 @@ export const CORE_FEATURES: CoreFeature[] = [
     title: "Teamwork & Approvals",
     description: "Collaborate with teammates, delegate tasks, and keep approvals moving.",
     iconUrl: icons.chat,
-  },
-  {
-    title: "Analytics & Insights",
-    description: "Track performance across channels and optimize what you publish.",
-    iconUrl: icons.lightningBolt,
   },
 ]

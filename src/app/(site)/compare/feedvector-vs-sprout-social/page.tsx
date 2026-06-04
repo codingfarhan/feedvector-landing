@@ -19,7 +19,7 @@ const comparisonRows = [
     "AI assistant, viral templates, AI design, AI images, AI videos, and copilots",
     "Trellis AI, AI Assist, AI insights, reply enhancement, and social intelligence workflows",
   ],
-  ["Templates", "Viral templates for LinkedIn and X", "Free templates and social resources outside the core publishing workflow"],
+  ["Templates", "Viral templates for LinkedIn", "Free templates and social resources outside the core publishing workflow"],
   [
     "Scheduling",
     "Calendar planning, queues, cross-posting, and MCP scheduling",
@@ -293,7 +293,7 @@ export default function FeedVectorVsSproutSocialPage() {
                   <ArticleHeading eyebrow="1" title="Product positioning: AI publishing system vs social intelligence platform" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     FeedVector presents itself as an all-in-one social scheduling tool with AI. Its homepage focuses on creating and scheduling
-                    high-performing posts, viral templates for LinkedIn and X, team collaboration, automation, and analytics from one workspace.
+                    high-performing posts, viral templates for LinkedIn, team collaboration, automation, and analytics from one workspace.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     Sprout Social presents itself as an AI-powered social intelligence platform. Its public pages emphasize publishing, engagement,
@@ -313,7 +313,7 @@ export default function FeedVectorVsSproutSocialPage() {
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
-                      body="FeedVector offers viral templates for LinkedIn and X, an AI content assistant, AI copilots, auto-complete, AI design tools, an advanced picture editor, AI image generation, and AI video generation."
+                      body="FeedVector offers viral templates for LinkedIn, an AI content assistant, AI copilots, auto-complete, AI design tools, an advanced picture editor, AI image generation, and AI video generation."
                       verdict="Best fit if the primary goal is creating and scheduling more content faster."
                     />
                     <ComparisonBlock
@@ -324,7 +324,7 @@ export default function FeedVectorVsSproutSocialPage() {
                   </div>
                   <ImageShowcase
                     src="/images/tab-image/viral-templates.png"
-                    alt="FeedVector viral templates for LinkedIn and X"
+                    alt="FeedVector viral templates for LinkedIn"
                     title="FeedVector puts creation before operations"
                     description="Templates, AI assistance, and creative tools help users move from idea to scheduled post faster."
                   />

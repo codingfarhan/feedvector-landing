@@ -8,10 +8,10 @@ export default function BenefitsGrid() {
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="max-w-lg mx-auto mb-3 font-bold text-center text-white dark:text-white/90 text-3xl md:text-title-lg">
-            The key benefits of modern social scheduling.
+            FeedVector makes it super easy to grow on <span className="text-[#0A66C2]">LinkedIn</span>
           </h2>
           <p className="max-w-2xl mx-auto text-base dark: font-normal leading-6 text-white/50">
-            Plan, create, automate, and analyze your social content from one focused workspace.
+            Plan, create, automate, and analyze your LinkedIn posts from one focused workspace.
           </p>
         </div>
         <div className="max-w-[1008px] mx-auto">
@@ -19,8 +19,8 @@ export default function BenefitsGrid() {
             <div className="lg:col-span-6">
               <div className="relative flex flex-col justify-between bg-primary-500 rounded-[20px] p-9 md:p-13">
                 <div className="max-w-sm mb-32">
-                  <h3 className="font-bold text-white text-2xl md:text-3xl mb-4">Plan and Schedule across every channel</h3>
-                  <p className="text-base text-white/70">Queue posts, cross-post to multiple networks, and keep your calendar consistent.</p>
+                  <h3 className="font-bold text-white text-2xl md:text-3xl mb-4">Plan and Schedule across every account</h3>
+                  <p className="text-base text-white/70">Queue posts, cross-post to multiple accounts, and keep your posting consistent.</p>
                 </div>
                 <div>
                   <svg
