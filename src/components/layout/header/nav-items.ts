@@ -82,15 +82,15 @@ export const navItems: NavItem[] = [
           // },
           {
             href: "/guides/feedvector-mcp-chatgpt",
-            label: "ChatGPT Website MCP setup",
+            label: "Schedule posts in ChatGPT using FeedVector MCP",
           },
           {
             href: "/guides/feedvector-mcp-codex-desktop",
-            label: "Codex Desktop App MCP setup",
+            label: "Schedule posts in Codex Desktop using FeedVector MCP",
           },
           {
             href: "/guides/feedvector-mcp-vscode",
-            label: "Codex VS Code Extension MCP setup",
+            label: "Schedule posts in Codex VS Code Extension using FeedVector MCP",
           },
         ],
       },
