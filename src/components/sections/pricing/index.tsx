@@ -1,18 +1,14 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import {
-  BILLING_PERIODS,
-  BILLING_PLANS,
-} from '@/components/sections/pricing/data';
-import { cn } from '@/lib/utils';
-import { PricingCard } from '@/components/sections/pricing/card';
+import { useState } from "react"
+import { BILLING_PERIODS, BILLING_PLANS } from "@/components/sections/pricing/data"
+import { cn } from "@/lib/utils"
+import { PricingCard } from "@/components/sections/pricing/card"
 
-type BillingPeriodKey = (typeof BILLING_PERIODS)[number]['key'];
+type BillingPeriodKey = (typeof BILLING_PERIODS)[number]["key"]
 
 export default function PricingSection() {
-  const [activeBillingPeriodKey, setActiveBillingPeriodKey] =
-    useState<BillingPeriodKey>('monthly');
+  const [activeBillingPeriodKey, setActiveBillingPeriodKey] = useState<BillingPeriodKey>("monthly")
 
   return (
     <section className="py-14 md:py-30 bg-gray-50 dark:bg-[#171f2e] dark:bg-linear-180 dark:from-white/3 dark:from-[45.56%] dark:to-white/0">
@@ -22,15 +18,13 @@ export default function PricingSection() {
             Start Your Content Creation Journey with AI
           </h2>
           <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Collaborate with AI to generate content that resonates with your
-            audience, drives and delivers meaningful results across all
-            platforms.
+            Collaborate with AI to generate content that resonates with your audience, drives and delivers meaningful results across all platforms.
           </p>
         </div>
 
         <div>
           {/* Billing Toggle */}
-          <div className="flex justify-center relative z-30 mt-12">
+          {/* <div className="flex justify-center relative z-30 mt-12">
             <div className="relative flex p-1 bg-white dark:bg-[#1D2939] rounded-full shadow-theme-xs">
               {BILLING_PERIODS.map((period) => (
                 <button
@@ -57,19 +51,15 @@ export default function PricingSection() {
                 </button>
               ))}
             </div>
-          </div>
+          </div> */}
 
           <div className="mt-12 z-30 relative space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:justify-center lg:max-w-4xl lg:mx-auto">
             {BILLING_PLANS.map((plan, index) => (
-              <PricingCard
-                key={index}
-                plan={plan}
-                billingPeriod={activeBillingPeriodKey}
-              />
+              <PricingCard key={index} plan={plan} billingPeriod={activeBillingPeriodKey} />
             ))}
           </div>
         </div>
       </div>
     </section>
-  );
+  )
 }

@@ -9,7 +9,7 @@ export type CoreFeature = {
 
 export const CORE_FEATURES: CoreFeature[] = [
   {
-    title: "Viral Templates for LinkedIn",
+    title: "Viral Post Templates",
     description: "Choose from hundreds of proven templates and tailor them to your voice in seconds.",
     iconUrl: icons.file,
   },

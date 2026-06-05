@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-import { Fragment, useState } from "react"
+import { Fragment, useEffect, useState } from "react"
 
 import { ChatGPTIcon, ClipboardIcon, ImageGeneratorIcon, LongArrowUpIcon, PencilIcon, SettingsIcon, UserIcon } from "@/icons/icons"
 import Image from "next/image"
@@ -18,75 +18,88 @@ interface Tab {
   description: string
 }
 
+// Tab data
+const tabs: Tab[] = [
+  {
+    id: "scheduling",
+    label: "Scheduling",
+    icon: <PencilIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/schedule.png",
+    darkImage: "/images/tab-image/schedule-dark.png",
+    title: "Seamless scheduling and cross-posting",
+    description: "Plan once, publish everywhere, and keep a consistent posting cadence.",
+  },
+  {
+    id: "analytics",
+    label: "Analytics",
+    icon: <LongArrowUpIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/analytics.png",
+    darkImage: "/images/tab-image/analytics-dark.png",
+    title: "Comprehensive analytics",
+    description: "Measure performance across channels and improve every campaign.",
+  },
+  {
+    id: "assistant",
+    label: "AI Assistant",
+    icon: <ChatGPTIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/ai-assistant.png",
+    darkImage: "/images/tab-image/ai-assistant-dark.png",
+    title: "AI content assistant",
+    description: "Generate ideas, polish copy, and adapt posts for every channel.",
+  },
+  {
+    id: "viral-templates",
+    label: "Templates",
+    icon: <ClipboardIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/viral-templates.png",
+    darkImage: "/images/tab-image/viral-templates-dark.png",
+    title: "Viral templates for X + LinkedIn",
+    description: "Pick a proven format, customize it to your voice, then schedule and publish.",
+  },
+  // {
+  //   id: "design",
+  //   label: "AI Design",
+  //   icon: <ImageGeneratorIcon className="w-7 h-7" />,
+  //   lightImage: "/images/tab-image/ai-image.png",
+  //   darkImage: "/images/tab-image/ai-image.png",
+  //   title: "Create visuals with AI",
+  //   description: "Use a built-in editor and AI image generation to ship great creative.",
+  // },
+  // {
+  //   id: "collaboration",
+  //   label: "Teamwork",
+  //   icon: <UserIcon className="w-7 h-7" />,
+  //   lightImage: "/images/tab-image/team.png",
+  //   darkImage: "/images/tab-image/team-dark.png",
+  //   title: "Teamwork organization",
+  //   description: "Collaborate with your team, assign tasks, and keep approvals aligned.",
+  // },
+  {
+    id: "automation",
+    label: "Auto Actions",
+    icon: <SettingsIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/plugs.png",
+    darkImage: "/images/tab-image/plugs-dark.png",
+    title: "Automation and auto actions",
+    description: "Trigger workflows with API integrations and milestone-based actions.",
+  },
+]
+
 export default function AIToolsTabs() {
   const [activeTab, setActiveTab] = useState("scheduling")
 
-  // Tab data
-  const tabs: Tab[] = [
-    {
-      id: "scheduling",
-      label: "Scheduling",
-      icon: <PencilIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/schedule.png",
-      darkImage: "/images/tab-image/schedule-dark.png",
-      title: "Seamless scheduling and cross-posting",
-      description: "Plan once, publish everywhere, and keep a consistent posting cadence.",
-    },
-    {
-      id: "analytics",
-      label: "Analytics",
-      icon: <LongArrowUpIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/analytics.png",
-      darkImage: "/images/tab-image/analytics-dark.png",
-      title: "Comprehensive analytics",
-      description: "Measure performance across channels and improve every campaign.",
-    },
-    {
-      id: "assistant",
-      label: "AI Assistant",
-      icon: <ChatGPTIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/ai-assistant.png",
-      darkImage: "/images/tab-image/ai-assistant-dark.png",
-      title: "AI content assistant",
-      description: "Generate ideas, polish copy, and adapt posts for every channel.",
-    },
-    {
-      id: "viral-templates",
-      label: "Templates",
-      icon: <ClipboardIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/viral-templates.png",
-      darkImage: "/images/tab-image/viral-templates-dark.png",
-      title: "Viral templates for X + LinkedIn",
-      description: "Pick a proven format, customize it to your voice, then schedule and publish.",
-    },
-    {
-      id: "design",
-      label: "AI Design",
-      icon: <ImageGeneratorIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/ai-image.png",
-      darkImage: "/images/tab-image/ai-image.png",
-      title: "Create visuals with AI",
-      description: "Use a built-in editor and AI image generation to ship great creative.",
-    },
-    {
-      id: "collaboration",
-      label: "Teamwork",
-      icon: <UserIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/team.png",
-      darkImage: "/images/tab-image/team-dark.png",
-      title: "Teamwork organization",
-      description: "Collaborate with your team, assign tasks, and keep approvals aligned.",
-    },
-    {
-      id: "automation",
-      label: "Auto Actions",
-      icon: <SettingsIcon className="w-7 h-7" />,
-      lightImage: "/images/tab-image/plugs.png",
-      darkImage: "/images/tab-image/plugs-dark.png",
-      title: "Automation and auto actions",
-      description: "Trigger workflows with API integrations and milestone-based actions.",
-    },
-  ]
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveTab((currentTabId) => {
+        const currentIndex = tabs.findIndex((tab) => tab.id === currentTabId)
+        const nextIndex = (currentIndex + 1) % tabs.length
+
+        return tabs[nextIndex].id
+      })
+    }, 2500)
+
+    return () => window.clearInterval(interval)
+  }, [])
 
   // Find the active tab
   const currentTab = tabs.find((tab) => tab.id === activeTab) || tabs[0]
@@ -96,7 +109,7 @@ export default function AIToolsTabs() {
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="mb-3 font-bold text-center text-gray-800 dark:text-white/90 text-3xl md:text-title-lg">
-            Everything you need to grow on <span className="text-[#0A66C2]">LinkedIn</span>, in one place.
+            Everything you need to grow on <span className="text-[#0A66C2]">LinkedIn</span>, in one place
           </h2>
           <p className="max-w-2xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
             Plan, write faster with viral templates, publish, automate, and analyze with AI assistance and built-in creative tools.
@@ -163,7 +176,7 @@ export default function AIToolsTabs() {
                 href="https://app.feedvector.com"
                 className="px-6 py-3 text-sm font-medium text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600 inline-flex items-center justify-center"
               >
-                Start scheduling
+                Start growing
               </a>
             </div>
           </div>

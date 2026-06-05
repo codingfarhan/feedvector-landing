@@ -18,8 +18,7 @@ export default function FaqAccordion() {
     {
       id: 1,
       question: "Is it really just $29 to unlock ALL features?",
-      answer:
-        "Yes. The $29 Pro plan unlocks every core feature, including scheduling, AI assistance, automations, and analytics.",
+      answer: "Yes. The $29 Pro plan unlocks every core feature, including scheduling, AI assistance, automations, and analytics.",
     },
     {
       id: 2,
@@ -49,9 +48,8 @@ export default function FaqAccordion() {
     },
     {
       id: 7,
-      question: "Do you include viral templates for X and LinkedIn?",
-      answer:
-        "Yes. Pick from hundreds of viral templates for X and LinkedIn, customize them to match your voice, then schedule and publish.",
+      question: "Do you have viral post templates for LinkedIn?",
+      answer: "Yes. Pick from hundreds of viral templates for LinkedIn, customize them to match your voice, then schedule and publish.",
     },
   ]
 

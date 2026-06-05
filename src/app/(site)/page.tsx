@@ -60,11 +60,11 @@ export default async function Home() {
     <>
       <Script id="json-ld-feedvector" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HeroSection />
-      <CoreFeatures />
-      <AudienceSection />
       <ToolsTab />
+      {/* <CoreFeatures /> */}
+      <AudienceSection />
       <McpCallout />
-      <BenefitsGrid />
+      {/* <BenefitsGrid /> */}
       {/* <TestimonialsSection /> */}
       <PricingSection />
       <FaqAccordion />

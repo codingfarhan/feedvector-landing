@@ -12,7 +12,7 @@ export default function HeroSection() {
         <div className="wrapper">
           <div className="max-w-[800px] mx-auto">
             <div className="text-center pb-16">
-              <Subheading text="All-in-one social scheduling with AI" />
+              <Subheading text="Use proven post formats to grow your presence" />
 
               <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
                 Create <span className="text-[#0A66C2]">LinkedIn</span> content so good it gets you <AnimatedHeadlineWord />
