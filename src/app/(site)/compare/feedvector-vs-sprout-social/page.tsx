@@ -22,7 +22,7 @@ const comparisonRows = [
   ["Templates", "Viral templates for LinkedIn", "Free templates and social resources outside the core publishing workflow"],
   [
     "Scheduling",
-    "Calendar planning, queues, cross-posting, and MCP scheduling",
+    "LinkedIn calendar planning, queues, and MCP scheduling",
     "Publishing, content planning, Sprout Queue, ViralPost send-time optimization, and multi-profile publishing",
   ],
   [
@@ -85,10 +85,10 @@ const sections = [
 
 const feedVectorFits = [
   "You want to create posts faster with AI",
-  "You publish heavily on LinkedIn and X",
+  "You publish heavily on LinkedIn",
   "You want viral templates built into the workflow",
   "You want AI design, image generation, and video generation",
-  "You want simple scheduling and cross-posting",
+  "You want simple LinkedIn scheduling",
   "You want unlimited team members without per-seat pricing",
   "You want MCP support for Claude, Cursor, and AI-agent workflows",
 ]
@@ -107,12 +107,12 @@ const faqs = [
   {
     question: "Is FeedVector better than Sprout Social?",
     answer:
-      "FeedVector is better if your priority is AI-native content creation, viral templates, simple scheduling, MCP workflows, unlimited teammates, and affordable pricing. Sprout Social is stronger if you need enterprise social intelligence, Smart Inbox, social listening, customer care, premium analytics, and per-seat governance.",
+      "FeedVector is better if your priority is AI-native LinkedIn content creation, viral templates, simple scheduling, MCP workflows, unlimited teammates, and affordable pricing. Sprout Social is stronger if you need enterprise social intelligence, Smart Inbox, social listening, customer care, premium analytics, and per-seat governance.",
   },
   {
     question: "Who should choose FeedVector over Sprout Social?",
     answer:
-      "Choose FeedVector if you are a creator, founder, startup, lean marketing team, or small agency that wants to publish more content faster without paying enterprise social media management prices.",
+      "Choose FeedVector if you are a creator, founder, startup, lean marketing team, or small agency that wants to publish more LinkedIn content faster without paying enterprise social media management prices.",
   },
   {
     question: "Who should choose Sprout Social over FeedVector?",
@@ -122,31 +122,31 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "FeedVector vs Sprout Social: Which Social Media Tool Should You Choose?",
+  title: "FeedVector vs Sprout Social: Which Tool Should You Choose?",
   description:
-    "Compare FeedVector vs Sprout Social for AI content creation, scheduling, analytics, Smart Inbox, social listening, customer care, automation, team workflows, and pricing.",
+    "Compare FeedVector vs Sprout Social for AI LinkedIn content creation, scheduling, analytics, Smart Inbox, social listening, customer care, automation, team workflows, and pricing.",
   keywords: [
     "FeedVector vs Sprout Social",
     "Sprout Social alternative",
-    "AI social media scheduler",
+    "AI LinkedIn scheduler",
     "social media management",
     "social media customer care",
-    "MCP social media scheduling",
+    "MCP LinkedIn scheduling",
   ],
   alternates: {
     canonical: "/compare/feedvector-vs-sprout-social",
   },
   openGraph: {
-    title: "FeedVector vs Sprout Social: Which Social Media Tool Should You Choose?",
+    title: "FeedVector vs Sprout Social: Which Tool Should You Choose?",
     description:
-      "Compare FeedVector and Sprout Social for AI-first publishing, enterprise social intelligence, customer care, analytics, automation, and pricing.",
+      "Compare FeedVector and Sprout Social for AI-first LinkedIn publishing, enterprise social intelligence, customer care, analytics, automation, and pricing.",
     url: "/compare/feedvector-vs-sprout-social",
     images: [{ url: "/images/tab-image/schedule.png", width: 1200, height: 630, alt: "FeedVector scheduling preview" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Sprout Social",
-    description: "Compare FeedVector and Sprout Social for AI-first social publishing and enterprise social media management.",
+    description: "Compare FeedVector and Sprout Social for AI-first LinkedIn publishing and enterprise social media management.",
     images: ["/images/tab-image/schedule.png"],
   },
 }
@@ -156,7 +156,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "FeedVector vs Sprout Social: Which Social Media Tool Should You Choose?",
+      headline: "FeedVector vs Sprout Social: Which Tool Should You Choose?",
       description:
         "A practical comparison of FeedVector and Sprout Social across AI content creation, scheduling, analytics, engagement, customer care, automation, collaboration, and pricing.",
       author: {
@@ -206,7 +206,7 @@ export default function FeedVectorVsSproutSocialPage() {
                       FeedVector vs Sprout Social: Which is better?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Sprout Social both help teams manage social media, but they sit in different categories. Sprout Social is an
+                      FeedVector and Sprout Social both help teams publish content, but they sit in different categories. Sprout Social is an
                       enterprise-grade social intelligence platform for publishing, engagement, customer care, listening, reporting, and large-team
                       workflows. FeedVector is a simpler AI-first scheduler for fast content creation, viral templates, automation, MCP workflows, and
                       affordable collaboration.
@@ -292,8 +292,8 @@ export default function FeedVectorVsSproutSocialPage() {
                 <section id="positioning" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="1" title="Product positioning: AI publishing system vs social intelligence platform" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector presents itself as an all-in-one social scheduling tool with AI. Its homepage focuses on creating and scheduling
-                    high-performing posts, viral templates for LinkedIn, team collaboration, automation, and analytics from one workspace.
+                    FeedVector presents itself as a LinkedIn content tool with AI. Its homepage focuses on creating and scheduling high-performing
+                    posts, viral templates for LinkedIn, team collaboration, automation, and analytics from one workspace.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     Sprout Social presents itself as an AI-powered social intelligence platform. Its public pages emphasize publishing, engagement,
@@ -333,7 +333,7 @@ export default function FeedVectorVsSproutSocialPage() {
                 <section id="publishing" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="3" title="Scheduling and publishing" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector supports planning ahead, queueing posts, cross-posting to multiple networks, and keeping a consistent calendar. It
+                    FeedVector supports planning ahead, queueing posts, and keeping a consistent LinkedIn calendar. It
                     positions scheduling as part of a broader AI-assisted content workflow.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
@@ -351,7 +351,7 @@ export default function FeedVectorVsSproutSocialPage() {
                     src="/images/tab-image/schedule.png"
                     alt="FeedVector scheduling calendar"
                     title="FeedVector keeps scheduling tied to content output"
-                    description="Plan, queue, cross-post, and keep a consistent publishing calendar without enterprise overhead."
+                    description="Plan, queue, and keep a consistent LinkedIn publishing calendar without enterprise overhead."
                   />
                 </section>
 
@@ -362,8 +362,7 @@ export default function FeedVectorVsSproutSocialPage() {
                     as an add-on with advanced filtering, ROI charts, benchmarking, and shareable stakeholder reports.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector offers analytics across social media platforms on Pro and positions analytics as a way to track performance across
-                    channels and optimize publishing.
+                    FeedVector offers analytics on Pro and positions analytics as a way to track performance and optimize publishing.
                   </p>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
@@ -402,7 +401,7 @@ export default function FeedVectorVsSproutSocialPage() {
                   <ArticleHeading eyebrow="6" title="Automation and AI-agent workflows" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     FeedVector has a strong modern differentiator: MCP. Users can connect Claude, Cursor, or any MCP-compatible client to FeedVector
-                    and manage social scheduling through natural language.
+                    and manage LinkedIn scheduling through natural language.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     Sprout Social has strong automation around insights, inbox, customer care, listening, AI Assist, APIs, and helpdesk integrations

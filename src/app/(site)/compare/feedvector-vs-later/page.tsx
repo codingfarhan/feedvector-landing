@@ -69,7 +69,7 @@ const sections = [
 
 const feedVectorFits = [
   "You want AI to help create, refine, design, and schedule posts",
-  "You publish heavily on LinkedIn or X and want viral templates",
+  "You publish heavily on LinkedIn and want viral templates",
   "You want AI images, AI videos, and workflow automation in one plan",
   "You want to schedule through AI clients like Claude or Cursor using MCP",
   "You want unlimited teammates on a simple $29/month Pro plan",
@@ -87,7 +87,7 @@ const faqs = [
   {
     question: "Is FeedVector better than Later?",
     answer:
-      "FeedVector is better if your priority is AI-native content production, automation, MCP scheduling, and simple team pricing. Later is stronger if you need a more operational social media management stack with visual planning, UGC, Link in Bio, access groups, and detailed analytics tiers.",
+      "FeedVector is better if your priority is AI-native LinkedIn content production, automation, MCP scheduling, and simple team pricing. Later is stronger if you need a more operational social media management stack with visual planning, UGC, Link in Bio, access groups, and detailed analytics tiers.",
   },
   {
     question: "Who should choose FeedVector over Later?",
@@ -102,22 +102,22 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "FeedVector vs Later: Which Social Media Tool Should You Choose?",
+  title: "FeedVector vs Later: Which Tool Should You Choose?",
   description:
-    "Compare FeedVector vs Later for AI content creation, social scheduling, collaboration, analytics, automation, and pricing. See which platform fits your workflow.",
+    "Compare FeedVector vs Later for AI LinkedIn content creation, scheduling, collaboration, analytics, automation, and pricing.",
   keywords: [
     "FeedVector vs Later",
     "Later alternative",
-    "AI social media scheduler",
+    "AI LinkedIn scheduler",
     "social media management",
     "social media automation",
-    "MCP social media scheduling",
+    "MCP LinkedIn scheduling",
   ],
   alternates: {
     canonical: "/compare/feedvector-vs-later",
   },
   openGraph: {
-    title: "FeedVector vs Later: Which Social Media Tool Should You Choose?",
+    title: "FeedVector vs Later: Which Tool Should You Choose?",
     description: "Compare FeedVector and Later for AI-native publishing, visual planning, collaboration, analytics, and pricing.",
     url: "/compare/feedvector-vs-later",
     images: [{ url: "/images/tab-image/viral-templates.png", width: 1200, height: 630, alt: "FeedVector viral templates preview" }],
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Later",
-    description: "Compare FeedVector and Later for AI-first social publishing and social media operations.",
+    description: "Compare FeedVector and Later for AI-first LinkedIn publishing and social media operations.",
     images: ["/images/tab-image/viral-templates.png"],
   },
 }
@@ -135,7 +135,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "FeedVector vs Later: Which Social Media Tool Should You Choose?",
+      headline: "FeedVector vs Later: Which Tool Should You Choose?",
       description:
         "A practical comparison of FeedVector and Later across AI content creation, scheduling, collaboration, analytics, automation, and pricing.",
       author: {
@@ -185,8 +185,8 @@ export default function FeedVectorVsLaterPage() {
                       FeedVector vs Later: AI publishing engine or social operations stack?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Later both help teams plan, schedule, collaborate, and analyze social content. The difference is the workflow
-                      philosophy: FeedVector is built around AI-native publishing, while Later is a broader social media management platform with
+                      FeedVector and Later both help teams plan, schedule, collaborate, and analyze content. The difference is the workflow
+                      philosophy: FeedVector is built around AI-native LinkedIn publishing, while Later is a broader social media management platform with
                       visual planning, UGC, Link in Bio, approvals, and reporting.
                     </p>
                   </div>
@@ -270,7 +270,7 @@ export default function FeedVectorVsLaterPage() {
                 <section id="positioning" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="1" title="Positioning and workflow" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector is focused on one core problem: helping teams create and schedule high-performing social posts with AI. Its workflow
+                    FeedVector is focused on one core problem: helping teams create and schedule high-performing LinkedIn posts with AI. Its workflow
                     starts earlier in the creation process with viral templates, AI copilots, AI design, and AI media generation, then carries that
                     work into scheduling, auto-actions, MCP, and analytics.
                   </p>
@@ -286,7 +286,7 @@ export default function FeedVectorVsLaterPage() {
                         "Idea input",
                         "Viral templates and AI copilot",
                         "AI design, images, and videos",
-                        "Single calendar and cross-posting",
+                        "LinkedIn calendar and scheduling",
                         "Auto-actions and MCP scheduling",
                         "Unified analytics",
                       ]}
@@ -330,7 +330,7 @@ export default function FeedVectorVsLaterPage() {
                 <section id="publishing" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="3" title="Scheduling and publishing" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector supports cross-posting from a single calendar, queue-style publishing, auto-actions, integrations, and MCP scheduling
+                    FeedVector supports LinkedIn scheduling from a single calendar, queue-style publishing, auto-actions, integrations, and MCP scheduling
                     from AI clients. That makes it a strong option for teams that already use AI assistants and want natural-language scheduling to
                     become part of their daily workflow.
                   </p>
@@ -350,7 +350,7 @@ export default function FeedVectorVsLaterPage() {
                     src="/images/tab-image/schedule.png"
                     alt="FeedVector scheduling calendar"
                     title="FeedVector keeps publishing simple and repeatable"
-                    description="Use one scheduling workflow for planning, queues, cross-posting, and consistent publishing."
+                    description="Use one scheduling workflow for planning, queues, and consistent LinkedIn publishing."
                   />
                 </section>
 

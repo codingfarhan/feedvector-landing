@@ -12,16 +12,16 @@ const onest = Onest({
 export const metadata: Metadata = {
   metadataBase: new URL("https://feedvector.com"),
   title: {
-    default: "FeedVector - Social Media Scheduling with AI",
+    default: "FeedVector - LinkedIn Growth with AI",
     template: "%s | FeedVector",
   },
   description:
-    "FeedVector is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+    "FeedVector is an AI platform for planning, creating, scheduling, and analyzing LinkedIn content that helps you grow followers, leads, and clients.",
   keywords: [
-    "social media scheduling",
-    "AI social media",
-    "social media scheduler",
-    "social media management",
+    "LinkedIn growth",
+    "AI LinkedIn content",
+    "LinkedIn post scheduler",
+    "LinkedIn content calendar",
     "content scheduling",
     "feed vector",
     "feedvector",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FeedVector",
     description:
-      "FeedVector (often written as Feed Vector) is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+      "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
     url: "/",
     siteName: "FeedVector",
     images: [{ url: "/images/tab-image/schedule.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FeedVector",
     description:
-      "FeedVector (often written as Feed Vector) is an AI social media scheduling platform for planning, creating, and publishing posts across channels with automation and analytics.",
+      "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
     images: ["/images/tab-image/schedule.png"],
   },
 }

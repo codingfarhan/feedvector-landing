@@ -89,23 +89,23 @@ const setupSteps = [
   },
   {
     id: "connected-account",
-    title: "Make sure FeedVector has a connected channel",
+    title: "Make sure FeedVector has a connected account",
     description:
-      "In FeedVector, connect at least one social media account. ChatGPT can only list accounts and schedule posts for channels available in your FeedVector workspace.",
+      "In FeedVector, connect at least one publishing account. ChatGPT can only list accounts and schedule posts for accounts available in your FeedVector workspace.",
     image: "step-9-make-sure-you-have-connected-at-least-one-social-media-account-on-feedvector.png",
     width: 2879,
     height: 1628,
-    alt: "FeedVector calendar with a connected channel highlighted",
+    alt: "FeedVector calendar with a connected account highlighted",
   },
   {
     id: "verify",
     title: "Ask ChatGPT to list connected accounts",
     description:
-      "Ask ChatGPT how many social media accounts are connected. If the MCP app is working, ChatGPT will call FeedVector and return your connected channels.",
+      "Ask ChatGPT how many publishing accounts are connected. If the MCP app is working, ChatGPT will call FeedVector and return your connected accounts.",
     image: "step-10-confirm-by-asking-chatgpt-for-connected-social-media-accounts.png",
     width: 2880,
     height: 1634,
-    alt: "ChatGPT chat showing connected FeedVector social media accounts",
+    alt: "ChatGPT chat showing connected FeedVector publishing accounts",
   },
 ]
 
@@ -128,7 +128,7 @@ const faqs = [
   {
     question: "How do I confirm the ChatGPT MCP app is working?",
     answer:
-      "Ask ChatGPT to list or count your connected social media accounts. ChatGPT should call FeedVector and return the accounts connected in your workspace.",
+      "Ask ChatGPT to list or count your connected publishing accounts. ChatGPT should call FeedVector and return the accounts connected in your workspace.",
   },
 ]
 
@@ -140,7 +140,7 @@ export const metadata: Metadata = {
     "FeedVector MCP ChatGPT",
     "ChatGPT MCP setup",
     "ChatGPT custom MCP app",
-    "FeedVector social media scheduling",
+    "FeedVector LinkedIn scheduling",
     "ChatGPT Developer Mode",
   ],
   alternates: {
@@ -149,14 +149,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Set Up FeedVector MCP in ChatGPT",
     description:
-      "Connect FeedVector to ChatGPT and schedule social media posts through MCP tools.",
+      "Connect FeedVector to ChatGPT and schedule LinkedIn posts through MCP tools.",
     url: "/guides/feedvector-mcp-chatgpt",
     images: [
       {
         url: `${imageBase}/step-10-confirm-by-asking-chatgpt-for-connected-social-media-accounts.png`,
         width: 1200,
         height: 681,
-        alt: "ChatGPT showing connected FeedVector social media accounts",
+        alt: "ChatGPT showing connected FeedVector publishing accounts",
       },
     ],
   },
@@ -230,7 +230,7 @@ export default function FeedVectorMcpChatGptGuidePage() {
                       Set up FeedVector MCP with ChatGPT
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      Connect FeedVector to ChatGPT on the web so you can ask ChatGPT to list connected social accounts, inspect channel details, and
+                      Connect FeedVector to ChatGPT on the web so you can ask ChatGPT to list connected publishing accounts, inspect account details, and
                       schedule posts through FeedVector.
                     </p>
                   </div>
@@ -266,7 +266,7 @@ export default function FeedVectorMcpChatGptGuidePage() {
                   </div>
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     <Requirement title="1. FeedVector account" text="Create an account at app.feedvector.com." />
-                    <Requirement title="2. Connected channel" text="Connect at least one social media account in FeedVector." />
+                    <Requirement title="2. Connected account" text="Connect at least one publishing account in FeedVector." />
                     <Requirement title="3. ChatGPT access" text="Use a ChatGPT account with Apps Developer Mode available." />
                   </div>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
@@ -306,18 +306,17 @@ export default function FeedVectorMcpChatGptGuidePage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Try this prompt</p>
                     <div className="mt-3 rounded-xl border border-gray-200 bg-gray-50 p-4 text-base text-gray-700 dark:border-white/10 dark:bg-white/5 dark:text-gray-200">
-                      How many social media accounts are currently connected?
+                      How many publishing accounts are currently connected?
                     </div>
                     <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      If the connection works, ChatGPT should call the FeedVector tools and return the channels connected in your workspace.
+                      If the connection works, ChatGPT should call the FeedVector tools and return the accounts connected in your workspace.
                     </p>
                   </div>
 
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Schedule posts through ChatGPT</p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      You can ask ChatGPT to schedule posts for any connected social media account, such as LinkedIn, X, Facebook, Instagram, or any
-                      other channel connected in FeedVector.
+                      You can ask ChatGPT to schedule posts for a connected LinkedIn account or page.
                     </p>
                     <div className="mt-3 rounded-xl border border-gray-200 bg-gray-50 p-4 text-base text-gray-700 dark:border-white/10 dark:bg-white/5 dark:text-gray-200">
                       Please schedule this on my LinkedIn page for tomorrow at 10 AM: "New update from our team."
@@ -344,7 +343,7 @@ export default function FeedVectorMcpChatGptGuidePage() {
                     />
                     <TroubleshootingItem
                       title="ChatGPT cannot find connected accounts"
-                      text="Open FeedVector and confirm at least one social media account is connected. If you just added a channel, try the ChatGPT prompt again."
+                      text="Open FeedVector and confirm at least one publishing account is connected. If you just added an account, try the ChatGPT prompt again."
                     />
                     <TroubleshootingItem
                       title="ChatGPT shows a 403 error"

@@ -3,7 +3,7 @@ import Image from "next/image"
 const AUDIENCES = [
   {
     title: "Creators",
-    description: "Plan content weeks ahead, repurpose ideas, and stay consistent across every channel.",
+    description: "Plan LinkedIn content weeks ahead, repurpose ideas, and stay consistent.",
     image: "/images/audience/creators.svg",
   },
   {
@@ -13,7 +13,7 @@ const AUDIENCES = [
   },
   {
     title: "Agencies",
-    description: "Manage multiple brands, automate repeat tasks, and report results with clear analytics.",
+    description: "Manage client LinkedIn workflows, automate repeat tasks, and report results with clear analytics.",
     image: "/images/audience/agencies.svg",
   },
 ]
@@ -25,7 +25,7 @@ export default function AudienceSection() {
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="mb-3 font-bold text-center text-gray-800 text-3xl dark:text-white/90 md:text-title-lg">Who is FeedVector for?</h2>
           <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Whether you are a solo creator or a growing team, FeedVector keeps your publishing system clear and fast.
+            Whether you are a solo creator or a growing team, FeedVector keeps your LinkedIn publishing system clear and fast.
           </p>
         </div>
 

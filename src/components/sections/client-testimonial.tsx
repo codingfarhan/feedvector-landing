@@ -8,7 +8,7 @@ const testimonials = [
     name: "Ralph Edwards",
     company: "Brightline Media",
     image: "/images/users/user-1.png",
-    testimonial: "Scheduling across Instagram and LinkedIn finally feels organized. The calendar and cross posting save us hours every week.",
+    testimonial: "Our LinkedIn publishing finally feels organized. The calendar and scheduling workflow save us hours every week.",
   },
   {
     id: 2,
@@ -57,8 +57,7 @@ export default function TestimonialsSection() {
           <div className="max-w-2xl mx-auto mb-12 text-center">
             <h2 className="mb-3 font-bold text-center text-gray-800 text-3xl dark:text-white/90 md:text-title-lg">What our users say</h2>
             <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-              Unlock the Potential of Innovation. Discover the Advanced AI Tools Transforming Your Ideas into Reality with Unmatched Precision and
-              Intelligence.
+              See how creators and teams use FeedVector to plan, write, publish, and improve LinkedIn content with less manual work.
             </p>
           </div>
 

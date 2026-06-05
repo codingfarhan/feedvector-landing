@@ -12,7 +12,7 @@ const comparisonRows = [
   ],
   [
     "Scheduling",
-    "Calendar planning, queues, cross-posting, and MCP scheduling",
+    "LinkedIn calendar planning, queues, and MCP scheduling",
     "Planner, calendar, best times, automated content lists, and multi-network scheduling",
   ],
   [
@@ -69,7 +69,7 @@ const sections = [
 
 const feedVectorFits = [
   "You want to create posts faster with AI",
-  "You publish heavily on LinkedIn and X",
+  "You publish heavily on LinkedIn",
   "You want viral templates built into the product",
   "You want AI design, image generation, and video generation",
   "You want simple scheduling without a heavy dashboard",
@@ -96,7 +96,7 @@ const faqs = [
   {
     question: "Who should choose FeedVector over Metricool?",
     answer:
-      "Choose FeedVector if you are a creator, founder, startup, or lean team that wants to produce more content, publish consistently, and automate repetitive social tasks without a heavier social operations dashboard.",
+      "Choose FeedVector if you are a creator, founder, startup, or lean team that wants to produce more LinkedIn content, publish consistently, and automate repetitive work without a heavier operations dashboard.",
   },
   {
     question: "Who should choose Metricool over FeedVector?",
@@ -106,30 +106,30 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "FeedVector vs Metricool: Which Social Media Tool Should You Choose?",
+  title: "FeedVector vs Metricool: Which Tool Should You Choose?",
   description:
     "Compare FeedVector vs Metricool for AI content creation, scheduling, analytics, reporting, automation, inbox, ads, team workflows, and pricing.",
   keywords: [
     "FeedVector vs Metricool",
     "Metricool alternative",
-    "AI social media scheduler",
+    "AI LinkedIn scheduler",
     "social media analytics tool",
     "social media management",
-    "MCP social media scheduling",
+    "MCP LinkedIn scheduling",
   ],
   alternates: {
     canonical: "/compare/feedvector-vs-metricool",
   },
   openGraph: {
-    title: "FeedVector vs Metricool: Which Social Media Tool Should You Choose?",
-    description: "Compare FeedVector and Metricool for AI-first publishing, social planning, reporting, automation, inbox, ads, and pricing.",
+    title: "FeedVector vs Metricool: Which Tool Should You Choose?",
+    description: "Compare FeedVector and Metricool for AI-first LinkedIn publishing, planning, reporting, automation, inbox, ads, and pricing.",
     url: "/compare/feedvector-vs-metricool",
     images: [{ url: "/images/tab-image/analytics.png", width: 1200, height: 630, alt: "FeedVector analytics preview" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Metricool",
-    description: "Compare FeedVector and Metricool for AI-first social publishing and social media operations.",
+    description: "Compare FeedVector and Metricool for AI-first LinkedIn publishing and social media operations.",
     images: ["/images/tab-image/analytics.png"],
   },
 }
@@ -139,7 +139,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "FeedVector vs Metricool: Which Social Media Tool Should You Choose?",
+      headline: "FeedVector vs Metricool: Which Tool Should You Choose?",
       description:
         "A practical comparison of FeedVector and Metricool across AI content creation, planning, scheduling, analytics, reporting, automation, collaboration, and pricing.",
       author: {
@@ -189,7 +189,7 @@ export default function FeedVectorVsMetricoolPage() {
                       FeedVector vs Metricool: Which one should you go for?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Metricool both help teams plan, publish, and analyze social content. Metricool is a mature operations platform
+                      FeedVector and Metricool both help teams plan, publish, and analyze content. Metricool is a mature operations platform
                       with analytics, reports, inbox, ads, competitor tracking, and multi-brand workflows. FeedVector is an AI-first publishing system
                       built around content creation, viral templates, automation, AI design, and simpler pricing.
                     </p>
@@ -274,7 +274,7 @@ export default function FeedVectorVsMetricoolPage() {
                 <section id="positioning" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="1" title="Product positioning: content engine vs social media control center" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector positions itself as an all-in-one social scheduling tool with AI. Its workflow focuses on creating high-performing
+                    FeedVector positions itself as a LinkedIn content tool with AI. Its workflow focuses on creating high-performing
                     posts, using viral templates, collaborating with a team, automating repeat work, and tracking analytics from one place.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
@@ -315,7 +315,7 @@ export default function FeedVectorVsMetricoolPage() {
                 <section id="planning" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="3" title="Scheduling and planning" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector supports planning ahead, queueing posts, cross-posting to multiple networks, and managing content from a single
+                    FeedVector supports planning ahead, queueing posts, and managing LinkedIn content from a single
                     calendar. It is designed to keep publishing consistent without forcing users into a large operations dashboard.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
@@ -332,7 +332,7 @@ export default function FeedVectorVsMetricoolPage() {
                     src="/images/tab-image/schedule.png"
                     alt="FeedVector scheduling calendar"
                     title="FeedVector keeps scheduling direct"
-                    description="Plan, queue, cross-post, and maintain a consistent publishing calendar from one workflow."
+                    description="Plan, queue, and maintain a consistent LinkedIn publishing calendar from one workflow."
                   />
                 </section>
 
@@ -343,7 +343,7 @@ export default function FeedVectorVsMetricoolPage() {
                     Studio connection, PDF/PPT reports, unlimited analytics history on paid plans, and custom report templates on Advanced.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector offers analytics and insights across channels, including analytics for all social media platforms on Pro. It is better
+                    FeedVector offers analytics and insights on Pro. It is better
                     suited to teams that want to understand what content is working and improve the next week of publishing.
                   </p>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">

@@ -19,8 +19,8 @@ export default function BenefitsGrid() {
             <div className="lg:col-span-6">
               <div className="relative flex flex-col justify-between bg-primary-500 rounded-[20px] p-9 md:p-13">
                 <div className="max-w-sm mb-32">
-                  <h3 className="font-bold text-white text-2xl md:text-3xl mb-4">Plan and Schedule across every account</h3>
-                  <p className="text-base text-white/70">Queue posts, cross-post to multiple accounts, and keep your posting consistent.</p>
+                  <h3 className="font-bold text-white text-2xl md:text-3xl mb-4">Plan and schedule LinkedIn content</h3>
+                  <p className="text-base text-white/70">Queue posts, organize your calendar, and keep your LinkedIn publishing consistent.</p>
                 </div>
                 <div>
                   <svg

@@ -56,7 +56,7 @@ export const navItems: NavItem[] = [
           {
             href: "/compare/feedvector-vs-later",
             label: "FeedVector vs Later",
-            description: "See how FeedVector compares for social publishing.",
+            description: "See how FeedVector compares for content planning.",
           },
           {
             href: "/compare/feedvector-vs-hootsuite",
@@ -71,7 +71,7 @@ export const navItems: NavItem[] = [
           {
             href: "/compare/feedvector-vs-sprout-social",
             label: "FeedVector vs Sprout Social",
-            description: "Compare FeedVector with an enterprise social suite.",
+            description: "Compare FeedVector with an enterprise publishing suite.",
           },
         ],
       },

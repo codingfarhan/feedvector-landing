@@ -36,8 +36,8 @@ export default function Footer() {
                   <Image src="/images/logo-white.svg" alt="logo" width={128} height={32} />
                 </Link>
                 <p className="block text-sm text-gray-400 mb-9">
-                  FeedVector helps teams plan, create, and publish social content across every channel with AI assistance, automation, and
-                  clear performance insights.
+                  FeedVector helps teams plan, create, schedule, and improve LinkedIn content with AI assistance, automation, and clear performance
+                  insights.
                 </p>
                 <div className="flex flex-wrap items-center gap-3">
                   <a
@@ -94,7 +94,7 @@ export default function Footer() {
                   <span className="block mb-6 text-sm text-gray-400">Features</span>
                   <nav className="flex flex-col space-y-3">
                     <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
-                      Scheduling and cross posting
+                      LinkedIn scheduling
                     </Link>
                     <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       AI content assistant

@@ -75,9 +75,9 @@ const sections = [
 ]
 
 const feedVectorFits = [
-  "You want a simpler social scheduling tool",
+  "You want a simpler LinkedIn content tool",
   "You care about AI-assisted content creation",
-  "You publish heavily on LinkedIn and X",
+  "You publish heavily on LinkedIn",
   "You want viral templates built into the workflow",
   "You want AI design, image generation, and video generation",
   "You want team collaboration without paying per teammate",
@@ -103,7 +103,7 @@ const faqs = [
   {
     question: "Who should choose FeedVector over Hootsuite?",
     answer:
-      "Choose FeedVector if you are a creator, founder, startup, agency, or lean team that wants to create, schedule, automate, and analyze social content without enterprise complexity.",
+      "Choose FeedVector if you are a creator, founder, startup, agency, or lean team that wants to create, schedule, automate, and analyze LinkedIn content without enterprise complexity.",
   },
   {
     question: "Who should choose Hootsuite over FeedVector?",
@@ -113,22 +113,22 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "FeedVector vs Hootsuite: Which Social Media Tool Should You Choose?",
+  title: "FeedVector vs Hootsuite: Which Tool Should You Choose?",
   description:
-    "Compare FeedVector vs Hootsuite for AI content creation, scheduling, automation, analytics, team collaboration, social listening, and pricing.",
+    "Compare FeedVector vs Hootsuite for AI LinkedIn content creation, scheduling, automation, analytics, team collaboration, social listening, and pricing.",
   keywords: [
     "FeedVector vs Hootsuite",
     "Hootsuite alternative",
-    "AI social media scheduler",
+    "AI LinkedIn scheduler",
     "social media management",
     "social media automation",
-    "social media scheduling tool",
+    "LinkedIn scheduling tool",
   ],
   alternates: {
     canonical: "/compare/feedvector-vs-hootsuite",
   },
   openGraph: {
-    title: "FeedVector vs Hootsuite: Which Social Media Tool Should You Choose?",
+    title: "FeedVector vs Hootsuite: Which Tool Should You Choose?",
     description: "Compare FeedVector and Hootsuite for AI-first publishing, enterprise social management, automation, analytics, and pricing.",
     url: "/compare/feedvector-vs-hootsuite",
     images: [{ url: "/images/tab-image/plugs.png", width: 1200, height: 630, alt: "FeedVector automation preview" }],
@@ -136,7 +136,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Hootsuite",
-    description: "Compare FeedVector and Hootsuite for AI-first social publishing and enterprise social media management.",
+    description: "Compare FeedVector and Hootsuite for AI-first LinkedIn publishing and enterprise social media management.",
     images: ["/images/tab-image/plugs.png"],
   },
 }
@@ -146,7 +146,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "FeedVector vs Hootsuite: Which Social Media Tool Should You Choose?",
+      headline: "FeedVector vs Hootsuite: Which Tool Should You Choose?",
       description:
         "A practical comparison of FeedVector and Hootsuite across AI content creation, scheduling, automation, analytics, collaboration, social listening, and pricing.",
       author: {
@@ -196,9 +196,9 @@ export default function FeedVectorVsHootsuitePage() {
                       FeedVector vs Hootsuite: Which one to choose?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Hootsuite both help teams manage social media, but they are built for different buyers. Hootsuite is a large
+                      FeedVector and Hootsuite both help teams publish content, but they are built for different buyers. Hootsuite is a large
                       enterprise-grade platform for social management, inbox workflows, reporting, listening, and governance. FeedVector is an
-                      AI-first social scheduling tool for creators, startups, agencies, and lean teams that want to create and publish faster.
+                      AI-first LinkedIn content tool for creators, startups, agencies, and lean teams that want to create and publish faster.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3 sm:flex-row">
@@ -281,8 +281,8 @@ export default function FeedVectorVsHootsuitePage() {
                 <section id="positioning" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="1" title="AI publishing system vs enterprise platform" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector positions itself around a tight workflow: create better posts with AI, use viral templates for LinkedIn, schedule
-                    across channels, collaborate with a team, automate repetitive work, and track what performs.
+                    FeedVector positions itself around a tight workflow: create better LinkedIn posts with AI, use viral templates, schedule
+                    consistently, collaborate with a team, automate repetitive work, and track what performs.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     Hootsuite is much broader. Its public product surface includes social media management, social intelligence, brand monitoring,
@@ -322,7 +322,7 @@ export default function FeedVectorVsHootsuitePage() {
                 <section id="publishing" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="3" title="Scheduling and publishing" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector covers the core publishing workflow: planning ahead, cross-posting to multiple channels, calendar scheduling, queues,
+                    FeedVector covers the core LinkedIn publishing workflow: planning ahead, calendar scheduling, queues,
                     shared calendars, and repeat-work automation.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
@@ -341,7 +341,7 @@ export default function FeedVectorVsHootsuitePage() {
                     src="/images/tab-image/schedule.png"
                     alt="FeedVector scheduling calendar"
                     title="FeedVector covers the everyday publishing workflow"
-                    description="Plan, queue, cross-post, and keep a consistent content calendar without enterprise publishing overhead."
+                    description="Plan, queue, and keep a consistent LinkedIn content calendar without enterprise publishing overhead."
                   />
                 </section>
 
@@ -372,7 +372,7 @@ export default function FeedVectorVsHootsuitePage() {
                     report exports, scheduled reports, ROI reporting, and more.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector offers cross-channel analytics and analytics for all social media platforms on Pro, but its public site gives less
+                    FeedVector offers publishing analytics on Pro, but its public site gives less
                     detail about exports, benchmarking, ROI reports, and advanced report customization.
                   </p>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
@@ -426,7 +426,7 @@ export default function FeedVectorVsHootsuitePage() {
                     </p>
                     <p>
                       But that does not make it the better choice for everyone. For creators, startups, agencies, and small teams, FeedVector is the
-                      better practical choice because it gives you AI content creation, viral templates, simple scheduling, cross-posting, automation,
+                      better practical choice because it gives you AI content creation, viral templates, simple scheduling, automation,
                       MCP support, team collaboration, and clear pricing.
                     </p>
                     <p>

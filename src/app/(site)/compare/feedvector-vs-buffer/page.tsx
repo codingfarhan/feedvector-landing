@@ -47,7 +47,7 @@ const faqs = [
   {
     question: "Who should choose FeedVector over Buffer?",
     answer:
-      "Choose FeedVector if you publish heavily on LinkedIn or X, want to automate repetitive publishing work, and want AI to help generate, repurpose, and schedule content.",
+      "Choose FeedVector if LinkedIn is your growth channel, you want to automate repetitive publishing work, and you want AI to help generate, repurpose, and schedule content.",
   },
   {
     question: "Who should choose Buffer over FeedVector?",
@@ -57,13 +57,13 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "FeedVector vs Buffer: Which Social Media Tool Should You Choose?",
+  title: "FeedVector vs Buffer: Which Tool Should You Choose?",
   description:
-    "Compare FeedVector vs Buffer for AI content creation, scheduling, collaboration, analytics, automation, and pricing. See which tool fits your social media workflow.",
+    "Compare FeedVector vs Buffer for AI LinkedIn content creation, scheduling, collaboration, analytics, automation, and pricing.",
   keywords: [
     "FeedVector vs Buffer",
     "Buffer alternative",
-    "AI social media scheduler",
+    "AI LinkedIn scheduler",
     "social media management software",
     "social media automation",
     "LinkedIn scheduling tool",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     canonical: "/compare/feedvector-vs-buffer",
   },
   openGraph: {
-    title: "FeedVector vs Buffer: Which Social Media Tool Should You Choose?",
+    title: "FeedVector vs Buffer: Which Tool Should You Choose?",
     description: "Compare FeedVector vs Buffer for AI content creation, scheduling, collaboration, analytics, automation, and pricing.",
     url: "/compare/feedvector-vs-buffer",
     images: [{ url: "/images/tab-image/viral-templates.png", width: 1200, height: 630, alt: "FeedVector viral templates preview" }],
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Buffer",
-    description: "Compare FeedVector and Buffer for AI-first social media publishing and traditional scheduling workflows.",
+    description: "Compare FeedVector and Buffer for AI-first LinkedIn publishing and traditional scheduling workflows.",
     images: ["/images/tab-image/viral-templates.png"],
   },
 }
@@ -90,7 +90,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "FeedVector vs Buffer: Which Social Media Tool Should You Choose?",
+      headline: "FeedVector vs Buffer: Which Tool Should You Choose?",
       description:
         "A practical comparison of FeedVector and Buffer across content creation, scheduling, collaboration, analytics, automation, and pricing.",
       author: {
@@ -137,7 +137,7 @@ export default function FeedVectorVsBufferPage() {
                   </div>
                   <div className="space-y-4">
                     <h1 className="max-w-4xl text-3xl font-bold tracking-tight text-gray-800 dark:text-white/90 md:text-5xl">
-                      FeedVector vs Buffer: which social media tool should you choose?
+                      FeedVector vs Buffer: which content tool should you choose?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
                       If you are deciding between FeedVector and Buffer, you are choosing between two different approaches: a general-purpose social
@@ -267,7 +267,7 @@ export default function FeedVectorVsBufferPage() {
                 <section id="scheduling" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="2" title="Scheduling and publishing" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector gives you cross-posting, calendar planning, workflow automation, and the ability to schedule posts through AI clients
+                    FeedVector gives you LinkedIn calendar planning, workflow automation, and the ability to schedule posts through AI clients
                     using the FeedVector MCP server. That matters if your goal is to build a repeatable publishing system instead of manually queueing
                     every post.
                   </p>
@@ -285,8 +285,8 @@ export default function FeedVectorVsBufferPage() {
                   <ImageShowcase
                     src="/images/tab-image/schedule.png"
                     alt="FeedVector scheduling calendar"
-                    title="Plan and cross-post from one calendar"
-                    description="FeedVector keeps scheduling, queues, and cross-posting in the same publishing workflow."
+                    title="Plan LinkedIn content from one calendar"
+                    description="FeedVector keeps scheduling, queues, and publishing in the same LinkedIn workflow."
                   />
                 </section>
 
@@ -362,7 +362,7 @@ export default function FeedVectorVsBufferPage() {
                       management workflows.
                     </p>
                     <p>
-                      Choose FeedVector if you want AI at the center of your social workflow, especially if you publish heavily on LinkedIn or X, want
+                      Choose FeedVector if you want AI at the center of your LinkedIn workflow, especially if you publish consistently on LinkedIn, want
                       viral templates, want built-in creative tools, or want to schedule directly from AI clients.
                     </p>
                     <p>Buffer helps you manage social media. FeedVector helps you build a content system.</p>

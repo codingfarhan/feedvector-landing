@@ -15,12 +15,12 @@ export const CORE_FEATURES: CoreFeature[] = [
   },
   {
     title: "Analytics & Insights",
-    description: "Track performance across channels and optimize what you publish.",
+    description: "Track LinkedIn performance and optimize what you publish.",
     iconUrl: icons.lightningBolt,
   },
   {
     title: "Seamless Scheduling",
-    description: "Plan ahead and cross-post to multiple LinkedIn accounts from a single place.",
+    description: "Plan ahead and keep your LinkedIn publishing cadence consistent.",
     iconUrl: icons.pencil,
   },
   {

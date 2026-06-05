@@ -74,23 +74,23 @@ const setupSteps = [
   },
   {
     id: "connected-account",
-    title: "Make sure FeedVector has a connected channel",
+    title: "Make sure FeedVector has a connected account",
     description:
-      "In FeedVector, connect at least one social media account. Codex can only list accounts and schedule posts for channels available in your FeedVector workspace.",
+      "In FeedVector, connect at least one publishing account. Codex can only list accounts and schedule posts for accounts available in your FeedVector workspace.",
     image: "step-8-make-sure-you-have-connected-at-least-one-social-media-account-on-feedvector.png",
     width: 2879,
     height: 1628,
-    alt: "FeedVector calendar with a connected channel highlighted",
+    alt: "FeedVector calendar with a connected account highlighted",
   },
   {
     id: "verify",
-    title: "Ask Codex to list connected channels",
+    title: "Ask Codex to list connected accounts",
     description:
-      "Back in the Codex desktop app, ask Codex which social media accounts are connected. If the MCP server is working, Codex will call FeedVector and return your connected channels.",
+      "Back in the Codex desktop app, ask Codex which publishing accounts are connected. If the MCP server is working, Codex will call FeedVector and return your connected accounts.",
     image: "step-9-ask-agent-to-list-connected-channels.png",
     width: 2880,
     height: 1800,
-    alt: "Codex desktop chat showing connected FeedVector social media accounts",
+    alt: "Codex desktop chat showing connected FeedVector publishing accounts",
   },
 ]
 
@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     question: "How do I confirm the FeedVector MCP server is working?",
-    answer: "Restart Codex, then ask Codex to list your connected social media accounts. Codex should return the accounts connected in FeedVector.",
+    answer: "Restart Codex, then ask Codex to list your connected publishing accounts. Codex should return the accounts connected in FeedVector.",
   },
 ]
 
@@ -123,7 +123,7 @@ export const metadata: Metadata = {
     "FeedVector MCP Codex desktop",
     "Codex desktop MCP setup",
     "Codex app MCP server",
-    "FeedVector social media scheduling",
+    "FeedVector LinkedIn scheduling",
     "Streamable HTTP MCP",
   ],
   alternates: {
@@ -131,7 +131,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Set Up FeedVector MCP in the Codex Desktop App",
-    description: "Connect FeedVector to the Codex desktop app and schedule social media posts through MCP tools.",
+    description: "Connect FeedVector to the Codex desktop app and schedule LinkedIn posts through MCP tools.",
     url: "/guides/feedvector-mcp-codex-desktop",
     images: [
       {
@@ -208,7 +208,7 @@ export default function FeedVectorMcpCodexDesktopGuidePage() {
                       Set up FeedVector MCP with the Codex desktop app
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      Connect FeedVector to the Codex desktop app so you can ask Codex to list connected social accounts, read platform-specific
+                      Connect FeedVector to the Codex desktop app so you can ask Codex to list connected publishing accounts, read account-specific
                       settings, and schedule posts through FeedVector.
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export default function FeedVectorMcpCodexDesktopGuidePage() {
                   </div>
                   <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
                     <Requirement title="1. FeedVector account" text="Create an account at app.feedvector.com." />
-                    <Requirement title="2. Connected channel" text="Connect at least one social media account in FeedVector." />
+                    <Requirement title="2. Connected account" text="Connect at least one publishing account in FeedVector." />
                     <Requirement title="3. Codex desktop app" text="Install and sign in to the Codex desktop app." />
                   </div>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
@@ -278,19 +278,18 @@ export default function FeedVectorMcpCodexDesktopGuidePage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Try this prompt</p>
                     <div className="mt-3 rounded-xl border border-gray-200 bg-gray-50 p-4 text-base text-gray-700 dark:border-white/10 dark:bg-white/5 dark:text-gray-200">
-                      Which social media accounts are currently connected?
+                      Which publishing accounts are currently connected?
                     </div>
                     <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      If the connection works, Codex should return the channels connected in FeedVector. You can then ask it to schedule a post,
-                      create a draft, or inspect platform requirements before posting.
+                      If the connection works, Codex should return the accounts connected in FeedVector. You can then ask it to schedule a post,
+                      create a draft, or inspect account requirements before posting.
                     </p>
                   </div>
 
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Schedule posts through Codex</p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      You can ask the agent to schedule posts for any connected social media account, such as LinkedIn, X, Facebook, Instagram, or any
-                      other channel connected in FeedVector.
+                      You can ask the agent to schedule posts for a connected LinkedIn account or page.
                     </p>
                     <div className="mt-3 rounded-xl border border-gray-200 bg-gray-50 p-4 text-base text-gray-700 dark:border-white/10 dark:bg-white/5 dark:text-gray-200">
                       Please schedule this on my LinkedIn page for tomorrow at 10 AM: "New update from our team."
@@ -314,7 +313,7 @@ export default function FeedVectorMcpCodexDesktopGuidePage() {
                     />
                     <TroubleshootingItem
                       title="Codex cannot find connected accounts"
-                      text="Open FeedVector and confirm at least one social media account is connected. If you just added a channel, try the Codex prompt again."
+                      text="Open FeedVector and confirm at least one publishing account is connected. If you just added an account, try the Codex prompt again."
                     />
                     <TroubleshootingItem
                       title="Authentication fails"

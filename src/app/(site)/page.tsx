@@ -1,9 +1,6 @@
-import BenefitsGrid from "@/components/sections/benefits-grid"
-import TestimonialsSection from "@/components/sections/client-testimonial"
 import FaqAccordion from "@/components/sections/faq-accordion"
 import HeroSection from "@/components/sections/hero-section"
 import ToolsTab from "@/components/sections/tools-tab"
-import { CoreFeatures } from "@/components/sections/core-features"
 import PricingSection from "@/components/sections/pricing"
 import AudienceSection from "@/components/sections/audience-section"
 import McpCallout from "@/components/sections/mcp-callout"
@@ -11,17 +8,16 @@ import type { Metadata } from "next"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "Social Media Scheduling with AI",
+  title: "LinkedIn Growth with AI",
   description:
-    "Plan, create, and schedule posts across channels with FeedVector. Choose from hundreds of viral templates for X and LinkedIn, automate workflows, collaborate, and track performance with AI.",
+    "Plan, create, and schedule LinkedIn posts with FeedVector. Choose from hundreds of viral templates, automate your workflow, collaborate, and track performance with AI.",
   keywords: [
-    "social media scheduling",
-    "AI social media",
-    "social media scheduler",
+    "LinkedIn growth",
+    "LinkedIn content tool",
+    "LinkedIn post scheduler",
     "content calendar",
     "post scheduling",
     "viral templates",
-    "X templates",
     "LinkedIn templates",
     "feed vector",
     "feedvector",
@@ -30,9 +26,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Social Media Scheduling with AI",
+    title: "LinkedIn Growth with AI",
     description:
-      "Plan, create, and schedule posts across channels with FeedVector. Choose from hundreds of viral templates for X and LinkedIn, automate workflows, collaborate, and track performance with AI.",
+      "Plan, create, and schedule LinkedIn posts with FeedVector. Choose from hundreds of viral templates, automate your workflow, collaborate, and track performance with AI.",
     url: "/",
   },
 }

@@ -3,7 +3,7 @@
 import type React from "react"
 import { Fragment, useEffect, useState } from "react"
 
-import { ChatGPTIcon, ClipboardIcon, ImageGeneratorIcon, LongArrowUpIcon, PencilIcon, SettingsIcon, UserIcon } from "@/icons/icons"
+import { ChatGPTIcon, ClipboardIcon, LongArrowUpIcon, PencilIcon, SettingsIcon } from "@/icons/icons"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
@@ -26,8 +26,8 @@ const tabs: Tab[] = [
     icon: <PencilIcon className="w-7 h-7" />,
     lightImage: "/images/tab-image/schedule.png",
     darkImage: "/images/tab-image/schedule-dark.png",
-    title: "Seamless scheduling and cross-posting",
-    description: "Plan once, publish everywhere, and keep a consistent posting cadence.",
+    title: "Seamless LinkedIn scheduling",
+    description: "Plan your posts ahead of time and keep a consistent LinkedIn cadence.",
   },
   {
     id: "analytics",
@@ -36,7 +36,7 @@ const tabs: Tab[] = [
     lightImage: "/images/tab-image/analytics.png",
     darkImage: "/images/tab-image/analytics-dark.png",
     title: "Comprehensive analytics",
-    description: "Measure performance across channels and improve every campaign.",
+    description: "Measure LinkedIn performance and improve every post with clear insights.",
   },
   {
     id: "assistant",
@@ -45,7 +45,7 @@ const tabs: Tab[] = [
     lightImage: "/images/tab-image/ai-assistant.png",
     darkImage: "/images/tab-image/ai-assistant-dark.png",
     title: "AI content assistant",
-    description: "Generate ideas, polish copy, and adapt posts for every channel.",
+    description: "Generate ideas, polish copy, and turn rough thoughts into stronger LinkedIn posts.",
   },
   {
     id: "viral-templates",
@@ -53,7 +53,7 @@ const tabs: Tab[] = [
     icon: <ClipboardIcon className="w-7 h-7" />,
     lightImage: "/images/tab-image/viral-templates.png",
     darkImage: "/images/tab-image/viral-templates-dark.png",
-    title: "Viral templates for X + LinkedIn",
+    title: "Viral templates for LinkedIn",
     description: "Pick a proven format, customize it to your voice, then schedule and publish.",
   },
   // {
@@ -112,7 +112,7 @@ export default function AIToolsTabs() {
             Everything you need to grow on <span className="text-[#0A66C2]">LinkedIn</span>, in one place
           </h2>
           <p className="max-w-2xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Plan, write faster with viral templates, publish, automate, and analyze with AI assistance and built-in creative tools.
+            Plan, write faster with viral templates, publish consistently, automate, and analyze LinkedIn content with AI assistance.
           </p>
         </div>
 
