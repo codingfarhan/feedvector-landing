@@ -31,28 +31,6 @@ export default function HeroSection() {
 
                 {/* <IntroVideo /> */}
               </div>
-              <div className="mt-6 flex flex-wrap items-center justify-center gap-4 relative z-30">
-                <a
-                  href="https://startupbase.io/products/feedvector?utm_source=startupbase&utm_medium=badge&utm_campaign=featured-badge-dark"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex"
-                >
-                  <img
-                    src="https://statics.startupbase.io/site/badges/featured-on-sb-dark.svg"
-                    alt="Featured on StartupBase"
-                    height={55}
-                    style={{ height: "55px", width: "auto" }}
-                  />
-                </a>
-                <a href="https://fazier.com/launches/feedvector.com" target="_blank" rel="noopener noreferrer" className="inline-flex">
-                  <img
-                    src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light"
-                    width={120}
-                    alt="Fazier badge"
-                  />
-                </a>
-              </div>
             </div>
           </div>
           <div className="max-w-[1000px] mx-auto relative">

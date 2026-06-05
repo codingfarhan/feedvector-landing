@@ -39,6 +39,33 @@ export default function Footer() {
                   FeedVector helps teams plan, create, and publish social content across every channel with AI assistance, automation, and
                   clear performance insights.
                 </p>
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href="https://startupbase.io/products/feedvector?utm_source=startupbase&utm_medium=badge&utm_campaign=featured-badge-dark"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex shrink-0"
+                  >
+                    <img
+                      src="https://statics.startupbase.io/site/badges/featured-on-sb-dark.svg"
+                      alt="Featured on StartupBase"
+                      height={55}
+                      style={{ height: "55px", width: "auto" }}
+                    />
+                  </a>
+                  <a
+                    href="https://fazier.com/launches/feedvector.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex shrink-0"
+                  >
+                    <img
+                      src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=light"
+                      width={120}
+                      alt="Fazier badge"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className="lg:col-span-6 xl:col-span-5">
