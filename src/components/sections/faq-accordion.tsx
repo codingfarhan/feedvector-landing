@@ -51,6 +51,11 @@ export default function FaqAccordion() {
       question: "Do you have viral post templates for LinkedIn?",
       answer: "Yes. Pick from hundreds of viral templates for LinkedIn, customize them to match your voice, then schedule and publish.",
     },
+    {
+      id: 8,
+      question: "Is FeedVector the same as Feed Vector?",
+      answer: "Yes. FeedVector is the product name, and some people search for it as Feed Vector.",
+    },
   ]
 
   const toggleItem = (itemId: number) => {

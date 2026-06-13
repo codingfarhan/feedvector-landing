@@ -1,4 +1,5 @@
 import FaqAccordion from "@/components/sections/faq-accordion"
+import FeatureShowcase from "@/components/sections/feature-showcase"
 import HeroSection from "@/components/sections/hero-section"
 import ToolsTab from "@/components/sections/tools-tab"
 import PricingSection from "@/components/sections/pricing"
@@ -8,7 +9,7 @@ import type { Metadata } from "next"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-  title: "LinkedIn Growth with AI",
+  title: "Grow on LinkedIn with high-performing content",
   description:
     "Plan, create, and schedule LinkedIn posts with FeedVector. Choose from hundreds of viral templates, automate your workflow, collaborate, and track performance with AI.",
   keywords: [
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "LinkedIn Growth with AI",
+    title: "Grow on LinkedIn with high-performing content",
     description:
       "Plan, create, and schedule LinkedIn posts with FeedVector. Choose from hundreds of viral templates, automate your workflow, collaborate, and track performance with AI.",
     url: "/",
@@ -46,6 +47,7 @@ const jsonLd = {
     {
       "@type": "WebSite",
       name: "FeedVector",
+      alternateName: ["Feed Vector", "feed vector"],
       url: "https://feedvector.com",
     },
   ],
@@ -56,6 +58,7 @@ export default async function Home() {
     <>
       <Script id="json-ld-feedvector" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HeroSection />
+      <FeatureShowcase />
       <ToolsTab />
       {/* <CoreFeatures /> */}
       <AudienceSection />

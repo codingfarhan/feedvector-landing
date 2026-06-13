@@ -12,8 +12,8 @@ const onest = Onest({
 export const metadata: Metadata = {
   metadataBase: new URL("https://feedvector.com"),
   title: {
-    default: "FeedVector - LinkedIn Growth with AI",
-    template: "%s | FeedVector",
+    default: "FeedVector: Best LinkedIn growth tool",
+    template: "FeedVector: %s",
   },
   description:
     "FeedVector is an AI platform for planning, creating, scheduling, and analyzing LinkedIn content that helps you grow followers, leads, and clients.",
@@ -28,8 +28,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "FeedVector",
-    description:
-      "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
+    description: "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
     url: "/",
     siteName: "FeedVector",
     images: [{ url: "/images/tab-image/schedule.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
@@ -37,8 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FeedVector",
-    description:
-      "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
+    description: "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
     images: ["/images/tab-image/schedule.png"],
   },
 }

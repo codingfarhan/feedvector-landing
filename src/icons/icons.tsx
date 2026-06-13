@@ -986,7 +986,7 @@ export function LongArrowUpIcon(props: IconProps) {
         fillRule="evenodd"
         clipRule="evenodd"
         d="M9.639 3.05a.748.748 0 01.567-.26h.001c.192 0 .385.073.531.22l5 4.997a.75.75 0 11-1.06 1.06l-3.722-3.72v11.528a.75.75 0 11-1.5 0V5.353L5.739 9.068a.75.75 0 01-1.06-1.061l4.96-4.958z"
-        fill="#fff"
+        fill="currentColor"
       />
     </svg>
   );

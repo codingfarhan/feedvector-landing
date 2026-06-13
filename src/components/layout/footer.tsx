@@ -36,8 +36,8 @@ export default function Footer() {
                   <Image src="/images/logo-white.svg" alt="logo" width={128} height={32} />
                 </Link>
                 <p className="block text-sm text-gray-400 mb-9">
-                  FeedVector helps teams plan, create, schedule, and improve LinkedIn content with AI assistance, automation, and clear performance
-                  insights.
+                  FeedVector, sometimes searched as Feed Vector, helps teams plan, create, schedule, and improve LinkedIn content with AI assistance,
+                  automation, and clear performance insights.
                 </p>
                 <div className="flex flex-wrap items-center gap-3">
                   <a

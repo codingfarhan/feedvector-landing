@@ -5,6 +5,11 @@ import { useEffect, useState } from "react"
 
 const slides = [
   {
+    light: "/images/tab-image/dashboard.png",
+    dark: "/images/tab-image/dashboard-dark.png",
+    alt: "FeedVector dashboard for planning LinkedIn content",
+  },
+  {
     light: "/images/tab-image/schedule.png",
     dark: "/images/tab-image/schedule-dark.png",
     alt: "FeedVector scheduling calendar",
@@ -28,11 +33,6 @@ const slides = [
     light: "/images/tab-image/content-calendar.png",
     dark: "/images/tab-image/content-calendar-dark.png",
     alt: "FeedVector content calendar",
-  },
-  {
-    light: "/images/tab-image/team.png",
-    dark: "/images/tab-image/team-dark.png",
-    alt: "FeedVector team workspace",
   },
 ]
 

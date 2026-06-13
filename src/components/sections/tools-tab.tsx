@@ -7,6 +7,25 @@ import { ChatGPTIcon, ClipboardIcon, LongArrowUpIcon, PencilIcon, SettingsIcon }
 import Image from "next/image"
 import { cn } from "@/lib/utils"
 
+function DashboardIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M5.25 7.58c0-1.29 1.04-2.33 2.33-2.33h4.09c1.28 0 2.33 1.04 2.33 2.33v4.09c0 1.28-1.05 2.33-2.33 2.33H7.58a2.33 2.33 0 0 1-2.33-2.33V7.58Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+      <path
+        d="M14 16.33c0-1.28 1.04-2.33 2.33-2.33h4.09c1.29 0 2.33 1.05 2.33 2.33v4.09c0 1.29-1.04 2.33-2.33 2.33h-4.09A2.33 2.33 0 0 1 14 20.42v-4.09Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+      />
+      <path d="M16.33 5.25h6.42M19.54 2.04v6.42" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      <path d="M5.25 19.54h6.42M8.46 16.33v6.42" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 // Define the tab type
 interface Tab {
   id: string
@@ -20,6 +39,15 @@ interface Tab {
 
 // Tab data
 const tabs: Tab[] = [
+  {
+    id: "dashboard",
+    label: "Dashboard",
+    icon: <DashboardIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/dashboard.png",
+    darkImage: "/images/tab-image/dashboard-dark.png",
+    title: "Your LinkedIn growth command center",
+    description: "See weekly content, suggested posts, repurposing tools, and action items in one focused workspace.",
+  },
   {
     id: "scheduling",
     label: "Scheduling",
@@ -86,7 +114,7 @@ const tabs: Tab[] = [
 ]
 
 export default function AIToolsTabs() {
-  const [activeTab, setActiveTab] = useState("scheduling")
+  const [activeTab, setActiveTab] = useState("dashboard")
 
   useEffect(() => {
     const interval = window.setInterval(() => {
@@ -166,18 +194,6 @@ export default function AIToolsTabs() {
                   </Fragment>
                 ))}
               </div>
-            </div>
-
-            {/* Bottom Section */}
-            <div className="mt-6 text-center">
-              <h2 className="mb-2 text-xl font-bold text-gray-800 dark:text-white/90">{currentTab.title}</h2>
-              <p className="max-w-xl mx-auto mb-6 text-sm text-gray-500 dark:text-gray-400">{currentTab.description}</p>
-              <a
-                href="https://app.feedvector.com"
-                className="px-6 py-3 text-sm font-medium text-white transition-colors rounded-full bg-primary-500 hover:bg-primary-600 inline-flex items-center justify-center"
-              >
-                Start growing
-              </a>
             </div>
           </div>
         </div>
