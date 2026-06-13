@@ -33,18 +33,22 @@ export const navItems: NavItem[] = [
   },
   {
     type: "link",
-    label: "Pricing",
-    href: "/pricing",
+    href: "/features",
+    label: "Features",
   },
   {
     type: "link",
-    label: "FAQ",
-    href: "/faq",
+    label: "Pricing",
+    href: "/pricing",
   },
   {
     type: "dropdown",
     label: "More",
     items: [
+      {
+        label: "FAQ",
+        href: "/faq",
+      },
       {
         label: "Compare",
         items: [

@@ -93,19 +93,19 @@ export default function Footer() {
                 <div>
                   <span className="block mb-6 text-sm text-gray-400">Features</span>
                   <nav className="flex flex-col space-y-3">
-                    <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       LinkedIn scheduling
                     </Link>
-                    <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       AI content assistant
                     </Link>
-                    <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       AI design tools
                     </Link>
-                    <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       Auto actions and integrations
                     </Link>
-                    <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       Analytics and insights
                     </Link>
                   </nav>

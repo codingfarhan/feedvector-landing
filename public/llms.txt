@@ -19,6 +19,7 @@ Features:
 - 24/7 email support for paid users
 
 Docs:
+https://feedvector.com/features
 https://feedvector.com/pricing
 https://feedvector.com/faq
 https://feedvector.com/mcp
