@@ -28,7 +28,7 @@ export default function ContentSystemSection() {
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-800 dark:text-white/90 md:text-title-lg">How it works:</h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
-              FeedVector connects your business context, content strategy, post creation, scheduling, and analytics into one system.
+              FeedVector learns your business, plans relevant posts, helps you publish consistently and shows you what is working.
             </p>
           </div>
 
