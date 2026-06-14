@@ -15,11 +15,8 @@ export default function PricingSection() {
       <div className="wrapper">
         <div className="max-w-2xl mx-auto mb-12 text-center">
           <h2 className="mb-3 font-bold text-center text-gray-800 text-3xl dark:text-white/90 md:text-title-lg">
-            Start Your Content Creation Journey with AI
+            Start growing on LinkedIn today 🚀
           </h2>
-          <p className="max-w-xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Collaborate with AI to generate content that resonates with your audience, drives and delivers meaningful results across all platforms.
-          </p>
         </div>
 
         <div>
@@ -53,7 +50,7 @@ export default function PricingSection() {
             </div>
           </div> */}
 
-          <div className="mt-12 z-30 relative space-y-4 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:justify-center lg:max-w-4xl lg:mx-auto">
+          <div className="mt-6 z-30 relative space-y-4 sm:mt-8 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-6 sm:justify-center lg:max-w-4xl lg:mx-auto">
             {BILLING_PLANS.map((plan, index) => (
               <PricingCard key={index} plan={plan} billingPeriod={activeBillingPeriodKey} />
             ))}

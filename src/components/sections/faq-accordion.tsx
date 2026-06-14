@@ -17,42 +17,47 @@ export default function FaqAccordion() {
   const faqItems: FAQItem[] = [
     {
       id: 1,
-      question: "Is it really just $29 to unlock ALL features?",
-      answer: "Yes. The $29 Pro plan unlocks every core feature, including scheduling, AI assistance, automations, and analytics.",
+      question: "How does the 7-day trial work?",
+      answer: "You can try FeedVector for 7 days. After the trial ends, choose a paid plan to keep planning, creating, scheduling, and analyzing LinkedIn content.",
     },
     {
       id: 2,
+      question: "Is it really just $29 to unlock ALL features?",
+      answer: "Yes. After your 7-day trial, the $29 Pro plan unlocks every core LinkedIn feature, including scheduling, AI assistance, automations, and analytics.",
+    },
+    {
+      id: 3,
       question: "Which social channels are supported?",
       answer:
         "FeedVector supports the major social networks and community channels including Facebook, Instagram, YouTube, LinkedIn, Medium, Dev.to and more.",
     },
     {
-      id: 3,
+      id: 4,
       question: "Can I automate workflows with integrations?",
       answer: "Yes. You can connect via a public API and automation tools like n8n, Make, or Zapier to build custom workflows.",
     },
     {
-      id: 4,
-      question: "Does it include an AI content assistant?",
-      answer: "Yes. The AI assistant helps you draft, refine, and repurpose content for different channels faster.",
-    },
-    {
       id: 5,
-      question: "Can my team collaborate in one workspace?",
-      answer: "Absolutely. Assign tasks, manage approvals, and collaborate across multiple channels with your team.",
+      question: "Does it include an AI content assistant?",
+      answer: "Yes. The AI assistant helps you draft, refine, and repurpose LinkedIn content faster.",
     },
     {
       id: 6,
-      question: "Do you provide analytics?",
-      answer: "Yes. Track performance across channels with comprehensive analytics to improve results.",
+      question: "Can my team collaborate in one workspace?",
+      answer: "Absolutely. Assign tasks, manage approvals, and collaborate on LinkedIn content with your team.",
     },
     {
       id: 7,
+      question: "Do you provide analytics?",
+      answer: "Yes. Track LinkedIn performance with analytics that help you improve future posts.",
+    },
+    {
+      id: 8,
       question: "Do you have viral post templates for LinkedIn?",
       answer: "Yes. Pick from hundreds of viral templates for LinkedIn, customize them to match your voice, then schedule and publish.",
     },
     {
-      id: 8,
+      id: 9,
       question: "Is FeedVector the same as Feed Vector?",
       answer: "Yes. FeedVector is the product name, and some people search for it as Feed Vector.",
     },

@@ -5,15 +5,15 @@ import PricingSection from "@/components/sections/pricing"
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Simple pricing for FeedVector, the AI social media scheduling platform. Compare plans and pick the right fit for your team.",
-  keywords: ["social media scheduling", "AI social media", "pricing", "plans", "social media management"],
+    "Start FeedVector with a 7-day trial, then choose a paid plan for LinkedIn content planning, AI drafting, scheduling, analytics, and automation.",
+  keywords: ["LinkedIn content pricing", "LinkedIn scheduling", "AI LinkedIn content", "pricing", "plans"],
   alternates: {
     canonical: "/pricing",
   },
   openGraph: {
     title: "Pricing",
     description:
-      "Simple pricing for FeedVector, the AI social media scheduling platform. Compare plans and pick the right fit for your team.",
+      "Start FeedVector with a 7-day trial, then choose a paid plan for LinkedIn content planning, scheduling, analytics, and automation.",
     url: "/pricing",
   },
 }

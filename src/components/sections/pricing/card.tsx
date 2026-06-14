@@ -11,6 +11,8 @@ type Props = {
 };
 
 export function PricingCard({ plan, billingPeriod }: Props) {
+  const isTrialPlan = plan.pricing[billingPeriod].amount === 0;
+
   return (
     <div className="relative">
       <div
@@ -52,14 +54,14 @@ export function PricingCard({ plan, billingPeriod }: Props) {
                 'block w-full px-8 py-3.5 mt-7 text-sm font-medium text-center rounded-full transition',
                 {
                   'dark:bg-dark-primary dark:text-white/90 dark:hover:bg-gray-800 dark:border-gray-800 text-gray-800 bg-white border border-gray-200 hover:bg-gray-50':
-                    plan.name.includes('Free'),
+                    isTrialPlan,
                   'gradient-btn text-white': plan.popular,
                   'dark:hover:bg-primary-500 dark:bg-white/[0.03] hover:bg-gray-900 text-white bg-gray-700':
-                    !plan.popular && !plan.name.includes('Free'),
+                    !plan.popular && !isTrialPlan,
                 }
               )}
             >
-              {plan.cta}``
+              {plan.cta}
             </button>
           )}
         </div>
