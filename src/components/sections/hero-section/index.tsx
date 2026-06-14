@@ -12,13 +12,13 @@ export default function HeroSection() {
         <div className="wrapper">
           <div className="max-w-[800px] mx-auto">
             <div className="text-center pb-16">
-              <Subheading text="Use proven post formats to grow your presence" />
+              <Subheading text="Stop sounding like AI and build trust" />
 
               <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
                 Create <span className="text-[#0A66C2]">LinkedIn</span> content so good it gets you <AnimatedHeadlineWord />
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
-                Choose from hundreds of viral post templates for LinkedIn, schedule posts and track performance with Analytics. All from one place.
+                Use proven & winning formats for your LinkedIn posts, schedule posts and track performance with Analytics. All from one place.
               </p>
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
@@ -78,7 +78,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="max-[1100px]:hidden">
+        <div className="max-[1100px]:hidden mb-20">
           <Image src="/images/hero/shape-left-1.svg" className="absolute top-14 left-16 floating-1" alt="" width={170} height={44} />
           <Image
             src="/images/hero/shape-left-2.svg"
@@ -98,7 +98,7 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="hero-glow-bg pointer-events-none w-full h-167.5 absolute z-10 bottom-0"></div>
-      <HeroLogos />
+      {/* <HeroLogos /> */}
     </section>
   )
 }

@@ -141,12 +141,12 @@ function CursorDemo({ style }: { style: CursorStyle }) {
 
 export default function FeatureShowcase() {
   return (
-    <section className="bg-white py-14 dark:bg-dark-primary md:py-24">
+    <section className="border-t border-gray-200 bg-white py-14 dark:border-white/10 dark:bg-dark-primary md:py-24">
       <div className="wrapper">
         <div className="mx-auto mb-10 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold text-gray-800 dark:text-white/90 md:text-title-lg">Grow with value content the algorithm loves</h2>
           <p className="mx-auto max-w-xl leading-6 text-gray-500 dark:text-gray-400">
-            Decide what to publish, what to improve, and what to repurpose using an intelligent dashboard and deep analytics insights.
+            Create high-performing posts that drive revenue and grow your audience with FeedVector's content creation flows.
           </p>
         </div>
 
