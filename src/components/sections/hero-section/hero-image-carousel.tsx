@@ -20,9 +20,10 @@ const slides = [
     alt: "FeedVector viral post templates",
   },
   {
-    light: "/images/tab-image/analytics.png",
-    dark: "/images/tab-image/analytics-dark.png",
+    light: "/images/feature-showcase/analytics-opportunities.png",
+    dark: "/images/feature-showcase/analytics-opportunities-dark.png",
     alt: "FeedVector analytics dashboard",
+    imageClassName: "object-contain",
   },
   {
     light: "/images/tab-image/ai-assistant.png",
@@ -69,7 +70,7 @@ export function HeroImageCarousel() {
               alt={isActive ? slide.alt : ""}
               fill
               sizes="(min-width: 1024px) 966px, 100vw"
-              className="object-cover block dark:hidden"
+              className={`${slide.imageClassName ?? "object-cover"} block dark:hidden`}
               priority={index === 0}
             />
             <Image
@@ -77,7 +78,7 @@ export function HeroImageCarousel() {
               alt={isActive ? slide.alt : ""}
               fill
               sizes="(min-width: 1024px) 966px, 100vw"
-              className="object-cover hidden dark:block"
+              className={`${slide.imageClassName ?? "object-cover"} hidden dark:block`}
               priority={index === 0}
             />
           </div>

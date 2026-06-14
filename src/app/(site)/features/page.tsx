@@ -25,7 +25,20 @@ export const metadata: Metadata = {
   },
 }
 
-const featurePillars = [
+type ProductImageFit = "cover" | "contain"
+
+type FeaturePillar = {
+  eyebrow: string
+  title: string
+  body: string
+  lightImage: string
+  darkImage: string
+  imageAspect?: string
+  imageFit?: ProductImageFit
+  features: string[]
+}
+
+const featurePillars: FeaturePillar[] = [
   {
     eyebrow: "Plan",
     title: "Turn content strategy into a weekly plan",
@@ -54,8 +67,10 @@ const featurePillars = [
     eyebrow: "Optimize",
     title: "Use analytics to decide what to post next",
     body: "Learn which formats, topics, hooks, lengths, and posting times perform best so every new post starts with evidence.",
-    lightImage: "/images/tab-image/analytics.png",
-    darkImage: "/images/tab-image/analytics-dark.png",
+    lightImage: "/images/feature-showcase/analytics-opportunities.png",
+    darkImage: "/images/feature-showcase/analytics-opportunities-dark.png",
+    imageAspect: "aspect-[2/1]",
+    imageFit: "contain",
     features: ["Performance overview", "Top posts", "Optimization opportunities", "Audience engagement", "Reaction breakdown"],
   },
   {
@@ -157,15 +172,31 @@ const quickFeatures = [
   "Approvals",
 ]
 
-function ProductImage({ lightImage, darkImage, alt, priority = false }: { lightImage: string; darkImage: string; alt: string; priority?: boolean }) {
+function ProductImage({
+  lightImage,
+  darkImage,
+  alt,
+  priority = false,
+  imageAspect = "aspect-[16/9]",
+  imageFit = "cover",
+}: {
+  lightImage: string
+  darkImage: string
+  alt: string
+  priority?: boolean
+  imageAspect?: string
+  imageFit?: ProductImageFit
+}) {
   return (
-    <div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-gray-200 bg-white shadow-theme-sm dark:border-white/10 dark:bg-white/5">
+    <div
+      className={`${imageAspect} relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-theme-sm dark:border-white/10 dark:bg-white/5`}
+    >
       <Image
         src={lightImage}
         alt={alt}
         fill
         sizes="(min-width: 1024px) 1040px, 100vw"
-        className="block object-cover object-top dark:hidden"
+        className={`block object-top dark:hidden ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
         priority={priority}
       />
       <Image
@@ -173,7 +204,7 @@ function ProductImage({ lightImage, darkImage, alt, priority = false }: { lightI
         alt={alt}
         fill
         sizes="(min-width: 1024px) 1040px, 100vw"
-        className="hidden object-cover object-top dark:block"
+        className={`hidden object-top dark:block ${imageFit === "contain" ? "object-contain" : "object-cover"}`}
         priority={priority}
       />
     </div>
@@ -255,7 +286,13 @@ export default function FeaturesPage() {
                   ))}
                 </div>
               </div>
-              <ProductImage lightImage={pillar.lightImage} darkImage={pillar.darkImage} alt={pillar.title} />
+              <ProductImage
+                lightImage={pillar.lightImage}
+                darkImage={pillar.darkImage}
+                alt={pillar.title}
+                imageAspect={pillar.imageAspect}
+                imageFit={pillar.imageFit}
+              />
             </div>
           ))}
         </div>

@@ -124,13 +124,13 @@ export const metadata: Metadata = {
     title: "FeedVector vs Metricool: Which Tool Should You Choose?",
     description: "Compare FeedVector and Metricool for AI-first LinkedIn publishing, planning, reporting, automation, inbox, ads, and pricing.",
     url: "/compare/feedvector-vs-metricool",
-    images: [{ url: "/images/tab-image/analytics.png", width: 1200, height: 630, alt: "FeedVector analytics preview" }],
+    images: [{ url: "/images/feature-showcase/analytics-opportunities.png", width: 1200, height: 601, alt: "FeedVector analytics preview" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Metricool",
     description: "Compare FeedVector and Metricool for AI-first LinkedIn publishing and social media operations.",
-    images: ["/images/tab-image/analytics.png"],
+    images: ["/images/feature-showcase/analytics-opportunities.png"],
   },
 }
 
@@ -155,7 +155,7 @@ const jsonLd = {
         },
       },
       mainEntityOfPage: "https://feedvector.com/compare/feedvector-vs-metricool",
-      image: "https://feedvector.com/images/tab-image/analytics.png",
+      image: "https://feedvector.com/images/feature-showcase/analytics-opportunities.png",
     },
     {
       "@type": "FAQPage",
@@ -354,10 +354,12 @@ export default function FeedVectorVsMetricoolPage() {
                     </p>
                   </div>
                   <ImageShowcase
-                    src="/images/tab-image/analytics.png"
+                    src="/images/feature-showcase/analytics-opportunities.png"
                     alt="FeedVector analytics dashboard"
                     title="FeedVector analytics are built for content improvement"
                     description="Track performance, learn what works, and feed that insight back into the next post."
+                    width={2367}
+                    height={1186}
                   />
                 </section>
 
@@ -558,10 +560,24 @@ function MetricCard({ value, label }: { value: string; label: string }) {
   )
 }
 
-function ImageShowcase({ src, alt, title, description }: { src: string; alt: string; title: string; description: string }) {
+function ImageShowcase({
+  src,
+  alt,
+  title,
+  description,
+  width = 936,
+  height = 535,
+}: {
+  src: string
+  alt: string
+  title: string
+  description: string
+  width?: number
+  height?: number
+}) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
-      <Image src={src} alt={alt} width={936} height={535} className="w-full" />
+      <Image src={src} alt={alt} width={width} height={height} className="h-auto w-full" />
       <div className="border-t border-gray-200 p-5 dark:border-white/10">
         <p className="text-base font-semibold text-gray-800 dark:text-white/90">{title}</p>
         <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">{description}</p>

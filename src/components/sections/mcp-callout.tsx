@@ -27,7 +27,7 @@ export default function McpCallout() {
               href="/mcp"
               className="bg-primary-500 transition h-12 inline-flex items-center justify-center hover:bg-primary-600 px-6 py-3 rounded-full text-white text-sm"
             >
-              View MCP setup
+              MCP setup Guide
             </Link>
             <Link
               href="https://app.feedvector.com"

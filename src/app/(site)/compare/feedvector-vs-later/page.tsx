@@ -388,10 +388,12 @@ export default function FeedVectorVsLaterPage() {
                   </p>
                   <ComparisonTable rows={pricingRows} columns={["Product", "Plan", "Public price", "Key limits and inclusions"]} />
                   <ImageShowcase
-                    src="/images/tab-image/analytics.png"
+                    src="/images/feature-showcase/analytics-opportunities.png"
                     alt="FeedVector analytics dashboard"
                     title="Analytics connected to creation and scheduling"
                     description="FeedVector keeps performance data near the workflow that creates and publishes the next post."
+                    width={2367}
+                    height={1186}
                   />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
                     The economic takeaway is simple: FeedVector bundles rich AI creation, automation, MCP access, unlimited posts, and unlimited team
@@ -612,10 +614,24 @@ function MetricCard({ value, label }: { value: string; label: string }) {
   )
 }
 
-function ImageShowcase({ src, alt, title, description }: { src: string; alt: string; title: string; description: string }) {
+function ImageShowcase({
+  src,
+  alt,
+  title,
+  description,
+  width = 936,
+  height = 535,
+}: {
+  src: string
+  alt: string
+  title: string
+  description: string
+  width?: number
+  height?: number
+}) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
-      <Image src={src} alt={alt} width={936} height={535} className="w-full" />
+      <Image src={src} alt={alt} width={width} height={height} className="h-auto w-full" />
       <div className="border-t border-gray-200 p-5 dark:border-white/10">
         <p className="text-base font-semibold text-gray-800 dark:text-white/90">{title}</p>
         <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">{description}</p>

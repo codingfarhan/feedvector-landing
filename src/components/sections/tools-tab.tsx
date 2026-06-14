@@ -33,6 +33,7 @@ interface Tab {
   icon: React.ReactNode
   lightImage: string
   darkImage: string
+  imageFit?: "cover" | "contain"
   title: string
   description: string
 }
@@ -61,8 +62,9 @@ const tabs: Tab[] = [
     id: "analytics",
     label: "Analytics",
     icon: <LongArrowUpIcon className="w-7 h-7" />,
-    lightImage: "/images/tab-image/analytics.png",
-    darkImage: "/images/tab-image/analytics-dark.png",
+    lightImage: "/images/feature-showcase/analytics-opportunities.png",
+    darkImage: "/images/feature-showcase/analytics-opportunities-dark.png",
+    imageFit: "contain",
     title: "Comprehensive analytics",
     description: "Measure LinkedIn performance and improve every post with clear insights.",
   },
@@ -170,29 +172,39 @@ export default function AIToolsTabs() {
 
             <div className="p-6 tab-img-bg overflow-hidden rounded-4xl mt-8">
               <div className="p-3 tab-img-overlay">
-                {tabs.map((tab) => (
-                  <Fragment key={tab.id}>
-                    <Image
-                      src={tab.lightImage || "/placeholder.svg"}
-                      alt={tab.label}
-                      width={936}
-                      height={535}
-                      className={cn("w-full rounded-2xl block dark:hidden", currentTab.id !== tab.id && "hidden!")}
-                      quality={90}
-                      priority
-                    />
+                <div className="relative aspect-[936/535] overflow-hidden rounded-2xl bg-white dark:bg-[#151515]">
+                  {tabs.map((tab) => (
+                    <Fragment key={tab.id}>
+                      <Image
+                        src={tab.lightImage || "/placeholder.svg"}
+                        alt={tab.label}
+                        fill
+                        sizes="(min-width: 1024px) 936px, 100vw"
+                        className={cn(
+                          "block object-top dark:hidden",
+                          tab.imageFit === "contain" ? "object-contain" : "object-cover",
+                          currentTab.id !== tab.id && "hidden!"
+                        )}
+                        quality={90}
+                        priority
+                      />
 
-                    <Image
-                      src={tab.darkImage || "/placeholder.svg"}
-                      alt={tab.label}
-                      width={936}
-                      height={535}
-                      className={cn("w-full rounded-2xl hidden dark:block", currentTab.id !== tab.id && "hidden!")}
-                      quality={90}
-                      priority
-                    />
-                  </Fragment>
-                ))}
+                      <Image
+                        src={tab.darkImage || "/placeholder.svg"}
+                        alt={tab.label}
+                        fill
+                        sizes="(min-width: 1024px) 936px, 100vw"
+                        className={cn(
+                          "hidden object-top dark:block",
+                          tab.imageFit === "contain" ? "object-contain" : "object-cover",
+                          currentTab.id !== tab.id && "hidden!"
+                        )}
+                        quality={90}
+                        priority
+                      />
+                    </Fragment>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
