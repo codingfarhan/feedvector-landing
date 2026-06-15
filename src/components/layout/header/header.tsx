@@ -22,9 +22,9 @@ export default function Header() {
         <div className="grid grid-cols-2 items-center lg:grid-cols-[1fr_auto_1fr]">
           <div className="flex items-center">
             <Link href="/" className="flex items-end gap-2">
-              <Image src="/images/logo-black.svg" className="block dark:hidden" alt="AiStarterKit Logo" width={180} height={30} />
+              <Image src="/images/logo-black.svg" className="block dark:hidden" alt="FeedVector Logo" width={180} height={30} />
 
-              <Image src="/images/logo-white.svg" className="hidden dark:block" alt="AiStarterKit Logo" width={180} height={30} />
+              <Image src="/images/logo-white.svg" className="hidden dark:block" alt="FeedVector Logo" width={180} height={30} />
             </Link>
           </div>
 
