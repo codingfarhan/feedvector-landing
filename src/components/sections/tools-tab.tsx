@@ -26,6 +26,21 @@ function DashboardIcon(props: React.SVGProps<SVGSVGElement>) {
   )
 }
 
+function EngageIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" aria-hidden="true" {...props}>
+      <path
+        d="M6.42 6.42h15.16c1.29 0 2.34 1.04 2.34 2.33v8.17c0 1.29-1.05 2.33-2.34 2.33h-7.87l-4.62 3.5v-3.5H6.42a2.33 2.33 0 0 1-2.34-2.33V8.75c0-1.29 1.05-2.33 2.34-2.33Z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
+      <path d="M9.33 12.25h9.34M9.33 15.42h5.84" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+      <path d="M20.42 4.08v4.67M18.08 6.42h4.67" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 // Define the tab type
 interface Tab {
   id: string
@@ -48,6 +63,16 @@ const tabs: Tab[] = [
     darkImage: "/images/tab-image/dashboard-dark.png",
     title: "Your LinkedIn growth command center",
     description: "See weekly content, suggested posts, repurposing tools, and action items in one focused workspace.",
+  },
+  {
+    id: "engage",
+    label: "Engage",
+    icon: <EngageIcon className="w-7 h-7" />,
+    lightImage: "/images/tab-image/engage-posts.png",
+    darkImage: "/images/tab-image/engage-posts-dark.png",
+    imageFit: "contain",
+    title: "Daily posts to comment on",
+    description: "Find fresh LinkedIn posts every day so you can leave thoughtful comments and grow your audience.",
   },
   {
     id: "scheduling",
@@ -142,14 +167,14 @@ export default function AIToolsTabs() {
             Everything you need to grow on <span className="text-[#0A66C2]">LinkedIn</span>, in one place
           </h2>
           <p className="max-w-2xl mx-auto leading-6 text-gray-500 dark:text-gray-400">
-            Plan, write faster with viral templates, publish consistently, automate, and analyze LinkedIn content with AI assistance.
+            Plan, write faster with viral templates, find posts to comment on, publish consistently, automate, and analyze LinkedIn content with AI assistance.
           </p>
         </div>
 
-        <div className="max-w-[1008px] mx-auto">
+        <div className="max-w-[1120px] mx-auto">
           <div>
             {/* Tab Navigation */}
-            <div className="mx-auto max-w-[1008px] relative">
+            <div className="mx-auto max-w-[1120px] relative">
               <div className="flex flex-wrap justify-center gap-2 rounded-3xl bg-gray-100 dark:bg-white/5 p-1">
                 {tabs.map((tab) => (
                   <button

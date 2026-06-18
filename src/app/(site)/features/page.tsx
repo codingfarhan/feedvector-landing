@@ -5,10 +5,12 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Explore every FeedVector feature for LinkedIn content planning, AI writing, scheduling, analytics, automation, team workflows, and MCP publishing.",
+    "Explore every FeedVector feature for LinkedIn content planning, daily engagement, AI writing, scheduling, analytics, automation, team workflows, and MCP publishing.",
   keywords: [
     "FeedVector features",
     "LinkedIn content planning",
+    "LinkedIn engagement",
+    "LinkedIn commenting",
     "LinkedIn analytics",
     "AI LinkedIn posts",
     "social media scheduling",
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "FeedVector Features",
-    description: "Explore every FeedVector feature for planning, creating, scheduling, automating, and analyzing LinkedIn content.",
+    description: "Explore every FeedVector feature for planning, creating, engaging, scheduling, automating, and analyzing LinkedIn content.",
     url: "/features",
     images: [{ url: "/images/tab-image/dashboard.png", width: 1200, height: 630, alt: "FeedVector dashboard" }],
   },
@@ -48,12 +50,24 @@ const featurePillars: FeaturePillar[] = [
     features: ["Growth dashboard", "Weekly suggested posts", "Next-week generation", "Repurpose content", "Input reminders"],
   },
   {
-    eyebrow: "Create",
-    title: "Create LinkedIn posts faster with AI",
-    body: "Use templates and an AI assistant to move from raw ideas to polished posts, then create supporting visuals without leaving the workflow.",
-    lightImage: "/images/tab-image/viral-templates.png",
-    darkImage: "/images/tab-image/viral-templates-dark.png",
-    features: ["Viral templates", "AI content assistant", "Post rewriting", "AI image generation", "Design tools"],
+    eyebrow: "Repurpose",
+    title: "Turn existing assets into fresh LinkedIn posts",
+    body: "Reuse website pages, past LinkedIn posts, profile context, and proven ideas so you never start from scratch.",
+    lightImage: "/images/feature-showcase/dashboard-repurpose.png",
+    darkImage: "/images/feature-showcase/dashboard-repurpose-dark.png",
+    imageAspect: "aspect-[72/65]",
+    imageFit: "contain",
+    features: ["Website-to-post", "Past post refresh", "Profile-based posts", "Proven idea variations", "Repurposing workflow"],
+  },
+  {
+    eyebrow: "Engage",
+    title: "Find the right LinkedIn conversations to join",
+    body: "Get fresh LinkedIn posts every day that are worth commenting on so you can show up consistently and grow your audience.",
+    lightImage: "/images/tab-image/engage-posts.png",
+    darkImage: "/images/tab-image/engage-posts-dark.png",
+    imageAspect: "aspect-[16/9]",
+    imageFit: "contain",
+    features: ["Daily posts to comment on", "Relevant conversations", "Audience growth workflow", "Thoughtful commenting", "Engagement routine"],
   },
   {
     eyebrow: "Publish",
@@ -93,6 +107,16 @@ const featureDirectory = [
       "Next-week draft generation",
       "Core narrative and content pillars",
       "Needs-your-input reminders",
+    ],
+  },
+  {
+    title: "Engagement",
+    features: [
+      "Daily LinkedIn posts to comment on",
+      "Relevant conversation discovery",
+      "Audience growth through thoughtful comments",
+      "Consistent engagement workflow",
+      "Commenting opportunities alongside content planning",
     ],
   },
   {
@@ -160,6 +184,7 @@ const quickFeatures = [
   "Calendar",
   "Scheduling",
   "Analytics",
+  "Engage",
   "AI assistant",
   "Templates",
   "Repurposing",
@@ -223,8 +248,8 @@ export default function FeaturesPage() {
             All the features you need to build your Personal brand
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400 md:text-lg">
-            Plan content, create better LinkedIn posts with AI, schedule consistently, automate repeat work, and use analytics to improve the next
-            post.
+            Plan content, create better LinkedIn posts with AI, find daily conversations to join, schedule consistently, automate repeat work, and use
+            analytics to improve the next post.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
@@ -330,7 +355,7 @@ export default function FeaturesPage() {
           <div className="mx-auto max-w-4xl rounded-lg border border-gray-200 bg-gray-50 p-8 text-center dark:border-white/10 dark:bg-white/5 md:p-10">
             <h2 className="text-3xl font-bold text-gray-800 dark:text-white/90">Ready to try the full workflow?</h2>
             <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
-              Use FeedVector to plan, create, schedule, automate, and analyze your LinkedIn content from one workspace.
+              Use FeedVector to plan, create, engage, schedule, automate, and analyze your LinkedIn content from one workspace.
             </p>
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
               <Link

@@ -66,6 +66,7 @@ export const BILLING_PLANS = [
       "20 social media accounts",
       "Connect multiple social accounts across Instagram, X, Facebook, YouTube, Bluesky, and more",
       "Unlimited LinkedIn posts per month",
+      "Daily LinkedIn posts to comment on for audience growth",
       "LinkedIn analytics that show what to post next",
       "Recommended topics, formats, hooks, and posting times",
       "Unlimited team members in your workspace",

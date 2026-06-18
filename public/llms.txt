@@ -2,13 +2,14 @@ FeedVector
 https://feedvector.com
 
 About:
-FeedVector is an AI platform for planning, creating, scheduling, and analyzing LinkedIn content that helps creators and teams grow followers, leads, and clients. FeedVector also provides an MCP (Model Context Protocol) server so AI clients can manage publishing workflows through natural language.
+FeedVector is an AI platform for planning, creating, engaging with, scheduling, and analyzing LinkedIn content that helps creators and teams grow followers, leads, and clients. FeedVector also provides an MCP (Model Context Protocol) server so AI clients can manage publishing workflows through natural language.
 
 Features:
 - Content planning and calendar
 - AI caption and post generation (including both images and videos)
 - A canva-like design tool inside the app for designing posts/graphics
 - LinkedIn content scheduling
+- Daily LinkedIn posts to comment on for audience growth
 - MCP server for scheduling posts from AI clients (Claude, Cursor, etc.)
 - Team collaboration and approvals
 - Asset library and brand templates

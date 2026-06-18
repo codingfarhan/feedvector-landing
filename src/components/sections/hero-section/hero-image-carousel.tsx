@@ -10,6 +10,12 @@ const slides = [
     alt: "FeedVector dashboard for planning LinkedIn content",
   },
   {
+    light: "/images/tab-image/engage-posts.png",
+    dark: "/images/tab-image/engage-posts-dark.png",
+    alt: "FeedVector daily LinkedIn posts to comment on",
+    imageClassName: "object-contain",
+  },
+  {
     light: "/images/tab-image/schedule.png",
     dark: "/images/tab-image/schedule-dark.png",
     alt: "FeedVector scheduling calendar",

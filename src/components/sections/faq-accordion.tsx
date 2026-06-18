@@ -53,11 +53,17 @@ export default function FaqAccordion() {
     },
     {
       id: 8,
+      question: "Does FeedVector help me grow through commenting?",
+      answer:
+        "Yes. FeedVector can surface fresh LinkedIn posts every day so you can join relevant conversations, leave thoughtful comments, and grow your audience.",
+    },
+    {
+      id: 9,
       question: "Do you have viral post templates for LinkedIn?",
       answer: "Yes. Pick from hundreds of viral templates for LinkedIn, customize them to match your voice, then schedule and publish.",
     },
     {
-      id: 9,
+      id: 10,
       question: "Is FeedVector the same as Feed Vector?",
       answer: "Yes. FeedVector is the product name, and some people search for it as Feed Vector.",
     },

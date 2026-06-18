@@ -12,11 +12,13 @@ import Script from "next/script"
 export const metadata: Metadata = {
   title: "Grow on LinkedIn with high-performing content",
   description:
-    "Plan, create, and schedule LinkedIn posts with FeedVector. Choose from hundreds of viral templates, automate your workflow, collaborate, and track performance with AI.",
+    "Plan, create, engage, and schedule LinkedIn posts with FeedVector. Choose from viral templates, find daily posts to comment on, automate your workflow, and track performance with AI.",
   keywords: [
     "LinkedIn growth",
     "LinkedIn content tool",
     "LinkedIn post scheduler",
+    "LinkedIn engagement tool",
+    "LinkedIn comments",
     "content calendar",
     "post scheduling",
     "viral templates",
@@ -30,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Grow on LinkedIn with high-performing content",
     description:
-      "Plan, create, and schedule LinkedIn posts with FeedVector. Choose from hundreds of viral templates, automate your workflow, collaborate, and track performance with AI.",
+      "Plan, create, engage, and schedule LinkedIn posts with FeedVector. Choose from viral templates, find daily posts to comment on, automate your workflow, and track performance with AI.",
     url: "/",
   },
 }

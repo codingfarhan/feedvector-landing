@@ -31,6 +31,24 @@ const features = [
     },
   },
   {
+    title: "Find posts to comment on daily",
+    description: "Get fresh LinkedIn posts every day so you can add thoughtful comments and grow your audience.",
+    lightImage: "/images/tab-image/engage-posts.png",
+    darkImage: "/images/tab-image/engage-posts-dark.png",
+    className: "lg:col-span-5",
+    imageClassName: "aspect-[16/9]",
+    imageFitClassName: "object-contain",
+    cursorStyle: {
+      "--cursor-x0": "12%",
+      "--cursor-y0": "22%",
+      "--cursor-x1": "56%",
+      "--cursor-y1": "38%",
+      "--cursor-x2": "82%",
+      "--cursor-y2": "67%",
+      "--cursor-delay": "-0.7s",
+    },
+  },
+  {
     title: "Repurpose what already works",
     description: "Turn a website page, old LinkedIn post, or profile context into a fresh post idea.",
     lightImage: "/images/feature-showcase/dashboard-repurpose.png",
@@ -53,7 +71,7 @@ const features = [
     description: "See your best format, strongest time, recommended topic, and next-post direction in one read.",
     lightImage: "/images/feature-showcase/analytics-overview.png",
     darkImage: "/images/feature-showcase/analytics-overview-dark.png",
-    className: "lg:col-span-6",
+    className: "lg:col-span-7",
     imageClassName: "aspect-[21/10]",
     imageFitClassName: "object-contain",
     cursorStyle: {
@@ -88,7 +106,7 @@ const features = [
     description: "Compare formats, lengths, hooks, topics, and posting times with sample-size confidence.",
     lightImage: "/images/feature-showcase/analytics-opportunities.png",
     darkImage: "/images/feature-showcase/analytics-opportunities-dark.png",
-    className: "lg:col-span-8",
+    className: "lg:col-span-6",
     imageClassName: "aspect-[21/10]",
     imageFitClassName: "object-contain",
     cursorStyle: {
@@ -106,8 +124,8 @@ const features = [
     description: "Break down comments, reposts, reactions, and reaction mix so performance is easier to interpret.",
     lightImage: "/images/feature-showcase/analytics-audience.png",
     darkImage: "/images/feature-showcase/analytics-audience-dark.png",
-    className: "lg:col-span-4",
-    imageClassName: "aspect-[16/10]",
+    className: "lg:col-span-12",
+    imageClassName: "aspect-[21/10]",
     imageFitClassName: "object-contain",
     cursorStyle: {
       "--cursor-x0": "20%",
@@ -146,7 +164,7 @@ export default function FeatureShowcase() {
         <div className="mx-auto mb-10 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold text-gray-800 dark:text-white/90 md:text-title-lg">Grow with value content the algorithm loves</h2>
           <p className="mx-auto max-w-xl leading-6 text-gray-500 dark:text-gray-400">
-            Create high-performing posts that drive revenue and grow your audience with FeedVector's content creation flows.
+            Create high-performing posts and find the right conversations to join so you can grow your audience with FeedVector's content flows.
           </p>
         </div>
 

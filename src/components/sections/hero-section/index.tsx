@@ -18,7 +18,7 @@ export default function HeroSection() {
                 Create <span className="text-[#0A66C2]">LinkedIn</span> content so good it gets you <AnimatedHeadlineWord />
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
-                Use proven & winning formats for your LinkedIn posts, schedule posts and track performance with Analytics. All from one place.
+                Use proven formats for your LinkedIn posts, find daily posts to comment on, schedule content, and track performance with Analytics.
               </p>
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">

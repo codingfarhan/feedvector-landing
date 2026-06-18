@@ -97,6 +97,9 @@ export default function Footer() {
                       LinkedIn scheduling
                     </Link>
                     <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                      LinkedIn engagement
+                    </Link>
+                    <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       AI content assistant
                     </Link>
                     <Link href="/features" className="text-sm font-normal text-gray-400 transition hover:text-white">

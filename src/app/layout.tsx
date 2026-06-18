@@ -16,11 +16,12 @@ export const metadata: Metadata = {
     template: "FeedVector: %s",
   },
   description:
-    "FeedVector is an AI platform for planning, creating, scheduling, and analyzing LinkedIn content that helps you grow followers, leads, and clients.",
+    "FeedVector is an AI platform for planning, creating, engaging with, scheduling, and analyzing LinkedIn content that helps you grow followers, leads, and clients.",
   keywords: [
     "LinkedIn growth",
     "AI LinkedIn content",
     "LinkedIn post scheduler",
+    "LinkedIn engagement",
     "LinkedIn content calendar",
     "content scheduling",
     "feed vector",
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "FeedVector",
-    description: "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
+    description: "FeedVector (often written as Feed Vector) helps you plan, create, engage with, schedule, and analyze LinkedIn content with AI.",
     url: "/",
     siteName: "FeedVector",
     images: [{ url: "/images/tab-image/schedule.png", width: 1200, height: 630, alt: "FeedVector product preview" }],
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FeedVector",
-    description: "FeedVector (often written as Feed Vector) helps you plan, create, schedule, and analyze LinkedIn content with AI.",
+    description: "FeedVector (often written as Feed Vector) helps you plan, create, engage with, schedule, and analyze LinkedIn content with AI.",
     images: ["/images/tab-image/schedule.png"],
   },
 }
