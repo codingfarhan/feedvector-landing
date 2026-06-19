@@ -18,7 +18,7 @@ export default function HeroSection() {
                 Turn <span className="text-[#0A66C2]">LinkedIn</span> posts and comments into <AnimatedHeadlineWord />
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
-                Create authentic content, discover relevant posts worth commenting on, and grow your visibility with intelligent analytics.
+                Create authentic content, discover relevant posts worth commenting on, and grow your visibility with smart analytics.
               </p>
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">

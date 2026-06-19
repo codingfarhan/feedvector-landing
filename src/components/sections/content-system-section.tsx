@@ -1,6 +1,6 @@
 const inputSignals = ["LinkedIn Profile", "Website", "Past Posts"]
 const engineSignals = ["Content Pillars", "Voice", "Data"]
-const outputSignals = ["Weekly Draft Posts", "Intelligent Analytics", "Recommended Posts to comment on"]
+const outputSignals = ["Weekly Draft Posts", "Smart Analytics", "Recommended Posts to comment on"]
 
 function SignalGroup({ label, items }: { label: string; items: string[] }) {
   return (
