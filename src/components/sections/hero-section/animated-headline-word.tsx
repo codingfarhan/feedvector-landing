@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 
-const words = ["followers", "clients", "leads"]
+const words = ["revenue", "clients", "leads"]
 
 export function AnimatedHeadlineWord() {
   const [wordIndex, setWordIndex] = useState(0)
@@ -18,7 +18,7 @@ export function AnimatedHeadlineWord() {
     const currentWord = words[wordIndex]
 
     if (!isDeleting && displayText === currentWord) {
-      const pause = window.setTimeout(() => setIsDeleting(true), 1300)
+      const pause = window.setTimeout(() => setIsDeleting(true), 2300)
       return () => window.clearTimeout(pause)
     }
 
@@ -33,11 +33,7 @@ export function AnimatedHeadlineWord() {
 
     const type = window.setTimeout(
       () => {
-        setDisplayText((text) =>
-          isDeleting
-            ? currentWord.slice(0, Math.max(text.length - 1, 0))
-            : currentWord.slice(0, text.length + 1),
-        )
+        setDisplayText((text) => (isDeleting ? currentWord.slice(0, Math.max(text.length - 1, 0)) : currentWord.slice(0, text.length + 1)))
       },
       isDeleting ? 45 : 85,
     )
