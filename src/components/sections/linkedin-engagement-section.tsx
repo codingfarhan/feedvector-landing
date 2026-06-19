@@ -6,7 +6,7 @@ export default function LinkedinEngagementSection() {
       <div className="wrapper">
         <div className="mx-auto mb-10 max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-800 dark:text-white/90 md:text-title-lg">
-            Posting alone isn't enough to grow on LinkedIn
+            Posting alone isn't enough to grow on <span className="text-[#0A66C2]">LinkedIn</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
             FeedVector gives you relevant LinkedIn posts to comment on every day, so you can build visibility beyond just posting on LinkedIn.
