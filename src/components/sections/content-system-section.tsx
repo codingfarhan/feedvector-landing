@@ -1,6 +1,6 @@
-const inputSignals = ["Profile", "Website", "Posts"]
-const engineSignals = ["Pillars", "Voice", "Data"]
-const outputSignals = ["Ideas", "Drafts", "Next Action"]
+const inputSignals = ["LinkedIn Profile", "Website", "Past Posts"]
+const engineSignals = ["Content Pillars", "Voice", "Data"]
+const outputSignals = ["Weekly Draft Posts", "Intelligent Analytics", "Recommended Posts to comment on"]
 
 function SignalGroup({ label, items }: { label: string; items: string[] }) {
   return (
@@ -10,7 +10,7 @@ function SignalGroup({ label, items }: { label: string; items: string[] }) {
         {items.map((item) => (
           <span
             key={item}
-            className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-800 dark:border-white/10 dark:bg-dark-primary dark:text-white/90"
+            className="rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-gray-800 dark:border-white/10 dark:bg-dark-primary dark:text-white/90 text-center items-center"
           >
             {item}
           </span>
@@ -28,7 +28,8 @@ export default function ContentSystemSection() {
           <div className="mx-auto mb-12 max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-800 dark:text-white/90 md:text-title-lg">How it works:</h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
-              FeedVector learns your business, plans relevant posts, helps you publish consistently and shows you what is working.
+              FeedVector learns your business, recommends posts to comment on, plans relevant posts, helps you publish consistently and shows you what
+              is working.
             </p>
           </div>
 
@@ -43,12 +44,15 @@ export default function ContentSystemSection() {
 
               <div className="content-engine-card relative overflow-hidden rounded-3xl p-[1px] shadow-theme-sm">
                 <div className="relative rounded-[23px] bg-gray-900 p-6 text-center text-white dark:bg-black/50">
-                  <svg className="content-engine-gear absolute right-5 top-5 text-primary-300/70" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                    <path
-                      d="M12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Z"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                    />
+                  <svg
+                    className="content-engine-gear absolute right-5 top-5 text-primary-300/70"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path d="M12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5Z" stroke="currentColor" strokeWidth="1.7" />
                     <path
                       d="M12 2.75v2.2M12 19.05v2.2M4.4 4.4l1.56 1.56M18.04 18.04l1.56 1.56M2.75 12h2.2M19.05 12h2.2M4.4 19.6l1.56-1.56M18.04 5.96 19.6 4.4"
                       stroke="currentColor"
