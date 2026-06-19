@@ -2,6 +2,7 @@ import FaqAccordion from "@/components/sections/faq-accordion"
 import ContentSystemSection from "@/components/sections/content-system-section"
 import FeatureShowcase from "@/components/sections/feature-showcase"
 import HeroSection from "@/components/sections/hero-section"
+import LinkedinEngagementSection from "@/components/sections/linkedin-engagement-section"
 import ToolsTab from "@/components/sections/tools-tab"
 import PricingSection from "@/components/sections/pricing"
 import AudienceSection from "@/components/sections/audience-section"
@@ -61,6 +62,7 @@ export default async function Home() {
     <>
       <Script id="json-ld-feedvector" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HeroSection />
+      <LinkedinEngagementSection />
       <ContentSystemSection />
       <FeatureShowcase />
       <ToolsTab />

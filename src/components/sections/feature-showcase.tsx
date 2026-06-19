@@ -164,7 +164,7 @@ export default function FeatureShowcase() {
         <div className="mx-auto mb-10 max-w-2xl text-center">
           <h2 className="mb-3 text-3xl font-bold text-gray-800 dark:text-white/90 md:text-title-lg">Grow with value content the algorithm loves</h2>
           <p className="mx-auto max-w-xl leading-6 text-gray-500 dark:text-gray-400">
-            Create high-performing posts and find the right conversations to join so you can grow your audience with FeedVector's content flows.
+            Create high-performing posts and find the right conversations to join so you can grow your audience and revenue on LinkedIn.
           </p>
         </div>
 
