@@ -9,7 +9,7 @@ export default function LinkedinEngagementSection() {
             Posting alone isn't enough to grow on LinkedIn
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-gray-500 dark:text-gray-400">
-            FeedVector gives you relevant LinkedIn posts to comment on every day, so you can build visibility beyond your own publishing schedule.
+            FeedVector gives you relevant LinkedIn posts to comment on every day, so you can build visibility beyond just posting on LinkedIn.
           </p>
         </div>
 
