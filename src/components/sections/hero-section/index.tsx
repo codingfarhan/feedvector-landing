@@ -14,8 +14,8 @@ export default function HeroSection() {
             <div className="text-center pb-16">
               <Subheading text="Stop sounding like AI and build trust" />
 
-              <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[700px]">
-                Turn <span className="text-[#0A66C2]">LinkedIn</span> posts and comments into <AnimatedHeadlineWord />
+              <h1 className="text-gray-700 mx-auto font-bold mb-4 text-4xl sm:text-[50px] dark:text-white/90 sm:leading-[64px] max-w-[800px]">
+                Grow on <span className="text-[#0A66C2]">LinkedIn</span> with content that brings you <AnimatedHeadlineWord />
               </h1>
               <p className="max-w-[537px] text-center mx-auto dark:text-gray-400 text-gray-500 text-base">
                 Create authentic content, discover relevant posts worth commenting on, and grow your visibility with smart analytics.

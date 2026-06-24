@@ -1,6 +1,9 @@
 import Image from "next/image"
 
+import { IntroVideo } from "./hero-section/intro-video"
+
 export default function LinkedinEngagementSection() {
+  // prettier-ignore
   return (
     <section className="border-y border-gray-200 bg-white py-14 dark:border-white/10 dark:bg-dark-primary md:py-24">
       <div className="wrapper">
@@ -15,23 +18,16 @@ export default function LinkedinEngagementSection() {
 
         <div className="mx-auto max-w-5xl rounded-[32px] border border-gray-200 bg-gray-50 p-3 shadow-theme-sm dark:border-white/10 dark:bg-white/[0.04] sm:p-5">
           <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-[#141414]">
-            <Image
-              src="/images/tab-image/engage-posts.png"
-              alt="Recommended LinkedIn posts to comment on in FeedVector"
-              width={1920}
-              height={1080}
-              className="block h-auto w-full dark:hidden"
-              priority
-            />
-            <Image
-              src="/images/tab-image/engage-posts-dark.png"
-              alt="Recommended LinkedIn posts to comment on in FeedVector"
-              width={1920}
-              height={1080}
-              className="hidden h-auto w-full dark:block"
-              priority
-            />
-
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline 
+  className="w-full h-full object-cover"
+      >
+        <source src="/images/tab-image/engage_posts.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
             <div className="engagement-cursor" aria-hidden="true">
               <svg className="engagement-cursor-pointer" width="32" height="32" viewBox="0 0 30 30" fill="none">
                 <path
