@@ -28,8 +28,6 @@ export default function HeroSection() {
                 >
                   Start for Free
                 </Link>
-
-                {/* <IntroVideo /> */}
               </div>
             </div>
           </div>
