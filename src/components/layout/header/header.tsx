@@ -45,10 +45,12 @@ export default function Header() {
             </button>
 
             <Link
-              href="https://app.feedvector.com"
+              href="https://calendar.app.google/r5ARqVFTkr3WCnFe7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="lg:inline-flex items-center px-5 py-3 gradient-btn hidden text-sm text-white rounded-full button-bg h-11"
             >
-              Get Started
+              Book a Demo
             </Link>
           </div>
         </div>

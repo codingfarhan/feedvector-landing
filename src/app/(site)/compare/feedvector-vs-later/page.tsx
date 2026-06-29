@@ -1,16 +1,24 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import Script from "next/script"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
 
 const comparisonRows = [
-  ["Product focus", "AI-first publishing workspace", "Social media management plus influencer and creator workflows"],
+  [
+    "Product focus",
+    "AI-first publishing workspace",
+    "Social media management plus influencer and creator workflows",
+  ],
   [
     "AI posture",
     "AI assistant, copilots, auto-complete, AI design, images, videos, and MCP workflows",
     "AI Ideas and Caption Writer powered by monthly AI credits",
   ],
-  ["Templates", "Hundreds of viral templates for LinkedIn", "Idea generation, captions, hashtags, and media workflows"],
+  [
+    "Templates",
+    "Hundreds of viral templates for LinkedIn",
+    "Idea generation, captions, hashtags, and media workflows",
+  ],
   [
     "Publishing",
     "Cross-posting, queue publishing, calendar planning, auto-actions, and MCP scheduling",
@@ -18,7 +26,7 @@ const comparisonRows = [
   ],
   [
     "Collaboration",
-    "Approvals, task delegation, shared calendars, and unlimited team members on Pro",
+    "Approvals, task delegation, shared calendars, and team access on Pro and Growth",
     "Approvals, access groups, external feedback, custom roles, and permissions",
   ],
   [
@@ -28,20 +36,36 @@ const comparisonRows = [
   ],
   [
     "Pricing",
-    "$29/month Pro plan with 50 channels, unlimited posts, and unlimited team members",
+    "$29 Standard, $99 Pro with 5 accounts, and $149 Growth with unlimited accounts",
     "Starter, Growth, and Scale plans with users, social sets, and AI credit limits",
   ],
-]
+];
 
 const pricingRows = [
-  ["FeedVector", "Free", "$0", "2 channels, 20 posts/month, AI copilots, picture editor, 2 AI images/month, 1 AI video/month"],
+  [
+    "FeedVector",
+    "Standard",
+    "$29/month",
+    "1 LinkedIn account, unlimited LinkedIn posts, recommended posts refreshed every 24 hours, analytics, workflow Plugs, integrations, 35 AI images/month, 20 AI videos/month",
+  ],
   [
     "FeedVector",
     "Pro",
-    "$29/month",
-    "50 channels, unlimited posts, analytics, workflow Plugs, integrations, unlimited team members, 35 AI images/month, 20 AI videos/month",
+    "$99/month",
+    "Everything in Standard, up to 5 connected accounts, recommended posts refreshed every 4 hours, team access, approvals, 100 AI images/month, and 35 AI videos/month",
   ],
-  ["Later", "Starter", "$18.75/month billed yearly", "1 social set, 1 user, 30 posts/profile/month, 5 AI credits/month, analytics up to 3 months"],
+  [
+    "FeedVector",
+    "Growth",
+    "$149/month",
+    "Everything in Pro, unlimited connected accounts, exportable client reports, 200 AI images/month, 50 AI videos/month, and multi-client workspace organization",
+  ],
+  [
+    "Later",
+    "Starter",
+    "$18.75/month billed yearly",
+    "1 social set, 1 user, 30 posts/profile/month, 5 AI credits/month, analytics up to 3 months",
+  ],
   [
     "Later",
     "Growth",
@@ -54,7 +78,7 @@ const pricingRows = [
     "$82.50/month billed yearly",
     "6 social sets, 4 users, unlimited posts, 100 AI credits/month, custom analytics, benchmarking, analytics up to 2 years",
   ],
-]
+];
 
 const sections = [
   { id: "at-a-glance", label: "At a glance" },
@@ -65,15 +89,15 @@ const sections = [
   { id: "analytics-pricing", label: "Analytics and pricing" },
   { id: "decision", label: "Decision guide" },
   { id: "verdict", label: "Verdict" },
-]
+];
 
 const feedVectorFits = [
   "You want AI to help create, refine, design, and schedule posts",
   "You publish heavily on LinkedIn and want viral templates",
   "You want AI images, AI videos, and workflow automation in one plan",
   "You want to schedule through AI clients like Claude or Cursor using MCP",
-  "You want unlimited teammates on a simple $29/month Pro plan",
-]
+  "You want team access and up to 5 accounts on the $99/month Pro plan",
+];
 
 const laterFits = [
   "You need detailed platform-by-platform scheduling documentation",
@@ -81,7 +105,7 @@ const laterFits = [
   "You need access groups, external approvals, custom roles, and permissions",
   "You want more explicit public documentation for analytics and reporting tiers",
   "You are running a broader social operations or agency workflow",
-]
+];
 
 const faqs = [
   {
@@ -99,7 +123,7 @@ const faqs = [
     answer:
       "Choose Later if you need structured social operations, platform-specific scheduling documentation, UGC collection, Link in Bio, social inbox workflows, external approvals, and granular access controls.",
   },
-]
+];
 
 export const metadata: Metadata = {
   title: "FeedVector vs Later: Which Tool Should You Choose?",
@@ -118,17 +142,26 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "FeedVector vs Later: Which Tool Should You Choose?",
-    description: "Compare FeedVector and Later for AI-native publishing, visual planning, collaboration, analytics, and pricing.",
+    description:
+      "Compare FeedVector and Later for AI-native publishing, visual planning, collaboration, analytics, and pricing.",
     url: "/compare/feedvector-vs-later",
-    images: [{ url: "/images/tab-image/viral-templates.png", width: 1200, height: 630, alt: "FeedVector viral templates preview" }],
+    images: [
+      {
+        url: "/images/tab-image/viral-templates.png",
+        width: 1200,
+        height: 630,
+        alt: "FeedVector viral templates preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Later",
-    description: "Compare FeedVector and Later for AI-first LinkedIn publishing and social media operations.",
+    description:
+      "Compare FeedVector and Later for AI-first LinkedIn publishing and social media operations.",
     images: ["/images/tab-image/viral-templates.png"],
   },
-}
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -165,12 +198,16 @@ const jsonLd = {
       })),
     },
   ],
-}
+};
 
 export default function FeedVectorVsLaterPage() {
   return (
     <>
-      <Script id="json-ld-feedvector-vs-later" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Script
+        id="json-ld-feedvector-vs-later"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="py-16 md:py-24">
         <div className="wrapper">
           <div className="mx-auto max-w-6xl">
@@ -182,12 +219,16 @@ export default function FeedVectorVsLaterPage() {
                   </div>
                   <div className="space-y-4">
                     <h1 className="max-w-4xl text-3xl font-bold tracking-tight text-gray-800 dark:text-white/90 md:text-5xl">
-                      FeedVector vs Later: AI publishing engine or social operations stack?
+                      FeedVector vs Later: AI publishing engine or social
+                      operations stack?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Later both help teams plan, schedule, collaborate, and analyze content. The difference is the workflow
-                      philosophy: FeedVector is built around AI-native LinkedIn publishing, while Later is a broader social media management platform with
-                      visual planning, UGC, Link in Bio, approvals, and reporting.
+                      FeedVector and Later both help teams plan, schedule,
+                      collaborate, and analyze content. The difference is the
+                      workflow philosophy: FeedVector is built around AI-native
+                      LinkedIn publishing, while Later is a broader social media
+                      management platform with visual planning, UGC, Link in
+                      Bio, approvals, and reporting.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3 sm:flex-row">
@@ -210,8 +251,12 @@ export default function FeedVectorVsLaterPage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-white/10">
                       <div>
-                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">FeedVector workflow</p>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">AI native scheduling thats simple.</p>
+                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
+                          FeedVector workflow
+                        </p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                          AI native scheduling thats simple.
+                        </p>
                       </div>
                       <span className="rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-600 dark:bg-primary-500/10 dark:text-primary-400 whitespace-nowrap">
                         AI-first
@@ -219,14 +264,27 @@ export default function FeedVectorVsLaterPage() {
                     </div>
                     <div className="mt-5 space-y-4">
                       <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                        FeedVector is built for teams that want templates, AI writing, AI visuals, scheduling, automation, and team collaboration in
-                        one simpler workflow.
+                        FeedVector is built for teams that want templates, AI
+                        writing, AI visuals, scheduling, automation, and team
+                        collaboration in one simpler workflow.
                       </p>
                       <div className="grid grid-cols-2 gap-3">
-                        <MetricCard value="$29" label="Flat Pro plan with every feature you'll ever need" />
-                        <MetricCard value="Unlimited" label="Posts and teammates" />
-                        <MetricCard value="AI" label="Images, videos, design, and copilots" />
-                        <MetricCard value="MCP" label="Claude and Cursor scheduling" />
+                        <MetricCard
+                          value="$29"
+                          label="Standard plan for core workflows"
+                        />
+                        <MetricCard
+                          value="$99"
+                          label="Pro plan with team access"
+                        />
+                        <MetricCard
+                          value="AI"
+                          label="Images, videos, design, and copilots"
+                        />
+                        <MetricCard
+                          value="MCP"
+                          label="Claude and Cursor scheduling"
+                        />
                       </div>
                     </div>
                   </div>
@@ -234,8 +292,12 @@ export default function FeedVectorVsLaterPage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-white/10">
                       <div>
-                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Later workflow</p>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Visual social operations and governance.</p>
+                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
+                          Later workflow
+                        </p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                          Visual social operations and governance.
+                        </p>
                       </div>
                       <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 dark:bg-white/10 dark:text-gray-300">
                         Operations
@@ -243,14 +305,28 @@ export default function FeedVectorVsLaterPage() {
                     </div>
                     <div className="mt-5 space-y-4">
                       <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                        Later is the better fit when you need visual planning, UGC workflows, Link in Bio, social inbox, stakeholder approvals, access
-                        controls, and detailed social operations.
+                        Later is the better fit when you need visual planning,
+                        UGC workflows, Link in Bio, social inbox, stakeholder
+                        approvals, access controls, and detailed social
+                        operations.
                       </p>
                       <div className="grid grid-cols-2 gap-3">
-                        <MetricCard value="Visual" label="Planner and calendar workflows" />
-                        <MetricCard value="UGC" label="Collect and manage assets" />
-                        <MetricCard value="Approvals" label="Internal and external review" />
-                        <MetricCard value="Reports" label="Plan-based analytics depth" />
+                        <MetricCard
+                          value="Visual"
+                          label="Planner and calendar workflows"
+                        />
+                        <MetricCard
+                          value="UGC"
+                          label="Collect and manage assets"
+                        />
+                        <MetricCard
+                          value="Approvals"
+                          label="Internal and external review"
+                        />
+                        <MetricCard
+                          value="Reports"
+                          label="Plan-based analytics depth"
+                        />
                       </div>
                     </div>
                   </div>
@@ -258,26 +334,43 @@ export default function FeedVectorVsLaterPage() {
 
                 <section id="at-a-glance" className="scroll-mt-28 space-y-5">
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">At a glance</h2>
+                    <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
+                      At a glance
+                    </h2>
                     <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                      If the buying question is "Which tool gives us the most leverage for AI-assisted publishing?", FeedVector is the stronger fit.
-                      If the question is "Which tool gives us more explicit social operations controls?", Later is stronger on public documentation.
+                      If the buying question is "Which tool gives us the most
+                      leverage for AI-assisted publishing?", FeedVector is the
+                      stronger fit. If the question is "Which tool gives us more
+                      explicit social operations controls?", Later is stronger
+                      on public documentation.
                     </p>
                   </div>
-                  <ComparisonTable rows={comparisonRows} columns={["Attribute", "FeedVector", "Later"]} />
+                  <ComparisonTable
+                    rows={comparisonRows}
+                    columns={["Attribute", "FeedVector", "Later"]}
+                  />
                 </section>
 
                 <section id="positioning" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="1" title="Positioning and workflow" />
+                  <ArticleHeading
+                    eyebrow="1"
+                    title="Positioning and workflow"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector is focused on one core problem: helping teams create and schedule high-performing LinkedIn posts with AI. Its workflow
-                    starts earlier in the creation process with viral templates, AI copilots, AI design, and AI media generation, then carries that
-                    work into scheduling, auto-actions, MCP, and analytics.
+                    FeedVector is focused on one core problem: helping teams
+                    create and schedule high-performing LinkedIn posts with AI.
+                    Its workflow starts earlier in the creation process with
+                    viral templates, AI copilots, AI design, and AI media
+                    generation, then carries that work into scheduling,
+                    auto-actions, MCP, and analytics.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Later is broader. Its social product sits alongside influencer marketing, creator monetization, Link in Bio, UGC collection,
-                    access controls, social inbox, visual planning, and reporting. That broader footprint is useful for teams that run social as an
-                    operations function, not just a content production workflow.
+                    Later is broader. Its social product sits alongside
+                    influencer marketing, creator monetization, Link in Bio, UGC
+                    collection, access controls, social inbox, visual planning,
+                    and reporting. That broader footprint is useful for teams
+                    that run social as an operations function, not just a
+                    content production workflow.
                   </p>
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <WorkflowCard
@@ -328,22 +421,36 @@ export default function FeedVectorVsLaterPage() {
                 </section>
 
                 <section id="publishing" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="3" title="Scheduling and publishing" />
+                  <ArticleHeading
+                    eyebrow="3"
+                    title="Scheduling and publishing"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector supports LinkedIn scheduling from a single calendar, queue-style publishing, auto-actions, integrations, and MCP scheduling
-                    from AI clients. That makes it a strong option for teams that already use AI assistants and want natural-language scheduling to
-                    become part of their daily workflow.
+                    FeedVector supports LinkedIn scheduling from a single
+                    calendar, queue-style publishing, auto-actions,
+                    integrations, and MCP scheduling from AI clients. That makes
+                    it a strong option for teams that already use AI assistants
+                    and want natural-language scheduling to become part of their
+                    daily workflow.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Later is more explicit on platform and post-type support. Its current public docs list Instagram, Facebook, Pinterest, TikTok,
-                    LinkedIn, Threads, YouTube Shorts, and Snapchat, with detailed limitations and supported post formats. Later also documents auto
-                    publish, multi-profile scheduling, Visual Planner, saved captions, draft posts, and best-time tools.
+                    Later is more explicit on platform and post-type support.
+                    Its current public docs list Instagram, Facebook, Pinterest,
+                    TikTok, LinkedIn, Threads, YouTube Shorts, and Snapchat,
+                    with detailed limitations and supported post formats. Later
+                    also documents auto publish, multi-profile scheduling,
+                    Visual Planner, saved captions, draft posts, and best-time
+                    tools.
                   </p>
                   <div className="rounded-2xl border border-primary-100 bg-primary-50 p-5 dark:border-primary-500/20 dark:bg-primary-500/10">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+                      Verdict
+                    </p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Later wins on publicly documented platform-by-platform publishing detail. FeedVector wins on automation, AI-client scheduling,
-                      and turning publishing into a more agentic workflow.
+                      Later wins on publicly documented platform-by-platform
+                      publishing detail. FeedVector wins on automation,
+                      AI-client scheduling, and turning publishing into a more
+                      agentic workflow.
                     </p>
                   </div>
                   <ImageShowcase
@@ -357,15 +464,23 @@ export default function FeedVectorVsLaterPage() {
                 <section id="collaboration" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="4" title="Collaboration and teams" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector includes approvals, task delegation, shared calendars, and unlimited team members on Pro. That is a strong economic
-                    advantage for teams that want many collaborators without each seat changing the math.
+                    FeedVector includes approvals, task delegation, shared
+                    calendars, and team access on Pro and Growth. Pro supports
+                    up to 5 connected accounts, while Growth supports unlimited
+                    accounts for client-heavy workflows.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Later is stronger on public detail for governance. Its Growth and Scale tiers include collaboration and approvals, social inbox,
-                    UGC collection, custom roles and permissions, and access groups. For agencies and multi-brand workflows, that detail can matter.
+                    Later is stronger on public detail for governance. Its
+                    Growth and Scale tiers include collaboration and approvals,
+                    social inbox, UGC collection, custom roles and permissions,
+                    and access groups. For agencies and multi-brand workflows,
+                    that detail can matter.
                   </p>
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                    <FeatureList title="Choose FeedVector for" items={feedVectorFits} />
+                    <FeatureList
+                      title="Choose FeedVector for"
+                      items={feedVectorFits}
+                    />
                     <FeatureList title="Choose Later for" items={laterFits} />
                   </div>
                   <ImageShowcase
@@ -376,17 +491,37 @@ export default function FeedVectorVsLaterPage() {
                   />
                 </section>
 
-                <section id="analytics-pricing" className="scroll-mt-28 space-y-6">
-                  <ArticleHeading eyebrow="5" title="Analytics, integrations, and pricing" />
+                <section
+                  id="analytics-pricing"
+                  className="scroll-mt-28 space-y-6"
+                >
+                  <ArticleHeading
+                    eyebrow="5"
+                    title="Analytics, integrations, and pricing"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Later is more explicit about analytics depth on public pages. It documents plan-based lookback windows, shareable reports, custom
-                    analytics on Scale, competitive benchmarking, and social listening powered future insights on higher tiers.
+                    Later is more explicit about analytics depth on public
+                    pages. It documents plan-based lookback windows, shareable
+                    reports, custom analytics on Scale, competitive
+                    benchmarking, and social listening powered future insights
+                    on higher tiers.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector's public positioning is lighter on report-format detail, but stronger for AI-native teams: third-party integrations,
-                    Plugs for complex workflows, and a documented MCP server with API-key or Bearer authentication for AI clients.
+                    FeedVector's public positioning is lighter on report-format
+                    detail, but stronger for AI-native teams: third-party
+                    integrations, Plugs for complex workflows, and a documented
+                    MCP server with API-key or Bearer authentication for AI
+                    clients.
                   </p>
-                  <ComparisonTable rows={pricingRows} columns={["Product", "Plan", "Public price", "Key limits and inclusions"]} />
+                  <ComparisonTable
+                    rows={pricingRows}
+                    columns={[
+                      "Product",
+                      "Plan",
+                      "Public price",
+                      "Key limits and inclusions",
+                    ]}
+                  />
                   <ImageShowcase
                     src="/images/feature-showcase/analytics-opportunities.png"
                     alt="FeedVector analytics dashboard"
@@ -396,14 +531,18 @@ export default function FeedVectorVsLaterPage() {
                     height={1186}
                   />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    The economic takeaway is simple: FeedVector bundles rich AI creation, automation, MCP access, unlimited posts, and unlimited team
-                    members into a $29/month Pro plan. Later's costs rise as you need more social sets, users, AI credits, analytics depth, and
-                    governance.
+                    The economic takeaway is simple: FeedVector separates solo
+                    users, core creators, teams, and agencies into clear tiers.
+                    Later's costs rise as you need more social sets, users, AI
+                    credits, analytics depth, and governance.
                   </p>
                 </section>
 
                 <section id="decision" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="6" title="Ideal fit and decision criteria" />
+                  <ArticleHeading
+                    eyebrow="6"
+                    title="Ideal fit and decision criteria"
+                  />
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <DecisionCard
                       title="FeedVector is the better fit if"
@@ -412,7 +551,7 @@ export default function FeedVectorVsLaterPage() {
                         "You want AI drafting, templates, visuals, and videos",
                         "You want automation beyond standard scheduling",
                         "You want AI-agent connectivity through MCP",
-                        "You want simple pricing with unlimited teammates",
+                        "You want clear team and growth tiers",
                       ]}
                     />
                     <DecisionCard
@@ -432,24 +571,31 @@ export default function FeedVectorVsLaterPage() {
                   <ArticleHeading eyebrow="7" title="Final verdict" />
                   <div className="space-y-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                     <p>
-                      FeedVector is the better choice if your primary goal is to build an AI-native publishing system rather than a broader social
-                      operations stack. It leads with viral templates, AI copilots, AI design, image and video generation, workflow automation, and
-                      MCP-based scheduling.
+                      FeedVector is the better choice if your primary goal is to
+                      build an AI-native publishing system rather than a broader
+                      social operations stack. It leads with viral templates, AI
+                      copilots, AI design, image and video generation, workflow
+                      automation, and MCP-based scheduling.
                     </p>
                     <p>
-                      Later is stronger where governance, platform-by-platform documentation, UGC operations, social inbox, Link in Bio, and reporting
-                      sophistication matter most.
+                      Later is stronger where governance, platform-by-platform
+                      documentation, UGC operations, social inbox, Link in Bio,
+                      and reporting sophistication matter most.
                     </p>
                     <p>
-                      On the narrower question of which platform gives you more leverage for AI-assisted content production and publishing per dollar,
-                      FeedVector comes out ahead.
+                      On the narrower question of which platform gives you more
+                      leverage for AI-assisted content production and publishing
+                      per dollar, FeedVector comes out ahead.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-white/5">
-                    <p className="text-xl font-bold text-gray-800 dark:text-white/90">The practical answer</p>
+                    <p className="text-xl font-bold text-gray-800 dark:text-white/90">
+                      The practical answer
+                    </p>
                     <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Pick Later for visual social operations and governance. Pick FeedVector for AI-first content production, automation, MCP
-                      scheduling, and simple team pricing.
+                      Pick Later for visual social operations and governance.
+                      Pick FeedVector for AI-first content production,
+                      automation, MCP scheduling, and simple team pricing.
                     </p>
                     <Link
                       href="https://app.feedvector.com"
@@ -461,12 +607,21 @@ export default function FeedVectorVsLaterPage() {
                 </section>
 
                 <section className="space-y-5">
-                  <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">FAQs</h2>
+                  <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
+                    FAQs
+                  </h2>
                   <div className="space-y-3">
                     {faqs.map((faq) => (
-                      <div key={faq.question} className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                        <h3 className="text-base font-bold text-gray-800 dark:text-white/90">{faq.question}</h3>
-                        <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">{faq.answer}</p>
+                      <div
+                        key={faq.question}
+                        className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5"
+                      >
+                        <h3 className="text-base font-bold text-gray-800 dark:text-white/90">
+                          {faq.question}
+                        </h3>
+                        <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
+                          {faq.answer}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -475,7 +630,9 @@ export default function FeedVectorVsLaterPage() {
 
               <aside className="hidden lg:block">
                 <div className="sticky top-24 rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                  <p className="text-xs font-extrabold uppercase tracking-widest text-gray-800 dark:text-white/90">On this page</p>
+                  <p className="text-xs font-extrabold uppercase tracking-widest text-gray-800 dark:text-white/90">
+                    On this page
+                  </p>
                   <nav className="mt-4 space-y-2.5 text-sm">
                     {sections.map((section) => (
                       <a
@@ -488,9 +645,12 @@ export default function FeedVectorVsLaterPage() {
                     ))}
                   </nav>
                   <div className="mt-5 border-t border-gray-200 pt-4 dark:border-white/10">
-                    <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Short summary</p>
+                    <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
+                      Short summary
+                    </p>
                     <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
-                      Pick FeedVector for AI-native creation and automation. Pick Later for visual social operations and governance.
+                      Pick FeedVector for AI-native creation and automation.
+                      Pick Later for visual social operations and governance.
                     </p>
                   </div>
                 </div>
@@ -500,29 +660,59 @@ export default function FeedVectorVsLaterPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-function ArticleHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
+function ArticleHeading({
+  eyebrow,
+  title,
+}: {
+  eyebrow: string;
+  title: string;
+}) {
   return (
     <div className="space-y-2">
-      <p className="text-sm font-bold text-primary-600 dark:text-primary-400">{eyebrow}</p>
-      <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">{title}</h2>
+      <p className="text-sm font-bold text-primary-600 dark:text-primary-400">
+        {eyebrow}
+      </p>
+      <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
+        {title}
+      </h2>
     </div>
-  )
+  );
 }
 
-function ComparisonBlock({ title, body, verdict }: { title: string; body: string; verdict: string }) {
+function ComparisonBlock({
+  title,
+  body,
+  verdict,
+}: {
+  title: string;
+  body: string;
+  verdict: string;
+}) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
-      <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">{body}</p>
-      <p className="mt-4 rounded-xl bg-gray-50 p-4 text-sm leading-6 text-gray-600 dark:bg-white/5 dark:text-gray-300">{verdict}</p>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {title}
+      </h3>
+      <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
+        {body}
+      </p>
+      <p className="mt-4 rounded-xl bg-gray-50 p-4 text-sm leading-6 text-gray-600 dark:bg-white/5 dark:text-gray-300">
+        {verdict}
+      </p>
     </div>
-  )
+  );
 }
 
-function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[] }) {
+function ComparisonTable({
+  rows,
+  columns,
+}: {
+  rows: string[][];
+  columns: string[];
+}) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
       <div className="overflow-x-auto">
@@ -542,7 +732,11 @@ function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[
                 {row.map((cell, index) => (
                   <td
                     key={`${row[0]}-${index}`}
-                    className={index === 0 ? "px-5 py-4 font-medium text-gray-800 dark:text-white/90" : "px-5 py-4 text-gray-600 dark:text-gray-300"}
+                    className={
+                      index === 0
+                        ? "px-5 py-4 font-medium text-gray-800 dark:text-white/90"
+                        : "px-5 py-4 text-gray-600 dark:text-gray-300"
+                    }
                   >
                     {cell}
                   </td>
@@ -553,32 +747,42 @@ function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[
         </table>
       </div>
     </div>
-  )
+  );
 }
 
 function FeatureList({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {title}
+      </h3>
       <ul className="mt-4 space-y-3">
         {items.map((item) => (
-          <li key={item} className="flex gap-3 text-base text-gray-600 dark:text-gray-300">
+          <li
+            key={item}
+            className="flex gap-3 text-base text-gray-600 dark:text-gray-300"
+          >
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary-500" />
             <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 function WorkflowCard({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {title}
+      </h3>
       <ol className="mt-4 space-y-3">
         {items.map((item, index) => (
-          <li key={item} className="flex gap-3 text-base text-gray-600 dark:text-gray-300">
+          <li
+            key={item}
+            className="flex gap-3 text-base text-gray-600 dark:text-gray-300"
+          >
             <span className="flex size-7 shrink-0 items-center justify-center rounded-full bg-gray-100 text-xs font-semibold text-gray-600 dark:bg-white/10 dark:text-gray-300">
               {index + 1}
             </span>
@@ -587,31 +791,40 @@ function WorkflowCard({ title, items }: { title: string; items: string[] }) {
         ))}
       </ol>
     </div>
-  )
+  );
 }
 
 function DecisionCard({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {title}
+      </h3>
       <ul className="mt-4 space-y-3">
         {items.map((item) => (
-          <li key={item} className="text-base leading-7 text-gray-600 dark:text-gray-300">
+          <li
+            key={item}
+            className="text-base leading-7 text-gray-600 dark:text-gray-300"
+          >
             {item}
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 function MetricCard({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-xl bg-gray-50 p-4 dark:bg-white/5">
-      <p className="text-lg font-bold text-gray-800 dark:text-white/90">{value}</p>
-      <p className="mt-1 text-xs leading-5 text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {value}
+      </p>
+      <p className="mt-1 text-xs leading-5 text-gray-500 dark:text-gray-400">
+        {label}
+      </p>
     </div>
-  )
+  );
 }
 
 function ImageShowcase({
@@ -622,20 +835,30 @@ function ImageShowcase({
   width = 936,
   height = 535,
 }: {
-  src: string
-  alt: string
-  title: string
-  description: string
-  width?: number
-  height?: number
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+  width?: number;
+  height?: number;
 }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
-      <Image src={src} alt={alt} width={width} height={height} className="h-auto w-full" />
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="h-auto w-full"
+      />
       <div className="border-t border-gray-200 p-5 dark:border-white/10">
-        <p className="text-base font-semibold text-gray-800 dark:text-white/90">{title}</p>
-        <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+          {title}
+        </p>
+        <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">
+          {description}
+        </p>
       </div>
     </div>
-  )
+  );
 }

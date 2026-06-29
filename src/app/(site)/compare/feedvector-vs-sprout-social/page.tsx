@@ -1,7 +1,7 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import Script from "next/script"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import Script from "next/script";
 
 const comparisonRows = [
   [
@@ -19,7 +19,11 @@ const comparisonRows = [
     "AI assistant, viral templates, AI design, AI images, AI videos, and copilots",
     "Trellis AI, AI Assist, AI insights, reply enhancement, and social intelligence workflows",
   ],
-  ["Templates", "Viral templates for LinkedIn", "Free templates and social resources outside the core publishing workflow"],
+  [
+    "Templates",
+    "Viral templates for LinkedIn",
+    "Free templates and social resources outside the core publishing workflow",
+  ],
   [
     "Scheduling",
     "LinkedIn calendar planning, queues, and MCP scheduling",
@@ -30,26 +34,58 @@ const comparisonRows = [
     "Cross-channel analytics connected to the publishing workflow",
     "Profile and post reports, Premium Analytics add-on, benchmarking, ROI charts, and shareable reports",
   ],
-  ["Inbox and care", "Not the main focus", "Smart Inbox, customer care reports, sentiment, spike alerts, saved replies, and helpdesk integrations"],
-  ["Listening", "Not the main focus", "Listening add-on with AI insights, sentiment tracking, spike alerts, and machine-learning filters"],
-  ["Team access", "Unlimited team members on Pro", "Per-seat pricing with advanced team workflows on higher plans"],
-  ["Pricing", "Free and $29/month Pro", "Essentials from $79/seat/month, Standard $199, Professional $299, Advanced $399, Enterprise custom"],
+  [
+    "Inbox and care",
+    "Not the main focus",
+    "Smart Inbox, customer care reports, sentiment, spike alerts, saved replies, and helpdesk integrations",
+  ],
+  [
+    "Listening",
+    "Not the main focus",
+    "Listening add-on with AI insights, sentiment tracking, spike alerts, and machine-learning filters",
+  ],
+  [
+    "Team access",
+    "Team access on Pro and client reporting on Growth",
+    "Per-seat pricing with advanced team workflows on higher plans",
+  ],
+  [
+    "Pricing",
+    "$29 Standard, $99 Pro, and $149 Growth",
+    "Essentials from $79/seat/month, Standard $199, Professional $299, Advanced $399, Enterprise custom",
+  ],
   [
     "AI-agent workflow",
     "Dedicated FeedVector MCP for Claude, Cursor, and MCP clients",
     "No comparable public MCP scheduling workflow found on reviewed pages",
   ],
-]
+];
 
 const pricingRows = [
-  ["FeedVector", "Free", "$0", "2 channels, 20 posts/month, AI copilots, picture editor, 2 AI images/month, 1 AI video/month"],
+  [
+    "FeedVector",
+    "Standard",
+    "$29/month",
+    "1 LinkedIn account, unlimited LinkedIn posts, recommended posts refreshed every 24 hours, analytics, workflow Plugs, integrations, 35 AI images/month, 20 AI videos/month",
+  ],
   [
     "FeedVector",
     "Pro",
-    "$29/month",
-    "50 channels, unlimited posts, analytics, workflow Plugs, integrations, unlimited team members, 35 AI images/month, 20 AI videos/month",
+    "$99/month",
+    "Everything in Standard, up to 5 connected accounts, recommended posts refreshed every 4 hours, team access, approvals, 100 AI images/month, and 35 AI videos/month",
   ],
-  ["Sprout Social", "Essentials", "$79/seat/month billed annually", "Up to 5 social profiles, optimal send times, and profile/post-level reporting"],
+  [
+    "FeedVector",
+    "Growth",
+    "$149/month",
+    "Everything in Pro, unlimited connected accounts, exportable client reports, 200 AI images/month, 50 AI videos/month, and multi-client workspace organization",
+  ],
+  [
+    "Sprout Social",
+    "Essentials",
+    "$79/seat/month billed annually",
+    "Up to 5 social profiles, optimal send times, and profile/post-level reporting",
+  ],
   [
     "Sprout Social",
     "Standard",
@@ -68,7 +104,7 @@ const pricingRows = [
     "$399/seat/month billed annually",
     "Enhance Reply by AI Assist, sentiment in Smart Inbox and Reviews, API, helpdesk integrations, productivity reports, and spike alerts",
   ],
-]
+];
 
 const sections = [
   { id: "at-a-glance", label: "At a glance" },
@@ -81,7 +117,7 @@ const sections = [
   { id: "collaboration-pricing", label: "Teams and pricing" },
   { id: "decision", label: "Decision guide" },
   { id: "verdict", label: "Verdict" },
-]
+];
 
 const feedVectorFits = [
   "You want to create posts faster with AI",
@@ -89,9 +125,9 @@ const feedVectorFits = [
   "You want viral templates built into the workflow",
   "You want AI design, image generation, and video generation",
   "You want simple LinkedIn scheduling",
-  "You want unlimited team members without per-seat pricing",
+  "You want team access without enterprise complexity",
   "You want MCP support for Claude, Cursor, and AI-agent workflows",
-]
+];
 
 const sproutFits = [
   "You are a mid-market or enterprise team",
@@ -101,13 +137,13 @@ const sproutFits = [
   "You need influencer marketing or employee advocacy",
   "You need helpdesk integrations, API access, or enterprise support",
   "You have a dedicated social media team with budget",
-]
+];
 
 const faqs = [
   {
     question: "Is FeedVector better than Sprout Social?",
     answer:
-      "FeedVector is better if your priority is AI-native LinkedIn content creation, viral templates, simple scheduling, MCP workflows, unlimited teammates, and affordable pricing. Sprout Social is stronger if you need enterprise social intelligence, Smart Inbox, social listening, customer care, premium analytics, and per-seat governance.",
+      "FeedVector is better if your priority is AI-native LinkedIn content creation, viral templates, simple scheduling, MCP workflows, team access, and affordable Growth tiers. Sprout Social is stronger if you need enterprise social intelligence, Smart Inbox, social listening, customer care, premium analytics, and per-seat governance.",
   },
   {
     question: "Who should choose FeedVector over Sprout Social?",
@@ -119,7 +155,7 @@ const faqs = [
     answer:
       "Choose Sprout Social if you need Smart Inbox, social customer care, social listening, sentiment tracking, premium reporting, influencer marketing, employee advocacy, API access, helpdesk integrations, or enterprise team workflows.",
   },
-]
+];
 
 export const metadata: Metadata = {
   title: "FeedVector vs Sprout Social: Which Tool Should You Choose?",
@@ -141,15 +177,23 @@ export const metadata: Metadata = {
     description:
       "Compare FeedVector and Sprout Social for AI-first LinkedIn publishing, enterprise social intelligence, customer care, analytics, automation, and pricing.",
     url: "/compare/feedvector-vs-sprout-social",
-    images: [{ url: "/images/tab-image/schedule.png", width: 1200, height: 630, alt: "FeedVector scheduling preview" }],
+    images: [
+      {
+        url: "/images/tab-image/schedule.png",
+        width: 1200,
+        height: 630,
+        alt: "FeedVector scheduling preview",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Sprout Social",
-    description: "Compare FeedVector and Sprout Social for AI-first LinkedIn publishing and enterprise social media management.",
+    description:
+      "Compare FeedVector and Sprout Social for AI-first LinkedIn publishing and enterprise social media management.",
     images: ["/images/tab-image/schedule.png"],
   },
-}
+};
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -171,7 +215,8 @@ const jsonLd = {
           url: "https://feedvector.com/images/logo-black.svg",
         },
       },
-      mainEntityOfPage: "https://feedvector.com/compare/feedvector-vs-sprout-social",
+      mainEntityOfPage:
+        "https://feedvector.com/compare/feedvector-vs-sprout-social",
       image: "https://feedvector.com/images/tab-image/schedule.png",
     },
     {
@@ -186,12 +231,16 @@ const jsonLd = {
       })),
     },
   ],
-}
+};
 
 export default function FeedVectorVsSproutSocialPage() {
   return (
     <>
-      <Script id="json-ld-feedvector-vs-sprout-social" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Script
+        id="json-ld-feedvector-vs-sprout-social"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="py-16 md:py-24">
         <div className="wrapper">
           <div className="mx-auto max-w-6xl">
@@ -206,10 +255,14 @@ export default function FeedVectorVsSproutSocialPage() {
                       FeedVector vs Sprout Social: Which is better?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Sprout Social both help teams publish content, but they sit in different categories. Sprout Social is an
-                      enterprise-grade social intelligence platform for publishing, engagement, customer care, listening, reporting, and large-team
-                      workflows. FeedVector is a simpler AI-first scheduler for fast content creation, viral templates, automation, MCP workflows, and
-                      affordable collaboration.
+                      FeedVector and Sprout Social both help teams publish
+                      content, but they sit in different categories. Sprout
+                      Social is an enterprise-grade social intelligence platform
+                      for publishing, engagement, customer care, listening,
+                      reporting, and large-team workflows. FeedVector is a
+                      simpler AI-first scheduler for fast content creation,
+                      viral templates, automation, MCP workflows, and affordable
+                      collaboration.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3 sm:flex-row">
@@ -232,8 +285,12 @@ export default function FeedVectorVsSproutSocialPage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-white/10">
                       <div>
-                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">FeedVector workflow</p>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">AI-first publishing without enterprise complexity.</p>
+                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
+                          FeedVector workflow
+                        </p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                          AI-first publishing without enterprise complexity.
+                        </p>
                       </div>
                       <span className="rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-600 dark:bg-primary-500/10 dark:text-primary-400">
                         Lean teams
@@ -241,14 +298,25 @@ export default function FeedVectorVsSproutSocialPage() {
                     </div>
                     <div className="mt-5 space-y-4">
                       <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                        FeedVector is the better fit when you want AI to help create, design, schedule, automate, and improve content without buying a
-                        full customer care and social intelligence platform.
+                        FeedVector is the better fit when you want AI to help
+                        create, design, schedule, automate, and improve content
+                        without buying a full customer care and social
+                        intelligence platform.
                       </p>
                       <div className="grid grid-cols-2 gap-3">
-                        <MetricCard value="$29" label="Simple Pro plan" />
-                        <MetricCard value="Unlimited" label="Posts and teammates" />
-                        <MetricCard value="AI" label="Templates, design, images, and videos" />
-                        <MetricCard value="MCP" label="Claude and Cursor scheduling" />
+                        <MetricCard value="$29" label="Standard plan" />
+                        <MetricCard
+                          value="$99"
+                          label="Pro plan with team access"
+                        />
+                        <MetricCard
+                          value="AI"
+                          label="Templates, design, images, and videos"
+                        />
+                        <MetricCard
+                          value="MCP"
+                          label="Claude and Cursor scheduling"
+                        />
                       </div>
                     </div>
                   </div>
@@ -256,8 +324,12 @@ export default function FeedVectorVsSproutSocialPage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-white/10">
                       <div>
-                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Sprout Social workflow</p>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Social intelligence, inbox, care, and reporting.</p>
+                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
+                          Sprout Social workflow
+                        </p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
+                          Social intelligence, inbox, care, and reporting.
+                        </p>
                       </div>
                       <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 dark:bg-white/10 dark:text-gray-300">
                         Enterprise
@@ -265,14 +337,28 @@ export default function FeedVectorVsSproutSocialPage() {
                     </div>
                     <div className="mt-5 space-y-4">
                       <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                        Sprout Social is the better fit when you need mature social operations: Smart Inbox, customer care, listening, sentiment,
-                        premium analytics, helpdesk integrations, and enterprise workflows.
+                        Sprout Social is the better fit when you need mature
+                        social operations: Smart Inbox, customer care,
+                        listening, sentiment, premium analytics, helpdesk
+                        integrations, and enterprise workflows.
                       </p>
                       <div className="grid grid-cols-2 gap-3">
-                        <MetricCard value="$79+" label="Per-seat annual plans" />
-                        <MetricCard value="Smart Inbox" label="Engagement and customer care" />
-                        <MetricCard value="Listening" label="AI insights and sentiment add-on" />
-                        <MetricCard value="Enterprise" label="SSO, support, API, and integrations" />
+                        <MetricCard
+                          value="$79+"
+                          label="Per-seat annual plans"
+                        />
+                        <MetricCard
+                          value="Smart Inbox"
+                          label="Engagement and customer care"
+                        />
+                        <MetricCard
+                          value="Listening"
+                          label="AI insights and sentiment add-on"
+                        />
+                        <MetricCard
+                          value="Enterprise"
+                          label="SSO, support, API, and integrations"
+                        />
                       </div>
                     </div>
                   </div>
@@ -280,36 +366,60 @@ export default function FeedVectorVsSproutSocialPage() {
 
                 <section id="at-a-glance" className="scroll-mt-28 space-y-5">
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">At a glance</h2>
+                    <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
+                      At a glance
+                    </h2>
                     <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Sprout Social is stronger for large companies with complex social operations. FeedVector is stronger for creators, startups,
-                      lean teams, and small agencies that want to publish more content faster without enterprise pricing.
+                      Sprout Social is stronger for large companies with complex
+                      social operations. FeedVector is stronger for creators,
+                      startups, lean teams, and small agencies that want to
+                      publish more content faster without enterprise pricing.
                     </p>
                   </div>
-                  <ComparisonTable rows={comparisonRows} columns={["Feature", "FeedVector", "Sprout Social"]} />
+                  <ComparisonTable
+                    rows={comparisonRows}
+                    columns={["Feature", "FeedVector", "Sprout Social"]}
+                  />
                 </section>
 
                 <section id="positioning" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="1" title="Product positioning: AI publishing system vs social intelligence platform" />
+                  <ArticleHeading
+                    eyebrow="1"
+                    title="Product positioning: AI publishing system vs social intelligence platform"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector presents itself as a LinkedIn content tool with AI. Its homepage focuses on creating and scheduling high-performing
-                    posts, viral templates for LinkedIn, team collaboration, automation, and analytics from one workspace.
+                    FeedVector presents itself as a LinkedIn content tool with
+                    AI. Its homepage focuses on creating and scheduling
+                    high-performing posts, viral templates for LinkedIn, team
+                    collaboration, automation, and analytics from one workspace.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Sprout Social presents itself as an AI-powered social intelligence platform. Its public pages emphasize publishing, engagement,
-                    Smart Inbox, social listening, sentiment, influencer marketing, employee advocacy, customer care, and enterprise reporting.
+                    Sprout Social presents itself as an AI-powered social
+                    intelligence platform. Its public pages emphasize
+                    publishing, engagement, Smart Inbox, social listening,
+                    sentiment, influencer marketing, employee advocacy, customer
+                    care, and enterprise reporting.
                   </p>
                   <div className="rounded-2xl border border-primary-100 bg-primary-50 p-5 dark:border-primary-500/20 dark:bg-primary-500/10">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+                      Verdict
+                    </p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Sprout Social is much broader. FeedVector is more focused. That focus is an advantage for teams whose main job is creating
-                      better posts and staying consistent.
+                      Sprout Social is much broader. FeedVector is more focused.
+                      That focus is an advantage for teams whose main job is
+                      creating better posts and staying consistent.
                     </p>
                   </div>
                 </section>
 
-                <section id="content-creation" className="scroll-mt-28 space-y-6">
-                  <ArticleHeading eyebrow="2" title="Content creation: FeedVector is more creator-first" />
+                <section
+                  id="content-creation"
+                  className="scroll-mt-28 space-y-6"
+                >
+                  <ArticleHeading
+                    eyebrow="2"
+                    title="Content creation: FeedVector is more creator-first"
+                  />
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
@@ -331,20 +441,31 @@ export default function FeedVectorVsSproutSocialPage() {
                 </section>
 
                 <section id="publishing" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="3" title="Scheduling and publishing" />
+                  <ArticleHeading
+                    eyebrow="3"
+                    title="Scheduling and publishing"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector supports planning ahead, queueing posts, and keeping a consistent LinkedIn calendar. It
-                    positions scheduling as part of a broader AI-assisted content workflow.
+                    FeedVector supports planning ahead, queueing posts, and
+                    keeping a consistent LinkedIn calendar. It positions
+                    scheduling as part of a broader AI-assisted content
+                    workflow.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Sprout Social includes publishing and content planning, collaborative calendars, advanced scheduling, Sprout Queue, multi-profile
-                    publishing, media publishing, image and video editing, and ViralPost send-time optimization.
+                    Sprout Social includes publishing and content planning,
+                    collaborative calendars, advanced scheduling, Sprout Queue,
+                    multi-profile publishing, media publishing, image and video
+                    editing, and ViralPost send-time optimization.
                   </p>
                   <div className="rounded-2xl border border-primary-100 bg-primary-50 p-5 dark:border-primary-500/20 dark:bg-primary-500/10">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+                      Verdict
+                    </p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Sprout is stronger for mature social teams that need structured publishing plus engagement and reporting. FeedVector is better
-                      for lean teams that want simpler scheduling without the enterprise layer.
+                      Sprout is stronger for mature social teams that need
+                      structured publishing plus engagement and reporting.
+                      FeedVector is better for lean teams that want simpler
+                      scheduling without the enterprise layer.
                     </p>
                   </div>
                   <ImageShowcase
@@ -358,16 +479,23 @@ export default function FeedVectorVsSproutSocialPage() {
                 <section id="analytics" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="4" title="Analytics and reporting" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Sprout Social is clearly stronger on analytics depth. It includes profile and post-level reporting, and offers Premium Analytics
-                    as an add-on with advanced filtering, ROI charts, benchmarking, and shareable stakeholder reports.
+                    Sprout Social is clearly stronger on analytics depth. It
+                    includes profile and post-level reporting, and offers
+                    Premium Analytics as an add-on with advanced filtering, ROI
+                    charts, benchmarking, and shareable stakeholder reports.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector offers analytics on Pro and positions analytics as a way to track performance and optimize publishing.
+                    FeedVector offers analytics on Pro and positions analytics
+                    as a way to track performance and optimize publishing.
                   </p>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+                      Verdict
+                    </p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Sprout Social wins analytics and reporting. FeedVector is better for teams that need quick feedback on what content is working.
+                      Sprout Social wins analytics and reporting. FeedVector is
+                      better for teams that need quick feedback on what content
+                      is working.
                     </p>
                   </div>
                   <ImageShowcase
@@ -381,33 +509,51 @@ export default function FeedVectorVsSproutSocialPage() {
                 </section>
 
                 <section id="engagement" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="5" title="Engagement, inbox, and customer care" />
+                  <ArticleHeading
+                    eyebrow="5"
+                    title="Engagement, inbox, and customer care"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    This is Sprout Social's strongest area. Sprout highlights Smart Inbox, conversation history, contact views, customer care reports,
-                    sentiment in Smart Inbox and Reviews, message spike alerts, saved replies, helpdesk integrations, case management, and team
-                    productivity reporting.
+                    This is Sprout Social's strongest area. Sprout highlights
+                    Smart Inbox, conversation history, contact views, customer
+                    care reports, sentiment in Smart Inbox and Reviews, message
+                    spike alerts, saved replies, helpdesk integrations, case
+                    management, and team productivity reporting.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector focuses more on scheduling, AI content, templates, design, teamwork, auto-actions, and analytics. It is not primarily a
-                    customer care or inbox platform.
+                    FeedVector focuses more on scheduling, AI content,
+                    templates, design, teamwork, auto-actions, and analytics. It
+                    is not primarily a customer care or inbox platform.
                   </p>
                   <div className="rounded-2xl border border-primary-100 bg-primary-50 p-5 dark:border-primary-500/20 dark:bg-primary-500/10">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+                      Verdict
+                    </p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Sprout wins if you need social support, inbox routing, and customer care operations. FeedVector is for publishing and growth.
+                      Sprout wins if you need social support, inbox routing, and
+                      customer care operations. FeedVector is for publishing and
+                      growth.
                     </p>
                   </div>
                 </section>
 
                 <section id="automation" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="6" title="Automation and AI-agent workflows" />
+                  <ArticleHeading
+                    eyebrow="6"
+                    title="Automation and AI-agent workflows"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector has a strong modern differentiator: MCP. Users can connect Claude, Cursor, or any MCP-compatible client to FeedVector
-                    and manage LinkedIn scheduling through natural language.
+                    FeedVector has a strong modern differentiator: MCP. Users
+                    can connect Claude, Cursor, or any MCP-compatible client to
+                    FeedVector and manage LinkedIn scheduling through natural
+                    language.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Sprout Social has strong automation around insights, inbox, customer care, listening, AI Assist, APIs, and helpdesk integrations
-                    on higher plans. I did not find a comparable public MCP-style scheduling workflow on the reviewed Sprout pages.
+                    Sprout Social has strong automation around insights, inbox,
+                    customer care, listening, AI Assist, APIs, and helpdesk
+                    integrations on higher plans. I did not find a comparable
+                    public MCP-style scheduling workflow on the reviewed Sprout
+                    pages.
                   </p>
                   <ImageShowcase
                     src="/images/tab-image/plugs.png"
@@ -417,15 +563,26 @@ export default function FeedVectorVsSproutSocialPage() {
                   />
                 </section>
 
-                <section id="collaboration-pricing" className="scroll-mt-28 space-y-6">
-                  <ArticleHeading eyebrow="7" title="Team collaboration and pricing" />
+                <section
+                  id="collaboration-pricing"
+                  className="scroll-mt-28 space-y-6"
+                >
+                  <ArticleHeading
+                    eyebrow="7"
+                    title="Team collaboration and pricing"
+                  />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector's Pro plan includes unlimited team members, approvals, shared calendars, task delegation, and team collaboration. That
-                    is one of its clearest advantages for small teams.
+                    FeedVector's Pro plan includes team access, approvals,
+                    shared calendars, task delegation, and collaboration for up
+                    to 5 connected accounts. Growth adds unlimited accounts and
+                    exportable client reports.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Sprout Social is built for teams too, but it is priced per seat. That pricing makes sense for companies that need social
-                    intelligence, customer care, listening, and enterprise reporting, but it can get expensive quickly for lean teams.
+                    Sprout Social is built for teams too, but it is priced per
+                    seat. That pricing makes sense for companies that need
+                    social intelligence, customer care, listening, and
+                    enterprise reporting, but it can get expensive quickly for
+                    lean teams.
                   </p>
                   <ImageShowcase
                     src="/images/tab-image/team.png"
@@ -433,14 +590,31 @@ export default function FeedVectorVsSproutSocialPage() {
                     title="FeedVector keeps collaboration affordable"
                     description="Unlimited team members on Pro means collaboration does not become expensive every time someone joins."
                   />
-                  <ComparisonTable rows={pricingRows} columns={["Product", "Plan", "Public price", "Key limits and inclusions"]} />
+                  <ComparisonTable
+                    rows={pricingRows}
+                    columns={[
+                      "Product",
+                      "Plan",
+                      "Public price",
+                      "Key limits and inclusions",
+                    ]}
+                  />
                 </section>
 
                 <section id="decision" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading eyebrow="8" title="Who should choose which tool?" />
+                  <ArticleHeading
+                    eyebrow="8"
+                    title="Who should choose which tool?"
+                  />
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                    <FeatureList title="Choose FeedVector if" items={feedVectorFits} />
-                    <FeatureList title="Choose Sprout Social if" items={sproutFits} />
+                    <FeatureList
+                      title="Choose FeedVector if"
+                      items={feedVectorFits}
+                    />
+                    <FeatureList
+                      title="Choose Sprout Social if"
+                      items={sproutFits}
+                    />
                   </div>
                 </section>
 
@@ -448,20 +622,30 @@ export default function FeedVectorVsSproutSocialPage() {
                   <ArticleHeading eyebrow="9" title="Final verdict" />
                   <div className="space-y-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                     <p>
-                      Sprout Social is the stronger enterprise social media platform. It has deeper customer care, social listening, analytics,
-                      reporting, influencer marketing, employee advocacy, integrations, and enterprise workflows.
+                      Sprout Social is the stronger enterprise social media
+                      platform. It has deeper customer care, social listening,
+                      analytics, reporting, influencer marketing, employee
+                      advocacy, integrations, and enterprise workflows.
                     </p>
                     <p>
-                      FeedVector is the better choice for lean teams that want to create, schedule, automate, and improve content without enterprise
-                      complexity.
+                      FeedVector is the better choice for lean teams that want
+                      to create, schedule, automate, and improve content without
+                      enterprise complexity.
                     </p>
-                    <p>Sprout Social helps large teams manage social operations. FeedVector helps modern teams publish faster with AI.</p>
+                    <p>
+                      Sprout Social helps large teams manage social operations.
+                      FeedVector helps modern teams publish faster with AI.
+                    </p>
                   </div>
                   <div className="rounded-2xl border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-white/5">
-                    <p className="text-xl font-bold text-gray-800 dark:text-white/90">The practical answer</p>
+                    <p className="text-xl font-bold text-gray-800 dark:text-white/90">
+                      The practical answer
+                    </p>
                     <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Pick Sprout Social for enterprise social intelligence and customer care. Pick FeedVector if you want a simpler, cheaper,
-                      AI-first publishing workflow built around getting more content out the door.
+                      Pick Sprout Social for enterprise social intelligence and
+                      customer care. Pick FeedVector if you want a simpler,
+                      cheaper, AI-first publishing workflow built around getting
+                      more content out the door.
                     </p>
                     <Link
                       href="https://app.feedvector.com"
@@ -473,12 +657,21 @@ export default function FeedVectorVsSproutSocialPage() {
                 </section>
 
                 <section className="space-y-5">
-                  <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">FAQs</h2>
+                  <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
+                    FAQs
+                  </h2>
                   <div className="space-y-3">
                     {faqs.map((faq) => (
-                      <div key={faq.question} className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                        <h3 className="text-base font-bold text-gray-800 dark:text-white/90">{faq.question}</h3>
-                        <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">{faq.answer}</p>
+                      <div
+                        key={faq.question}
+                        className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5"
+                      >
+                        <h3 className="text-base font-bold text-gray-800 dark:text-white/90">
+                          {faq.question}
+                        </h3>
+                        <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
+                          {faq.answer}
+                        </p>
                       </div>
                     ))}
                   </div>
@@ -487,7 +680,9 @@ export default function FeedVectorVsSproutSocialPage() {
 
               <aside className="hidden lg:block">
                 <div className="sticky top-24 rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                  <p className="text-xs font-extrabold uppercase tracking-widest text-gray-800 dark:text-white/90">On this page</p>
+                  <p className="text-xs font-extrabold uppercase tracking-widest text-gray-800 dark:text-white/90">
+                    On this page
+                  </p>
                   <nav className="mt-4 space-y-2.5 text-sm">
                     {sections.map((section) => (
                       <a
@@ -500,9 +695,12 @@ export default function FeedVectorVsSproutSocialPage() {
                     ))}
                   </nav>
                   <div className="mt-5 border-t border-gray-200 pt-4 dark:border-white/10">
-                    <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Short summary</p>
+                    <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
+                      Short summary
+                    </p>
                     <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
-                      Pick FeedVector for AI-first output and affordability. Pick Sprout Social for enterprise social operations.
+                      Pick FeedVector for AI-first output and affordability.
+                      Pick Sprout Social for enterprise social operations.
                     </p>
                   </div>
                 </div>
@@ -512,29 +710,59 @@ export default function FeedVectorVsSproutSocialPage() {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-function ArticleHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
+function ArticleHeading({
+  eyebrow,
+  title,
+}: {
+  eyebrow: string;
+  title: string;
+}) {
   return (
     <div className="space-y-2">
-      <p className="text-sm font-bold text-primary-600 dark:text-primary-400">{eyebrow}</p>
-      <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">{title}</h2>
+      <p className="text-sm font-bold text-primary-600 dark:text-primary-400">
+        {eyebrow}
+      </p>
+      <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
+        {title}
+      </h2>
     </div>
-  )
+  );
 }
 
-function ComparisonBlock({ title, body, verdict }: { title: string; body: string; verdict: string }) {
+function ComparisonBlock({
+  title,
+  body,
+  verdict,
+}: {
+  title: string;
+  body: string;
+  verdict: string;
+}) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
-      <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">{body}</p>
-      <p className="mt-4 rounded-xl bg-gray-50 p-4 text-sm leading-6 text-gray-600 dark:bg-white/5 dark:text-gray-300">{verdict}</p>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {title}
+      </h3>
+      <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
+        {body}
+      </p>
+      <p className="mt-4 rounded-xl bg-gray-50 p-4 text-sm leading-6 text-gray-600 dark:bg-white/5 dark:text-gray-300">
+        {verdict}
+      </p>
     </div>
-  )
+  );
 }
 
-function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[] }) {
+function ComparisonTable({
+  rows,
+  columns,
+}: {
+  rows: string[][];
+  columns: string[];
+}) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
       <div className="overflow-x-auto">
@@ -554,7 +782,11 @@ function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[
                 {row.map((cell, index) => (
                   <td
                     key={`${row[0]}-${index}`}
-                    className={index === 0 ? "px-5 py-4 font-medium text-gray-800 dark:text-white/90" : "px-5 py-4 text-gray-600 dark:text-gray-300"}
+                    className={
+                      index === 0
+                        ? "px-5 py-4 font-medium text-gray-800 dark:text-white/90"
+                        : "px-5 py-4 text-gray-600 dark:text-gray-300"
+                    }
                   >
                     {cell}
                   </td>
@@ -565,32 +797,41 @@ function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[
         </table>
       </div>
     </div>
-  )
+  );
 }
 
 function FeatureList({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {title}
+      </h3>
       <ul className="mt-4 space-y-3">
         {items.map((item) => (
-          <li key={item} className="flex gap-3 text-base text-gray-600 dark:text-gray-300">
+          <li
+            key={item}
+            className="flex gap-3 text-base text-gray-600 dark:text-gray-300"
+          >
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary-500" />
             <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 function MetricCard({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-xl bg-gray-50 p-4 dark:bg-white/5">
-      <p className="text-lg font-bold text-gray-800 dark:text-white/90">{value}</p>
-      <p className="mt-1 text-xs leading-5 text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="text-lg font-bold text-gray-800 dark:text-white/90">
+        {value}
+      </p>
+      <p className="mt-1 text-xs leading-5 text-gray-500 dark:text-gray-400">
+        {label}
+      </p>
     </div>
-  )
+  );
 }
 
 function ImageShowcase({
@@ -601,20 +842,30 @@ function ImageShowcase({
   width = 936,
   height = 535,
 }: {
-  src: string
-  alt: string
-  title: string
-  description: string
-  width?: number
-  height?: number
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
+  width?: number;
+  height?: number;
 }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
-      <Image src={src} alt={alt} width={width} height={height} className="h-auto w-full" />
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="h-auto w-full"
+      />
       <div className="border-t border-gray-200 p-5 dark:border-white/10">
-        <p className="text-base font-semibold text-gray-800 dark:text-white/90">{title}</p>
-        <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="text-base font-semibold text-gray-800 dark:text-white/90">
+          {title}
+        </p>
+        <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">
+          {description}
+        </p>
       </div>
     </div>
-  )
+  );
 }

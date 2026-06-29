@@ -28,19 +28,26 @@ export default function HeroSection() {
                 >
                   Start for Free
                 </Link>
+                <Link
+                  href="https://calendar.app.google/r5ARqVFTkr3WCnFe7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-12 inline-flex items-center justify-center rounded-full border border-gray-200 bg-white/80 px-6 py-3 text-sm font-medium text-gray-700 transition hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white/90 dark:hover:bg-white/10"
+                >
+                  Book a Demo
+                </Link>
               </div>
               <div className="relative z-30 mt-5 flex justify-center">
                 <a
-                  href="https://www.producthunt.com/products/feedvector?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-feedvector"
+                  href="https://www.producthunt.com/products/feedvector?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-feedvector"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex"
                 >
                   <img
                     alt="FeedVector - Turn LinkedIn posts and comments into clients | Product Hunt"
                     width="250"
                     height="54"
-                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1181572&theme=light&t=1782472532491"
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1181572&amp;theme=light&amp;t=1782565818141"
                   />
                 </a>
               </div>

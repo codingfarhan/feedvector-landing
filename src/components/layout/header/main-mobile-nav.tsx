@@ -147,7 +147,10 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
                                                   "block rounded-md px-3 py-2 text-sm font-medium text-gray-500" +
                                                     " dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700",
                                                   {
-                                                    "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-200": isActivePath(pathname, nestedItem.href),
+                                                    "bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-200": isActivePath(
+                                                      pathname,
+                                                      nestedItem.href,
+                                                    ),
                                                   },
                                                 )}
                                               >
@@ -219,10 +222,12 @@ export default function MainMobileNav({ isOpen }: MobileMenuProps) {
 
         <div className="flex flex-col pt-2 pb-3 space-y-3 px-8">
           <Link
-            href="https://app.feedvector.com"
+            href="https://calendar.app.google/r5ARqVFTkr3WCnFe7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center px-5 py-3 gradient-btn  justify-center text-sm text-white rounded-full button-bg h-11"
           >
-            Get Started
+            Book a Demo
           </Link>
         </div>
       </div>

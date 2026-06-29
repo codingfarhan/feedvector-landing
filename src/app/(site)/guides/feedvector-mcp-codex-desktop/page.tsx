@@ -321,7 +321,7 @@ export default function FeedVectorMcpCodexDesktopGuidePage() {
                     />
                     <TroubleshootingItem
                       title="Codex shows a 403 error"
-                      text="A 403 error means your FeedVector free trial has expired. Purchase a paid FeedVector plan to continue using the MCP server."
+                      text="A 403 error means your FeedVector plan does not include MCP access or your workspace needs a paid plan. Upgrade to continue using the MCP server."
                     />
                   </div>
                 </section>
