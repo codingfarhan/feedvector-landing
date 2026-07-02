@@ -4,100 +4,72 @@ export const BILLING_PERIODS = [
     key: "monthly",
     saving: null,
   },
-] as const;
+] as const
 
 const AMOUNTS = {
-  standard: {
-    monthly: 29,
-    yearly: null,
-  },
-  pro: {
-    monthly: 99,
+  essential: {
+    monthly: 179,
     yearly: null,
   },
   growth: {
-    monthly: 149,
+    monthly: 379,
     yearly: null,
   },
-};
+  doneForYou: {
+    monthly: 1499,
+    yearly: null,
+  },
+}
 
-export type TBILLING_PLAN = (typeof BILLING_PLANS)[number];
+const APP_URL = "https://app.feedvector.com"
+const STRATEGY_CALL_URL = "https://calendly.com/syedfarhanahmad0/30min"
+
+export type TBILLING_PLAN = (typeof BILLING_PLANS)[number]
 export const BILLING_PLANS = [
   {
-    name: "Standard",
-    description:
-      "For creators and founders who want a full LinkedIn content system.",
+    name: "Essential",
+    description: "For teams that already have a LinkedIn strategy and need one place to execute it.",
     pricing: {
       monthly: {
-        amount: AMOUNTS["standard"]["monthly"],
-        formattedPrice: "$" + AMOUNTS["standard"]["monthly"],
-        stripeId:
-          process.env.NEXT_PUBLIC_STANDARD_MONTHLY_PRICE_ID ||
-          process.env.NEXT_PUBLIC_PRO_MONTHLY_PRICE_ID!,
+        amount: AMOUNTS["essential"]["monthly"],
+        formattedPrice: "$" + AMOUNTS["essential"]["monthly"],
+        stripeId: process.env.NEXT_PUBLIC_ESSENTIAL_MONTHLY_PRICE_ID!,
       },
       yearly: {
-        amount: AMOUNTS["standard"]["yearly"],
+        amount: AMOUNTS["essential"]["yearly"],
         formattedPrice: "Let's talk",
         stripeId: null,
       },
     },
     features: [
-      "1 LinkedIn account",
-      "Plan and schedule LinkedIn posts",
-      "AI-assisted LinkedIn post drafting",
-      "Use LinkedIn post templates",
-      "Repurpose existing ideas into LinkedIn posts",
-      "Unlimited LinkedIn posts per month",
-      "Recommended LinkedIn posts refreshed every 24 hours",
-      "LinkedIn analytics that show what to post next",
-      "Recommended topics, formats, hooks, and posting times",
-      "Auto actions for repeat LinkedIn publishing tasks",
+      "5 social media channels",
+      "Invite 2 more users to your team",
+      "Full self-service FeedVector software",
+      "One onboarding call",
+      "Content planning and scheduling",
+      "Approval workflows",
+      "Engagement discovery",
+      "LinkedIn analytics and recommendations",
+      "AI-assisted post drafting",
+      "LinkedIn post templates",
+      "Website, profile, and past-post repurposing",
+      "Recommended LinkedIn posts to comment on",
+      "Auto actions for repeat publishing tasks",
       "Third-party integrations with the FeedVector app",
       "AI autocomplete for LinkedIn drafts",
       "AI copilots for LinkedIn content creation",
       "Advanced picture editor for LinkedIn visuals",
-      "35 AI images per month",
-      "20 AI videos per month",
-    ],
-    cta: "Choose Standard",
-    popular: true,
-  },
-  {
-    name: "Pro",
-    description:
-      "For teams that need more accounts, shared access, and collaboration.",
-    pricing: {
-      monthly: {
-        amount: AMOUNTS["pro"]["monthly"],
-        formattedPrice: "$" + AMOUNTS["pro"]["monthly"],
-        stripeId: process.env.NEXT_PUBLIC_PRO_MONTHLY_PRICE_ID!,
-      },
-      yearly: {
-        amount: AMOUNTS["pro"]["yearly"],
-        formattedPrice: "Let's talk",
-        stripeId: null,
-      },
-    },
-    features: [
-      "Everything in Standard",
-      "Up to 5 connected social accounts",
-      "Connect accounts across Instagram, X, Facebook, YouTube, Bluesky, and more",
-      "Team access for your workspace",
-      "Approval workflows for LinkedIn content",
-      "Shared calendars and team collaboration",
-      "Task delegation for content workflows",
-      "Recommended LinkedIn posts refreshed every 4 hours",
       "100 AI images per month",
       "35 AI videos per month",
-      "Priority support",
+      "Support",
     ],
-    cta: "Choose Pro",
+    cta: "Choose Essential",
+    ctaHref: APP_URL,
     popular: false,
   },
   {
     name: "Growth",
-    description:
-      "For agencies and operators managing content across many client accounts.",
+    description: "For B2B founders and teams that want a structured LinkedIn growth system, not another tool to configure alone.",
     pricing: {
       monthly: {
         amount: AMOUNTS["growth"]["monthly"],
@@ -111,17 +83,51 @@ export const BILLING_PLANS = [
       },
     },
     features: [
-      "Everything in Pro",
-      "Unlimited connected social accounts",
-      "Exportable client reports",
-      "Client-ready LinkedIn analytics",
-      "Multi-client workspace organization",
-      "Advanced reporting for content performance",
+      "Everything in Essential",
+      "Full FeedVector software access, without limits",
+      "Unlimited social media channels and users",
+      "Invite unlimited users to your team",
+      "Professionally configured brand strategy",
+      "Guided onboarding",
+      "Trackable content goals",
       "200 AI images per month",
       "50 AI videos per month",
-      "Priority onboarding support",
+      "Monthly review call",
+      "24/7 Priority support",
     ],
     cta: "Choose Growth",
+    ctaHref: APP_URL,
+    popular: true,
+  },
+  {
+    name: "Done-for-you",
+    description: "For founders that want us to plan, create, publish, and improve their LinkedIn content.",
+    pricing: {
+      monthly: {
+        amount: AMOUNTS["doneForYou"]["monthly"],
+        formattedPrice: "$" + AMOUNTS["doneForYou"]["monthly"].toLocaleString("en-US"),
+        pricePrefix: "Starts at",
+        stripeId: null,
+      },
+      yearly: {
+        amount: AMOUNTS["doneForYou"]["yearly"],
+        formattedPrice: "Let's talk",
+        stripeId: null,
+      },
+    },
+    features: [
+      "Fully manage 1 Founder profile",
+      "Fully manage 1 Company page",
+      "Content planning",
+      "Writing and editing",
+      "Scheduling",
+      "Monthly reporting",
+      "Ongoing performance reviews",
+      "Monthly review call",
+    ],
+    cta: "Book a strategy call",
+    ctaHref: STRATEGY_CALL_URL,
+    ctaNote: "Final pricing depends on the number of profiles, publishing frequency, and level of support required.",
     popular: false,
   },
-];
+]

@@ -21,7 +21,7 @@ const comparisonRows = [
   ],
   [
     "Collaboration",
-    "Team access, approvals, and shared workflows on Pro and Growth",
+    "Team users, approvals, guided onboarding, and done-for-you support options",
     "Approvals, access controls, and team workflows",
   ],
   [
@@ -226,13 +226,13 @@ export default function FeedVectorVsBufferPage() {
                       </p>
                       <div className="grid grid-cols-2 gap-3">
                         <MetricCard
-                          value="$29"
-                          label="Standard plan for core LinkedIn workflows"
+                          value="$179"
+                          label="Essential execution platform"
                         />
-                        <MetricCard value="5" label="Accounts on Pro" />
+                        <MetricCard value="$379" label="Guided Growth plan" />
                         <MetricCard
-                          value="Unlimited"
-                          label="Accounts on Growth"
+                          value="$1,499+"
+                          label="Done-for-you support"
                         />
                         <MetricCard
                           value="MCP"
@@ -446,10 +446,10 @@ export default function FeedVectorVsBufferPage() {
                         FeedVector
                       </p>
                       <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
-                        FeedVector has a $29/month Standard plan, a $99/month
-                        Pro plan for up to 5 connected accounts and team access,
-                        and a $149/month Growth plan with unlimited accounts and
-                        exportable client reports.
+                        FeedVector has a $179/month Essential plan for teams
+                        that want one place to execute LinkedIn, a $379/month
+                        Growth plan with guided strategy and monthly reviews,
+                        and Done-for-you support starting at $1,499/month.
                       </p>
                     </div>
                     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">

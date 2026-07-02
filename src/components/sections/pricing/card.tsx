@@ -3,7 +3,6 @@ import GlowGradient from "@/assets/pricing/glow";
 import type { TBILLING_PLAN } from "@/components/sections/pricing/data";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { PropsWithChildren } from "react";
 
 type Props = {
   plan: TBILLING_PLAN;
@@ -12,6 +11,7 @@ type Props = {
 
 export function PricingCard({ plan, billingPeriod }: Props) {
   const isTrialPlan = plan.pricing[billingPeriod].amount === 0;
+  const price = plan.pricing[billingPeriod];
 
   return (
     <div className="relative">
@@ -32,11 +32,16 @@ export function PricingCard({ plan, billingPeriod }: Props) {
             )}
           </div>
           <p className="flex items-baseline mt-4">
+            {"pricePrefix" in price && price.pricePrefix ? (
+              <span className="mr-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+                {price.pricePrefix}
+              </span>
+            ) : null}
             <span className="text-4xl font-semibold text-gray-800 dark:text-white/90">
-              {plan.pricing[billingPeriod].formattedPrice}
+              {price.formattedPrice}
             </span>
 
-            {!!plan.pricing[billingPeriod].amount && (
+            {!!price.amount && (
               <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">
                 {billingPeriod === "yearly" ? "Per year" : "Per month"}
               </span>
@@ -46,10 +51,15 @@ export function PricingCard({ plan, billingPeriod }: Props) {
             {plan.description}
           </p>
 
-          {plan.name.includes("Enterprise") ? (
-            <ContactSalesLink>{plan.cta}</ContactSalesLink>
-          ) : (
-            <button
+          {"ctaHref" in plan && plan.ctaHref ? (
+            <Link
+              href={plan.ctaHref}
+              target={plan.ctaHref.startsWith("http") ? "_blank" : undefined}
+              rel={
+                plan.ctaHref.startsWith("http")
+                  ? "noopener noreferrer"
+                  : undefined
+              }
               className={cn(
                 "block w-full px-8 py-3.5 mt-7 text-sm font-medium text-center rounded-full transition",
                 {
@@ -62,8 +72,13 @@ export function PricingCard({ plan, billingPeriod }: Props) {
               )}
             >
               {plan.cta}
-            </button>
-          )}
+            </Link>
+          ) : null}
+          {"ctaNote" in plan && plan.ctaNote ? (
+            <p className="mt-3 text-xs leading-5 text-gray-500 dark:text-gray-400">
+              {plan.ctaNote}
+            </p>
+          ) : null}
         </div>
         <div className="px-8 pb-7">
           <ul className="space-y-3">
@@ -113,16 +128,5 @@ export function PricingCard({ plan, billingPeriod }: Props) {
         <GlowGradient className="absolute -left-full -translate-x-20 top-0 max-lg:hidden" />
       )}
     </div>
-  );
-}
-
-function ContactSalesLink({ children }: PropsWithChildren) {
-  return (
-    <Link
-      href="https://app.feedvector.com"
-      className="block w-full px-8 py-3.5 mt-7 text-sm font-medium text-center rounded-full transition dark:hover:bg-primary-500 dark:bg-white/[0.03] hover:bg-gray-900 text-white bg-gray-700"
-    >
-      {children}
-    </Link>
   );
 }

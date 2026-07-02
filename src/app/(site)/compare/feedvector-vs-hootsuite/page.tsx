@@ -1,14 +1,10 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import Script from "next/script";
+import type { Metadata } from "next"
+import Image from "next/image"
+import Link from "next/link"
+import Script from "next/script"
 
 const comparisonRows = [
-  [
-    "Best for",
-    "Creators, founders, startups, lean teams, and agencies",
-    "Large teams, enterprises, and social media departments",
-  ],
+  ["Best for", "Creators, founders, startups, lean teams, and agencies", "Large teams, enterprises, and social media departments"],
   [
     "Core focus",
     "AI-powered content creation, scheduling, automation, and analytics",
@@ -34,36 +30,32 @@ const comparisonRows = [
     "Cross-channel analytics connected to the publishing workflow",
     "Advanced reports, benchmarking, ROI reporting, exports, and scheduled reports",
   ],
-  [
-    "Team model",
-    "Team access on Pro and Growth",
-    "User seats and governance controls depend on plan",
-  ],
+  ["Team model", "2 additional users on Essential and unlimited users on Growth", "User seats and governance controls depend on plan"],
   [
     "Pricing style",
-    "$29 Standard, $99 Pro, and $149 Growth plans",
+    "$179 Essential, $379 Growth, and Done-for-you from $1,499/month",
     "Per-user Standard and Advanced plans, plus custom Enterprise pricing",
   ],
-];
+]
 
 const pricingRows = [
   [
     "FeedVector",
-    "Standard",
-    "$29/month",
-    "1 LinkedIn account, unlimited LinkedIn posts, recommended posts refreshed every 24 hours, analytics, workflow Plugs, integrations, 35 AI images/month, 20 AI videos/month",
-  ],
-  [
-    "FeedVector",
-    "Pro",
-    "$99/month",
-    "Everything in Standard, up to 5 connected accounts, recommended posts refreshed every 4 hours, team access, approvals, 100 AI images/month, and 35 AI videos/month",
+    "Essential",
+    "$179/month",
+    "5 social media channels, 2 additional team users, self-service software, onboarding call, all features, 100 AI images/month, 35 AI videos/month",
   ],
   [
     "FeedVector",
     "Growth",
-    "$149/month",
-    "Everything in Pro, unlimited connected accounts, exportable client reports, 200 AI images/month, 50 AI videos/month, and multi-client workspace organization",
+    "$379/month",
+    "Unlimited social media channels and users, configured brand strategy, guided onboarding, monthly review call, 200 AI images/month, 50 AI videos/month",
+  ],
+  [
+    "FeedVector",
+    "Done-for-you",
+    "Starts at $1,499/month",
+    "Founder and company-page strategy, content planning, writing, editing, scheduling, monthly reporting, and ongoing performance reviews",
   ],
   [
     "Hootsuite",
@@ -83,7 +75,7 @@ const pricingRows = [
     "Custom",
     "Custom plan, more users, SSO, Talkwalker-powered listening, Advanced Analytics, Advanced Inbox, chatbot, Salesforce and compliance integrations",
   ],
-];
+]
 
 const sections = [
   { id: "at-a-glance", label: "At a glance" },
@@ -95,7 +87,7 @@ const sections = [
   { id: "collaboration-pricing", label: "Teams and pricing" },
   { id: "decision", label: "Decision guide" },
   { id: "verdict", label: "Verdict" },
-];
+]
 
 const feedVectorFits = [
   "You want a simpler LinkedIn content tool",
@@ -105,7 +97,7 @@ const feedVectorFits = [
   "You want AI design, image generation, and video generation",
   "You want team access without enterprise complexity",
   "You want automation through AI clients like Claude or Cursor",
-];
+]
 
 const hootsuiteFits = [
   "You are a large company or enterprise team",
@@ -115,7 +107,7 @@ const hootsuiteFits = [
   "You need deep reporting, exports, and ROI analytics",
   "You have complex approval, compliance, or department workflows",
   "You need a larger integration and governance ecosystem",
-];
+]
 
 const faqs = [
   {
@@ -133,7 +125,7 @@ const faqs = [
     answer:
       "Choose Hootsuite if you need large-team controls, social listening, brand monitoring, advanced inbox routing, competitive benchmarking, advanced report exports, ROI analytics, or compliance integrations.",
   },
-];
+]
 
 export const metadata: Metadata = {
   title: "FeedVector vs Hootsuite: Which Tool Should You Choose?",
@@ -152,8 +144,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "FeedVector vs Hootsuite: Which Tool Should You Choose?",
-    description:
-      "Compare FeedVector and Hootsuite for AI-first publishing, enterprise social management, automation, analytics, and pricing.",
+    description: "Compare FeedVector and Hootsuite for AI-first publishing, enterprise social management, automation, analytics, and pricing.",
     url: "/compare/feedvector-vs-hootsuite",
     images: [
       {
@@ -167,11 +158,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "FeedVector vs Hootsuite",
-    description:
-      "Compare FeedVector and Hootsuite for AI-first LinkedIn publishing and enterprise social media management.",
+    description: "Compare FeedVector and Hootsuite for AI-first LinkedIn publishing and enterprise social media management.",
     images: ["/images/tab-image/plugs.png"],
   },
-};
+}
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -193,8 +183,7 @@ const jsonLd = {
           url: "https://feedvector.com/images/logo-black.svg",
         },
       },
-      mainEntityOfPage:
-        "https://feedvector.com/compare/feedvector-vs-hootsuite",
+      mainEntityOfPage: "https://feedvector.com/compare/feedvector-vs-hootsuite",
       image: "https://feedvector.com/images/tab-image/plugs.png",
     },
     {
@@ -209,16 +198,12 @@ const jsonLd = {
       })),
     },
   ],
-};
+}
 
 export default function FeedVectorVsHootsuitePage() {
   return (
     <>
-      <Script
-        id="json-ld-feedvector-vs-hootsuite"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <Script id="json-ld-feedvector-vs-hootsuite" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <section className="py-16 md:py-24">
         <div className="wrapper">
           <div className="mx-auto max-w-6xl">
@@ -233,13 +218,9 @@ export default function FeedVectorVsHootsuitePage() {
                       FeedVector vs Hootsuite: Which one to choose?
                     </h1>
                     <p className="max-w-3xl text-base leading-7 text-gray-600 dark:text-gray-300 md:text-lg">
-                      FeedVector and Hootsuite both help teams publish content,
-                      but they are built for different buyers. Hootsuite is a
-                      large enterprise-grade platform for social management,
-                      inbox workflows, reporting, listening, and governance.
-                      FeedVector is an AI-first LinkedIn content tool for
-                      creators, startups, agencies, and lean teams that want to
-                      create and publish faster.
+                      FeedVector and Hootsuite both help teams publish content, but they are built for different buyers. Hootsuite is a large
+                      enterprise-grade platform for social management, inbox workflows, reporting, listening, and governance. FeedVector is an
+                      AI-first LinkedIn content tool for creators, startups, agencies, and lean teams that want to create and publish faster.
                     </p>
                   </div>
                   <div className="flex flex-col gap-3 sm:flex-row">
@@ -262,12 +243,8 @@ export default function FeedVectorVsHootsuitePage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-white/10">
                       <div>
-                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
-                          FeedVector workflow
-                        </p>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                          Lean AI publishing without enterprise overhead.
-                        </p>
+                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">FeedVector workflow</p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Lean AI publishing without enterprise overhead.</p>
                       </div>
                       <span className="rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-600 dark:bg-primary-500/10 dark:text-primary-400 whitespace-nowrap">
                         Lean teams
@@ -275,25 +252,14 @@ export default function FeedVectorVsHootsuitePage() {
                     </div>
                     <div className="mt-5 space-y-4">
                       <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                        FeedVector is the better fit when you need content
-                        creation, templates, scheduling, automation, and team
-                        collaboration without buying a full enterprise social
-                        intelligence features.
+                        FeedVector is the better fit when you need content creation, templates, scheduling, automation, and team collaboration without
+                        buying a full enterprise social intelligence features.
                       </p>
                       <div className="grid grid-cols-2 gap-3">
-                        <MetricCard value="$29" label="Standard plan" />
-                        <MetricCard
-                          value="$99"
-                          label="Pro plan with team access"
-                        />
-                        <MetricCard
-                          value="AI"
-                          label="Templates, design, images, and videos"
-                        />
-                        <MetricCard
-                          value="MCP"
-                          label="Natural-language scheduling"
-                        />
+                        <MetricCard value="$179" label="Essential platform" />
+                        <MetricCard value="$379" label="Guided Growth plan" />
+                        <MetricCard value="AI" label="Templates, design, images, and videos" />
+                        <MetricCard value="MCP" label="Natural-language scheduling" />
                       </div>
                     </div>
                   </div>
@@ -301,12 +267,8 @@ export default function FeedVectorVsHootsuitePage() {
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
                     <div className="flex items-center justify-between border-b border-gray-200 pb-4 dark:border-white/10">
                       <div>
-                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
-                          Hootsuite workflow
-                        </p>
-                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">
-                          Enterprise social management and governance.
-                        </p>
+                        <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Hootsuite workflow</p>
+                        <p className="mt-1 text-sm text-gray-500 dark:text-gray-400">Enterprise social management and governance.</p>
                       </div>
                       <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600 dark:bg-white/10 dark:text-gray-300">
                         Enterprise
@@ -314,28 +276,14 @@ export default function FeedVectorVsHootsuitePage() {
                     </div>
                     <div className="mt-5 space-y-4">
                       <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                        Hootsuite is the better fit when you need a broader
-                        social operations platform with publishing, inbox
-                        workflows, listening, benchmarking, reporting,
-                        governance, and enterprise controls.
+                        Hootsuite is the better fit when you need a broader social operations platform with publishing, inbox workflows, listening,
+                        benchmarking, reporting, governance, and enterprise controls.
                       </p>
                       <div className="grid grid-cols-2 gap-3">
-                        <MetricCard
-                          value="10+"
-                          label="Social accounts on Standard"
-                        />
-                        <MetricCard
-                          value="350"
-                          label="Bulk scheduled posts on Advanced"
-                        />
-                        <MetricCard
-                          value="Listening"
-                          label="Brand monitoring and mentions"
-                        />
-                        <MetricCard
-                          value="Enterprise"
-                          label="SSO, compliance, and advanced controls"
-                        />
+                        <MetricCard value="10+" label="Social accounts on Standard" />
+                        <MetricCard value="350" label="Bulk scheduled posts on Advanced" />
+                        <MetricCard value="Listening" label="Brand monitoring and mentions" />
+                        <MetricCard value="Enterprise" label="SSO, compliance, and advanced controls" />
                       </div>
                     </div>
                   </div>
@@ -343,61 +291,36 @@ export default function FeedVectorVsHootsuitePage() {
 
                 <section id="at-a-glance" className="scroll-mt-28 space-y-5">
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
-                      At a glance
-                    </h2>
+                    <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">At a glance</h2>
                     <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Hootsuite is broader and deeper for enterprise social
-                      operations. FeedVector is more focused, easier to reason
-                      about, and better suited to teams that mainly need
-                      AI-assisted content creation, scheduling, automation, and
-                      straightforward analytics.
+                      Hootsuite is broader and deeper for enterprise social operations. FeedVector is more focused, easier to reason about, and better
+                      suited to teams that mainly need AI-assisted content creation, scheduling, automation, and straightforward analytics.
                     </p>
                   </div>
-                  <ComparisonTable
-                    rows={comparisonRows}
-                    columns={["Feature", "FeedVector", "Hootsuite"]}
-                  />
+                  <ComparisonTable rows={comparisonRows} columns={["Feature", "FeedVector", "Hootsuite"]} />
                 </section>
 
                 <section id="positioning" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading
-                    eyebrow="1"
-                    title="AI publishing system vs enterprise platform"
-                  />
+                  <ArticleHeading eyebrow="1" title="AI publishing system vs enterprise platform" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector positions itself around a tight workflow: create
-                    better LinkedIn posts with AI, use viral templates, schedule
-                    consistently, collaborate with a team, automate repetitive
-                    work, and track what performs.
+                    FeedVector positions itself around a tight workflow: create better LinkedIn posts with AI, use viral templates, schedule
+                    consistently, collaborate with a team, automate repetitive work, and track what performs.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Hootsuite is much broader. Its public product surface
-                    includes social media management, social intelligence, brand
-                    monitoring, social listening, ROI tracking, engagement
-                    inbox, employee advocacy, market research, and enterprise
-                    controls.
+                    Hootsuite is much broader. Its public product surface includes social media management, social intelligence, brand monitoring,
+                    social listening, ROI tracking, engagement inbox, employee advocacy, market research, and enterprise controls.
                   </p>
                   <div className="rounded-2xl border border-primary-100 bg-primary-50 p-5 dark:border-primary-500/20 dark:bg-primary-500/10">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
-                      Verdict
-                    </p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Hootsuite is broader. FeedVector is more focused. That
-                      focus is an advantage for small teams that do not need a
-                      full enterprise social intelligence platform.
+                      Hootsuite is broader. FeedVector is more focused. That focus is an advantage for small teams that do not need a full enterprise
+                      social intelligence platform.
                     </p>
                   </div>
                 </section>
 
-                <section
-                  id="content-creation"
-                  className="scroll-mt-28 space-y-6"
-                >
-                  <ArticleHeading
-                    eyebrow="2"
-                    title="Content creation: FeedVector is more template-first and creator-friendly"
-                  />
+                <section id="content-creation" className="scroll-mt-28 space-y-6">
+                  <ArticleHeading eyebrow="2" title="Content creation: FeedVector is more template-first and creator-friendly" />
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                     <ComparisonBlock
                       title="FeedVector"
@@ -419,30 +342,21 @@ export default function FeedVectorVsHootsuitePage() {
                 </section>
 
                 <section id="publishing" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading
-                    eyebrow="3"
-                    title="Scheduling and publishing"
-                  />
+                  <ArticleHeading eyebrow="3" title="Scheduling and publishing" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector covers the core LinkedIn publishing workflow:
-                    planning ahead, calendar scheduling, queues, shared
-                    calendars, and repeat-work automation.
+                    FeedVector covers the core LinkedIn publishing workflow: planning ahead, calendar scheduling, queues, shared calendars, and
+                    repeat-work automation.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Hootsuite is very mature here. Its public plan pages
-                    describe unlimited scheduled posts, cross-network
-                    scheduling, a social content calendar, recommended times to
-                    publish, calendar exporting, link tracking, and bulk
-                    scheduling up to 350 posts at once on higher plans.
+                    Hootsuite is very mature here. Its public plan pages describe unlimited scheduled posts, cross-network scheduling, a social
+                    content calendar, recommended times to publish, calendar exporting, link tracking, and bulk scheduling up to 350 posts at once on
+                    higher plans.
                   </p>
                   <div className="rounded-2xl border border-primary-100 bg-primary-50 p-5 dark:border-primary-500/20 dark:bg-primary-500/10">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
-                      Verdict
-                    </p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Hootsuite has the more mature publishing feature set.
-                      FeedVector covers the everyday scheduling use case with
-                      less enterprise overhead.
+                      Hootsuite has the more mature publishing feature set. FeedVector covers the everyday scheduling use case with less enterprise
+                      overhead.
                     </p>
                   </div>
                   <ImageShowcase
@@ -454,22 +368,15 @@ export default function FeedVectorVsHootsuitePage() {
                 </section>
 
                 <section id="automation" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading
-                    eyebrow="4"
-                    title="Automation: AI-agent workflows vs social operations workflows"
-                  />
+                  <ArticleHeading eyebrow="4" title="Automation: AI-agent workflows vs social operations workflows" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector's strongest automation differentiator is MCP. You
-                    can connect Claude, Cursor, or another MCP-compatible client
-                    to FeedVector and schedule, draft, or publish posts through
-                    natural language. That is useful for teams already moving
-                    work into AI assistants.
+                    FeedVector's strongest automation differentiator is MCP. You can connect Claude, Cursor, or another MCP-compatible client to
+                    FeedVector and schedule, draft, or publish posts through natural language. That is useful for teams already moving work into AI
+                    assistants.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Hootsuite's automation is stronger for traditional social
-                    operations: DM automations, saved replies, automated
-                    responses, message assignment, routing, tagging, team inbox
-                    workflows, and enterprise customer care.
+                    Hootsuite's automation is stronger for traditional social operations: DM automations, saved replies, automated responses, message
+                    assignment, routing, tagging, team inbox workflows, and enterprise customer care.
                   </p>
                   <ImageShowcase
                     src="/images/tab-image/plugs.png"
@@ -482,26 +389,19 @@ export default function FeedVectorVsHootsuitePage() {
                 <section id="analytics" className="scroll-mt-28 space-y-5">
                   <ArticleHeading eyebrow="5" title="Analytics and reporting" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Hootsuite is clearly stronger if reporting depth is the main
-                    priority. Its plan page lists customizable reports, hundreds
-                    of metrics, post performance reports, multiple network
-                    reporting, industry benchmarking, competitive benchmarking,
-                    best-time charts, report exports, scheduled reports, ROI
-                    reporting, and more.
+                    Hootsuite is clearly stronger if reporting depth is the main priority. Its plan page lists customizable reports, hundreds of
+                    metrics, post performance reports, multiple network reporting, industry benchmarking, competitive benchmarking, best-time charts,
+                    report exports, scheduled reports, ROI reporting, and more.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector offers publishing analytics on Pro, but its
-                    public site gives less detail about exports, benchmarking,
-                    ROI reports, and advanced report customization.
+                    FeedVector offers publishing analytics on Pro, but its public site gives less detail about exports, benchmarking, ROI reports, and
+                    advanced report customization.
                   </p>
                   <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">
-                      Verdict
-                    </p>
+                    <p className="text-base font-semibold text-gray-800 dark:text-white/90">Verdict</p>
                     <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Pick Hootsuite for enterprise analytics depth. Pick
-                      FeedVector if you mainly need to understand what is
-                      working and keep improving your content system.
+                      Pick Hootsuite for enterprise analytics depth. Pick FeedVector if you mainly need to understand what is working and keep
+                      improving your content system.
                     </p>
                   </div>
                   <ImageShowcase
@@ -514,26 +414,16 @@ export default function FeedVectorVsHootsuitePage() {
                   />
                 </section>
 
-                <section
-                  id="collaboration-pricing"
-                  className="scroll-mt-28 space-y-6"
-                >
-                  <ArticleHeading
-                    eyebrow="6"
-                    title="Collaboration and pricing"
-                  />
+                <section id="collaboration-pricing" className="scroll-mt-28 space-y-6">
+                  <ArticleHeading eyebrow="6" title="Collaboration and pricing" />
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    FeedVector includes approvals, task delegation, shared
-                    calendars, and team access on Pro and Growth. Pro supports
-                    up to 5 connected accounts, while Growth adds unlimited
-                    accounts and exportable client reports.
+                    FeedVector includes approvals, guided onboarding, shared calendars, and team collaboration. Essential supports 5 social media
+                    channels and 2 additional users, while Growth adds unlimited profiles, unlimited users, a configured brand strategy, and monthly
+                    review calls.
                   </p>
                   <p className="text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Hootsuite has more advanced team governance: user seats,
-                    departmental organization, internal comments, approval
-                    workflows, message assignment, team productivity reporting,
-                    Enterprise SSO, and compliance integrations. The tradeoff is
-                    cost and complexity.
+                    Hootsuite has more advanced team governance: user seats, departmental organization, internal comments, approval workflows, message
+                    assignment, team productivity reporting, Enterprise SSO, and compliance integrations. The tradeoff is cost and complexity.
                   </p>
                   <ImageShowcase
                     src="/images/tab-image/team.png"
@@ -541,31 +431,14 @@ export default function FeedVectorVsHootsuitePage() {
                     title="FeedVector keeps collaboration lightweight"
                     description="Shared calendars, approvals, and team workflows help lean teams collaborate without per-seat complexity."
                   />
-                  <ComparisonTable
-                    rows={pricingRows}
-                    columns={[
-                      "Product",
-                      "Plan",
-                      "Public pricing style",
-                      "Key limits and inclusions",
-                    ]}
-                  />
+                  <ComparisonTable rows={pricingRows} columns={["Product", "Plan", "Public pricing style", "Key limits and inclusions"]} />
                 </section>
 
                 <section id="decision" className="scroll-mt-28 space-y-5">
-                  <ArticleHeading
-                    eyebrow="7"
-                    title="Who should choose which tool?"
-                  />
+                  <ArticleHeading eyebrow="7" title="Who should choose which tool?" />
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-                    <FeatureList
-                      title="Choose FeedVector if"
-                      items={feedVectorFits}
-                    />
-                    <FeatureList
-                      title="Choose Hootsuite if"
-                      items={hootsuiteFits}
-                    />
+                    <FeatureList title="Choose FeedVector if" items={feedVectorFits} />
+                    <FeatureList title="Choose Hootsuite if" items={hootsuiteFits} />
                   </div>
                 </section>
 
@@ -573,33 +446,24 @@ export default function FeedVectorVsHootsuitePage() {
                   <ArticleHeading eyebrow="8" title="Final verdict" />
                   <div className="space-y-4 text-base leading-7 text-gray-600 dark:text-gray-300">
                     <p>
-                      Hootsuite is the stronger enterprise platform. It has
-                      deeper analytics, social listening, inbox management,
-                      benchmarking, integrations, governance, and compliance
-                      options.
+                      Hootsuite is the stronger enterprise platform. It has deeper analytics, social listening, inbox management, benchmarking,
+                      integrations, governance, and compliance options.
                     </p>
                     <p>
-                      But that does not make it the better choice for everyone.
-                      For creators, startups, agencies, and small teams,
-                      FeedVector is the better practical choice because it gives
-                      you AI content creation, viral templates, simple
-                      scheduling, automation, MCP support, team collaboration,
-                      and clear pricing.
+                      But that does not make it the better choice for everyone. For creators, startups, agencies, and small teams, FeedVector is the
+                      better practical choice because it gives you AI content creation, viral templates, simple scheduling, automation, MCP support,
+                      team collaboration, and clear pricing.
                     </p>
                     <p>
-                      Hootsuite helps big teams manage social media at scale.
-                      FeedVector helps lean teams create, publish, automate, and
-                      grow faster without paying for enterprise complexity.
+                      Hootsuite helps big teams manage social media at scale. FeedVector helps lean teams create, publish, automate, and grow faster
+                      without paying for enterprise complexity.
                     </p>
                   </div>
                   <div className="rounded-2xl border border-gray-200 bg-white p-6 dark:border-white/10 dark:bg-white/5">
-                    <p className="text-xl font-bold text-gray-800 dark:text-white/90">
-                      The practical answer
-                    </p>
+                    <p className="text-xl font-bold text-gray-800 dark:text-white/90">The practical answer</p>
                     <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
-                      Pick Hootsuite for enterprise social operations. Pick
-                      FeedVector if you want a simpler, cheaper, AI-native
-                      publishing system built for speed.
+                      Pick Hootsuite for enterprise social operations. Pick FeedVector if you want a simpler, cheaper, AI-native publishing system
+                      built for speed.
                     </p>
                     <Link
                       href="https://app.feedvector.com"
@@ -611,21 +475,12 @@ export default function FeedVectorVsHootsuitePage() {
                 </section>
 
                 <section className="space-y-5">
-                  <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
-                    FAQs
-                  </h2>
+                  <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">FAQs</h2>
                   <div className="space-y-3">
                     {faqs.map((faq) => (
-                      <div
-                        key={faq.question}
-                        className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5"
-                      >
-                        <h3 className="text-base font-bold text-gray-800 dark:text-white/90">
-                          {faq.question}
-                        </h3>
-                        <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">
-                          {faq.answer}
-                        </p>
+                      <div key={faq.question} className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
+                        <h3 className="text-base font-bold text-gray-800 dark:text-white/90">{faq.question}</h3>
+                        <p className="mt-2 text-base leading-7 text-gray-600 dark:text-gray-300">{faq.answer}</p>
                       </div>
                     ))}
                   </div>
@@ -634,9 +489,7 @@ export default function FeedVectorVsHootsuitePage() {
 
               <aside className="hidden lg:block">
                 <div className="sticky top-24 rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-                  <p className="text-xs font-extrabold uppercase tracking-widest text-gray-800 dark:text-white/90">
-                    On this page
-                  </p>
+                  <p className="text-xs font-extrabold uppercase tracking-widest text-gray-800 dark:text-white/90">On this page</p>
                   <nav className="mt-4 space-y-2.5 text-sm">
                     {sections.map((section) => (
                       <a
@@ -649,12 +502,9 @@ export default function FeedVectorVsHootsuitePage() {
                     ))}
                   </nav>
                   <div className="mt-5 border-t border-gray-200 pt-4 dark:border-white/10">
-                    <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
-                      Short summary
-                    </p>
+                    <p className="text-sm font-semibold text-gray-800 dark:text-white/90">Short summary</p>
                     <p className="mt-2 text-sm leading-6 text-gray-500 dark:text-gray-400">
-                      Pick FeedVector for AI-native publishing and clear
-                      pricing. Pick Hootsuite for enterprise social operations.
+                      Pick FeedVector for AI-native publishing and clear pricing. Pick Hootsuite for enterprise social operations.
                     </p>
                   </div>
                 </div>
@@ -664,59 +514,29 @@ export default function FeedVectorVsHootsuitePage() {
         </div>
       </section>
     </>
-  );
+  )
 }
 
-function ArticleHeading({
-  eyebrow,
-  title,
-}: {
-  eyebrow: string;
-  title: string;
-}) {
+function ArticleHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
     <div className="space-y-2">
-      <p className="text-sm font-bold text-primary-600 dark:text-primary-400">
-        {eyebrow}
-      </p>
-      <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">
-        {title}
-      </h2>
+      <p className="text-sm font-bold text-primary-600 dark:text-primary-400">{eyebrow}</p>
+      <h2 className="text-2xl font-extrabold tracking-tight text-gray-800 dark:text-white/90 md:text-3xl">{title}</h2>
     </div>
-  );
+  )
 }
 
-function ComparisonBlock({
-  title,
-  body,
-  verdict,
-}: {
-  title: string;
-  body: string;
-  verdict: string;
-}) {
+function ComparisonBlock({ title, body, verdict }: { title: string; body: string; verdict: string }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
-        {title}
-      </h3>
-      <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">
-        {body}
-      </p>
-      <p className="mt-4 rounded-xl bg-gray-50 p-4 text-sm leading-6 text-gray-600 dark:bg-white/5 dark:text-gray-300">
-        {verdict}
-      </p>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
+      <p className="mt-3 text-base leading-7 text-gray-600 dark:text-gray-300">{body}</p>
+      <p className="mt-4 rounded-xl bg-gray-50 p-4 text-sm leading-6 text-gray-600 dark:bg-white/5 dark:text-gray-300">{verdict}</p>
     </div>
-  );
+  )
 }
 
-function ComparisonTable({
-  rows,
-  columns,
-}: {
-  rows: string[][];
-  columns: string[];
-}) {
+function ComparisonTable({ rows, columns }: { rows: string[][]; columns: string[] }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
       <div className="overflow-x-auto">
@@ -736,11 +556,7 @@ function ComparisonTable({
                 {row.map((cell, index) => (
                   <td
                     key={`${row[0]}-${index}`}
-                    className={
-                      index === 0
-                        ? "px-5 py-4 font-medium text-gray-800 dark:text-white/90"
-                        : "px-5 py-4 text-gray-600 dark:text-gray-300"
-                    }
+                    className={index === 0 ? "px-5 py-4 font-medium text-gray-800 dark:text-white/90" : "px-5 py-4 text-gray-600 dark:text-gray-300"}
                   >
                     {cell}
                   </td>
@@ -751,41 +567,32 @@ function ComparisonTable({
         </table>
       </div>
     </div>
-  );
+  )
 }
 
 function FeatureList({ title, items }: { title: string; items: string[] }) {
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-white/10 dark:bg-white/5">
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">
-        {title}
-      </h3>
+      <h3 className="text-lg font-bold text-gray-800 dark:text-white/90">{title}</h3>
       <ul className="mt-4 space-y-3">
         {items.map((item) => (
-          <li
-            key={item}
-            className="flex gap-3 text-base text-gray-600 dark:text-gray-300"
-          >
+          <li key={item} className="flex gap-3 text-base text-gray-600 dark:text-gray-300">
             <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary-500" />
             <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
 function MetricCard({ value, label }: { value: string; label: string }) {
   return (
     <div className="rounded-xl bg-gray-50 p-4 dark:bg-white/5">
-      <p className="text-lg font-bold text-gray-800 dark:text-white/90">
-        {value}
-      </p>
-      <p className="mt-1 text-xs leading-5 text-gray-500 dark:text-gray-400">
-        {label}
-      </p>
+      <p className="text-lg font-bold text-gray-800 dark:text-white/90">{value}</p>
+      <p className="mt-1 text-xs leading-5 text-gray-500 dark:text-gray-400">{label}</p>
     </div>
-  );
+  )
 }
 
 function ImageShowcase({
@@ -796,30 +603,20 @@ function ImageShowcase({
   width = 936,
   height = 535,
 }: {
-  src: string;
-  alt: string;
-  title: string;
-  description: string;
-  width?: number;
-  height?: number;
+  src: string
+  alt: string
+  title: string
+  description: string
+  width?: number
+  height?: number
 }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white dark:border-white/10 dark:bg-white/5">
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className="h-auto w-full"
-      />
+      <Image src={src} alt={alt} width={width} height={height} className="h-auto w-full" />
       <div className="border-t border-gray-200 p-5 dark:border-white/10">
-        <p className="text-base font-semibold text-gray-800 dark:text-white/90">
-          {title}
-        </p>
-        <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">
-          {description}
-        </p>
+        <p className="text-base font-semibold text-gray-800 dark:text-white/90">{title}</p>
+        <p className="mt-1 text-sm leading-6 text-gray-500 dark:text-gray-400">{description}</p>
       </div>
     </div>
-  );
+  )
 }

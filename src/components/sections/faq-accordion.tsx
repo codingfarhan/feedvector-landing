@@ -17,15 +17,15 @@ export default function FaqAccordion() {
   const faqItems: FAQItem[] = [
     {
       id: 1,
-      question: "What is included in the Standard plan?",
+      question: "What is included in the Essential plan?",
       answer:
-        "Standard gives creators and founders connected social accounts, LinkedIn planning and scheduling, templates, AI-assisted drafting, repurposing, analytics, commenting recommendations, and AI media credits.",
+        "Essential includes 5 social media channels, 2 additional team users, full self-service software, one onboarding call, content planning, approval workflows, analytics, engagement discovery, support, 100 AI images per month, and 35 AI videos per month.",
     },
     {
       id: 2,
       question: "Which plan should I choose?",
       answer:
-        "Choose Standard for one LinkedIn account and a full content system, Pro for up to 5 connected accounts and team access, and Growth for unlimited accounts plus exportable client reports.",
+        "Choose Essential if you already have a LinkedIn strategy and need one place to execute it. Choose Growth if you want FeedVector to configure your brand strategy and guide the system with monthly reviews. Choose Done-for-you if you want us to plan, create, publish, and improve your LinkedIn content.",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ export default function FaqAccordion() {
       id: 6,
       question: "Can my team collaborate in one workspace?",
       answer:
-        "Yes. Pro and Growth include team access, shared calendars, approval workflows, and collaboration for LinkedIn content.",
+        "Yes. Essential includes 2 additional team users, while Growth includes unlimited users. Both include collaboration workflows for planning, approvals, and publishing.",
     },
     {
       id: 7,
