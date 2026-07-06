@@ -37,20 +37,6 @@ export default function HeroSection() {
                   Book a Demo
                 </Link>
               </div>
-              <div className="relative z-30 mt-5 flex justify-center">
-                <a
-                  href="https://www.producthunt.com/products/feedvector?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-feedvector"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    alt="FeedVector - Turn LinkedIn posts and comments into clients | Product Hunt"
-                    width="250"
-                    height="54"
-                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1181572&amp;theme=light&amp;t=1782565818141"
-                  />
-                </a>
-              </div>
             </div>
           </div>
           <div className="max-w-[1000px] mx-auto relative">
