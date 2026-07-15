@@ -22,7 +22,7 @@ const AMOUNTS = {
 }
 
 const APP_URL = "https://app.feedvector.com"
-const STRATEGY_CALL_URL = "https://calendly.com/syedfarhanahmad0/30min"
+const STRATEGY_CALL_URL = "https://calendar.app.google/tBHzh5u8n4AGiVTb9"
 
 export type TBILLING_PLAN = (typeof BILLING_PLANS)[number]
 export const BILLING_PLANS = [
