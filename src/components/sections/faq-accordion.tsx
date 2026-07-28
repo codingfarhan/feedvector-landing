@@ -11,22 +11,22 @@ interface FAQItem {
 }
 
 export default function FaqAccordion() {
-  const [activeItem, setActiveItem] = useState<number | null>(1);
+  const [activeItem, setActiveItem] = useState<number | null>(3);
 
   // FAQ data
   const faqItems: FAQItem[] = [
-    {
-      id: 1,
-      question: "What is included in the Essential plan?",
-      answer:
-        "Essential includes 5 social media channels, 2 additional team users, full self-service software, one onboarding call, content planning, approval workflows, analytics, engagement discovery, support, 100 AI images per month, and 35 AI videos per month.",
-    },
-    {
-      id: 2,
-      question: "Which plan should I choose?",
-      answer:
-        "Choose Essential if you already have a LinkedIn strategy and need one place to execute it. Choose Growth if you want FeedVector to configure your brand strategy and guide the system with monthly reviews. Choose Done-for-you if you want us to plan, create, publish, and improve your LinkedIn content.",
-    },
+    // {
+    //   id: 1,
+    //   question: "What is included in the Essential plan?",
+    //   answer:
+    //     "Essential includes 5 social media channels, 2 additional team users, full self-service software, one onboarding call, content planning, approval workflows, analytics, engagement discovery, support, 100 AI images per month, and 35 AI videos per month.",
+    // },
+    // {
+    //   id: 2,
+    //   question: "Which plan should I choose?",
+    //   answer:
+    //     "Choose Essential if you already have a LinkedIn strategy and need one place to execute it. Choose Growth if you want FeedVector to configure your brand strategy and guide the system with monthly reviews. Choose Done-for-you if you want us to plan, create, publish, and improve your LinkedIn content.",
+    // },
     {
       id: 3,
       question: "Which social channels are supported?",
@@ -49,7 +49,7 @@ export default function FaqAccordion() {
       id: 6,
       question: "Can my team collaborate in one workspace?",
       answer:
-        "Yes. Essential includes 2 additional team users, while Growth includes unlimited users. Both include collaboration workflows for planning, approvals, and publishing.",
+        "Yes. FeedVector includes collaboration workflows for planning, approvals, and publishing.",
     },
     {
       id: 7,

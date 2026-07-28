@@ -16,12 +16,10 @@ Features:
 - Analytics and performance insights
 - Automation rules and workflows
 - UTM and link tracking
-- Simple and affordable pricing
 - 24/7 email support for paid users
 
 Docs:
 https://feedvector.com/features
-https://feedvector.com/pricing
 https://feedvector.com/faq
 https://feedvector.com/mcp
 https://feedvector.com/guides/feedvector-mcp-vscode

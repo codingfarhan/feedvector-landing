@@ -4,7 +4,7 @@ import FeatureShowcase from "@/components/sections/feature-showcase"
 import HeroSection from "@/components/sections/hero-section"
 import LinkedinEngagementSection from "@/components/sections/linkedin-engagement-section"
 import ToolsTab from "@/components/sections/tools-tab"
-import PricingSection from "@/components/sections/pricing"
+// import PricingSection from "@/components/sections/pricing"
 import AudienceSection from "@/components/sections/audience-section"
 import McpCallout from "@/components/sections/mcp-callout"
 import type { Metadata } from "next"
@@ -71,7 +71,7 @@ export default async function Home() {
       <McpCallout />
       {/* <BenefitsGrid /> */}
       {/* <TestimonialsSection /> */}
-      <PricingSection />
+      {/* <PricingSection /> */}
       <FaqAccordion />
     </>
   )

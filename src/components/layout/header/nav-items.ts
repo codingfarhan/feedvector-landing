@@ -36,11 +36,11 @@ export const navItems: NavItem[] = [
     href: "/features",
     label: "Features",
   },
-  {
-    type: "link",
-    label: "Pricing",
-    href: "/pricing",
-  },
+  // {
+  //   type: "link",
+  //   label: "Pricing",
+  //   href: "/pricing",
+  // },
   {
     type: "dropdown",
     label: "More",

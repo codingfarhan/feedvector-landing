@@ -231,10 +231,10 @@ export default function FeedVectorVsHootsuitePage() {
                       Try FeedVector
                     </Link>
                     <Link
-                      href="/pricing"
+                      href="https://calendly.com/syedfarhanahmad0/30min"
                       className="inline-flex h-11 items-center justify-center rounded-full border border-gray-200 bg-white px-6 text-sm font-medium text-gray-700 transition-colors hover:border-primary-200 hover:text-primary-600 dark:border-white/10 dark:bg-white/5 dark:text-gray-200 dark:hover:text-primary-400"
                     >
-                      See pricing
+                      Book a call
                     </Link>
                   </div>
                 </header>

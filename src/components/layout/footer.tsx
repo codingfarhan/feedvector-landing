@@ -76,10 +76,10 @@ export default function Footer() {
                     <Link href="/" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       Status
                     </Link>
-                    <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    {/* <Link href="/pricing" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       Pricing
-                    </Link>
-                    <Link href="/pricing#faq" className="text-sm font-normal text-gray-400 transition hover:text-white">
+                    </Link> */}
+                    <Link href="/faq" className="text-sm font-normal text-gray-400 transition hover:text-white">
                       FAQ
                     </Link>
                     <Link href="/privacy" className="text-sm font-normal text-gray-400 transition hover:text-white">

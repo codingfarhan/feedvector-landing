@@ -155,10 +155,10 @@ export default function BenefitsGrid() {
                     Trigger auto actions, connect integrations, and measure results with unified analytics.
                   </p>
                   <Link
-                    href="/pricing"
+                    href="https://calendly.com/syedfarhanahmad0/30min"
                     className="font-medium inline-block text-sm text-white rounded-full bg-primary-500 hover:bg-primary-600 transition py-3 px-6"
                   >
-                    View pricing
+                    Book a call
                   </Link>
                 </div>
                 <div>

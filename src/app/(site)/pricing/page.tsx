@@ -1,3 +1,5 @@
+import { notFound } from "next/navigation";
+/*
 import FaqAccordion from "@/components/sections/faq-accordion";
 import type { Metadata } from "next";
 import PricingSection from "@/components/sections/pricing";
@@ -23,12 +25,17 @@ export const metadata: Metadata = {
     url: "/pricing",
   },
 };
+*/
 
 export default async function PricingPage() {
+  return notFound();
+
+  /*
   return (
     <>
       <PricingSection />
       <FaqAccordion />
     </>
   );
+  */
 }

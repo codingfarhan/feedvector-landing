@@ -259,10 +259,10 @@ export default function FeaturesPage() {
               Start for free
             </Link>
             <Link
-              href="/pricing"
+              href="https://calendly.com/syedfarhanahmad0/30min"
               className="inline-flex h-12 items-center justify-center rounded-full border border-gray-200 px-6 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-white/10 dark:text-white/90 dark:hover:bg-white/5"
             >
-              See pricing
+              Book a call
             </Link>
           </div>
         </div>
