@@ -23,16 +23,8 @@ export default function HeroSection() {
 
               <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
                 <Link
-                  href="https://app.feedvector.com"
+                  href="https://calendar.app.google/yUU9zhkDXKfM6WMv6"
                   className="bg-primary-500 transition h-12 inline-flex items-center justify-center hover:bg-primary-600 px-6 py-3 rounded-full text-white text-sm"
-                >
-                  Start for Free
-                </Link>
-                <Link
-                  href="https://calendar.app.google/r5ARqVFTkr3WCnFe7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 inline-flex items-center justify-center rounded-full border border-gray-200 bg-white/80 px-6 py-3 text-sm font-medium text-gray-700 transition hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-white/90 dark:hover:bg-white/10"
                 >
                   Book a Demo
                 </Link>

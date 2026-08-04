@@ -253,16 +253,10 @@ export default function FeaturesPage() {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="https://app.feedvector.com"
+              href="https://calendar.app.google/yUU9zhkDXKfM6WMv6"
               className="inline-flex h-12 items-center justify-center rounded-full bg-primary-500 px-6 text-sm font-medium text-white transition-colors hover:bg-primary-600"
             >
-              Start for free
-            </Link>
-            <Link
-              href="https://calendly.com/syedfarhanahmad0/30min"
-              className="inline-flex h-12 items-center justify-center rounded-full border border-gray-200 px-6 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50 dark:border-white/10 dark:text-white/90 dark:hover:bg-white/5"
-            >
-              Book a call
+              Book a demo
             </Link>
           </div>
         </div>
